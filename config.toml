@@ -1,6 +1,7 @@
 baseurl = "https://username.github.io"
 DefaultContentLanguage = "en"
 #DefaultContentLanguage = "ja"
+publishDir = "docs"
 title = "Welcome To My Blog"
 theme = "beautifulhugo"
 metaDataFormat = "yaml"
