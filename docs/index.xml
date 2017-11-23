@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Welcome To My Blog</title>
-    <link>https://username.github.io/</link>
+    <link>https://pgaria.github.io/realAutomation/</link>
     <description>Recent content on Welcome To My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>pawangaria@gmail.com (Pawan garia)</managingEditor>
     <webMaster>pawangaria@gmail.com (Pawan garia)</webMaster>
     <lastBuildDate>Thu, 23 Nov 2017 14:15:09 +0100</lastBuildDate>
     
-	<atom:link href="https://username.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://pgaria.github.io/realAutomation/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Integrate TestRail with Automated TestCases in Java&#43;TestNG</title>
-      <link>https://username.github.io/post/testrailwithjavaintegration/</link>
+      <link>https://pgaria.github.io/realAutomation/post/testrailwithjavaintegration/</link>
       <pubDate>Thu, 23 Nov 2017 14:15:09 +0100</pubDate>
       <author>pawangaria@gmail.com (Pawan garia)</author>
-      <guid>https://username.github.io/post/testrailwithjavaintegration/</guid>
+      <guid>https://pgaria.github.io/realAutomation/post/testrailwithjavaintegration/</guid>
       <description>What is TestRail? TestRail (http://www.gurock.com/testrail/) is a modern and very nice tool for the Test Case Management by Quality Assurance and Development Team. TestManagement tools are very helpful for managing the test cases and TestRail is pack with very useful features like web-based application, Rest API integration etc.
 Why to use TestManagement Tool with Automation? While making Regression or any kind of Test Automation suit there is a need of maintaining Use cases and maintain the repository which anyone can access and see what use cases are been automated and what is left.</description>
     </item>
     
     <item>
       <title>About me</title>
-      <link>https://username.github.io/page/about/</link>
+      <link>https://pgaria.github.io/realAutomation/page/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>pawangaria@gmail.com (Pawan garia)</author>
-      <guid>https://username.github.io/page/about/</guid>
+      <guid>https://pgaria.github.io/realAutomation/page/about/</guid>
       <description>My name is Pawan Garia and these days I am living in Germany with my wife in a beautiful city of Bamberg. I am working as QA Automation Engineer and I have lots of experience in Framework Design and Development. In my free time I likes watching movies, travelling and adventure.
 Please feel free to contact me on my Email: pawangaria@gmail.com</description>
     </item>
