@@ -21,7 +21,7 @@ In this blog, I am going to use TestRail as Test Management tool and will explai
 #### How to integrate Automated Test with TestRail?
 I am explaining the steps to write your logic in Java and you can also follow the steps to make integration work for your framework
 
-STEP 1: First create one new Annotation class 
+STEP 1: First create one new *Annotation Class* 
 ```java
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
@@ -31,25 +31,25 @@ int testRailId() default 0;
 String[] tags() default "";
 }
 ```
-STEP 2: Use the above annotation in TestNg Class File with Other Test.
+STEP 2: Use the above annotation in TestNg class file with other test.
 
-Every @Test here is mapped with the Use case In TestRail So we got the TestRail Unique Id for every Test.
+Every *@Test* here is mapped with the use case in TestRail, So we got the TestRail unique Id for every test.
 ```java
 @Test
 @UseAsTestRailId(testRailId=<TestRail Id for this Usecase>)
 public void yourTestNumberSomething()
 {
-  // Do your testing Steps here which are mapped to testRail Case.
+  // Do your testing steps here which are mapped to TestRail usecase.
 }
 ```
-STEP 3: You can Use TestNG for Every Test So that you can execute the Test Rail API after the test Execution.
+STEP 3: You can use TestNG for every test, so that you can execute the TestRail API after the test execution.
 ```java
 @Listeners(com.gurock.testrail.Listener.class)
-public class TestIngClass {
-    // All the Test Will be here ...
+public class TestClass {
+    // All the Test will be here ...
 }
 ```
-STEP 4: You need to Call the test Rail from Listener Class. Like I am Calling the API in the on Test Success Method.
+STEP 4: You need to call the TestRail from Listener Class. Like I am calling the API in the *onTestSuccess* Method.
 ```java
 public void onTestSuccess(ITestResult result) {
 String TestID=null;
@@ -59,20 +59,20 @@ Method testMethod = newobj.getMethod(result.getName());
 if (testMethod.isAnnotationPresent(UseAsTestRailId.class)) 
 {
 UseAsTestRailId useAsTestName = testMethod.getAnnotation(UseAsTestRailId.class);
-// Get the TestCase ID for Test Rail
+// Get the TestCase ID for TestRail
 TestID = Integer.toString(useAsTestName.testRailId());
 System.out.println("Test Rail ID = " + TestID);
 }
-// Now You can call the Test Rail Post API call to update the Result in Test Rail Based on the Test Run Id and TestCase ID.
+// Now you can call the TestRail post API call to update the result in TestRail database based on the TestRun Id and TestCase Id.
 
 JSONObject r = (JSONObject) client.sendPost("add_result_for_case/TestCaseID/TestRunID", data);
 }
 ```
 #### Final Result and Reporting
-Now Integrating TestRail UseCases Id with Automated Test, We will have the test Run result history for the particular UseCases.
+Now integrating TestRail UseCases Id with automated test, We will have the test run result history for the particular UseCases.
 
 ![Image Title](https://pgaria.github.io/realAutomation/img/testRail/TestRailUseCaseReport.png)  
 
-You can change and improve the code and Logic based on your requirements and send me feedback about your experience with the integration.
+You can change and improve the code and logic based on your requirements and send me feedback about your experience with the integration.
 
 Thanks for reading!

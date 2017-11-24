@@ -183,7 +183,7 @@ Why to use TestManagement Tool with Automation? While making Regression or any k
                 
                   <span class="post-meta">
   <i class="fa fa-calendar-o"></i>&nbsp;Posted on November 23, 2017
-  &nbsp;|&nbsp; <i class="fa fa-clock-o"></i> 3 min (474 mots)
+  &nbsp;|&nbsp; <i class="fa fa-clock-o"></i> 3 min (467 mots)
   
 </span>
 
@@ -224,7 +224,7 @@ In this blog, I am going to use TestRail as Test Management tool and will explai
 
 <p>I am explaining the steps to write your logic in Java and you can also follow the steps to make integration work for your framework</p>
 
-<p>STEP 1: First create one new Annotation class</p>
+<p>STEP 1: First create one new <em>Annotation Class</em></p>
 
 <pre><code class="language-java">@Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
@@ -235,27 +235,27 @@ String[] tags() default &quot;&quot;;
 }
 </code></pre>
 
-<p>STEP 2: Use the above annotation in TestNg Class File with Other Test.</p>
+<p>STEP 2: Use the above annotation in TestNg class file with other test.</p>
 
-<p>Every @Test here is mapped with the Use case In TestRail So we got the TestRail Unique Id for every Test.</p>
+<p>Every <em>@Test</em> here is mapped with the use case in TestRail, So we got the TestRail unique Id for every test.</p>
 
 <pre><code class="language-java">@Test
 @UseAsTestRailId(testRailId=&lt;TestRail Id for this Usecase&gt;)
 public void yourTestNumberSomething()
 {
-  // Do your testing Steps here which are mapped to testRail Case.
+  // Do your testing steps here which are mapped to TestRail usecase.
 }
 </code></pre>
 
-<p>STEP 3: You can Use TestNG for Every Test So that you can execute the Test Rail API after the test Execution.</p>
+<p>STEP 3: You can use TestNG for every test, so that you can execute the TestRail API after the test execution.</p>
 
 <pre><code class="language-java">@Listeners(com.gurock.testrail.Listener.class)
-public class TestIngClass {
-    // All the Test Will be here ...
+public class TestClass {
+    // All the Test will be here ...
 }
 </code></pre>
 
-<p>STEP 4: You need to Call the test Rail from Listener Class. Like I am Calling the API in the on Test Success Method.</p>
+<p>STEP 4: You need to call the TestRail from Listener Class. Like I am calling the API in the <em>onTestSuccess</em> Method.</p>
 
 <pre><code class="language-java">public void onTestSuccess(ITestResult result) {
 String TestID=null;
@@ -265,11 +265,11 @@ Method testMethod = newobj.getMethod(result.getName());
 if (testMethod.isAnnotationPresent(UseAsTestRailId.class)) 
 {
 UseAsTestRailId useAsTestName = testMethod.getAnnotation(UseAsTestRailId.class);
-// Get the TestCase ID for Test Rail
+// Get the TestCase ID for TestRail
 TestID = Integer.toString(useAsTestName.testRailId());
 System.out.println(&quot;Test Rail ID = &quot; + TestID);
 }
-// Now You can call the Test Rail Post API call to update the Result in Test Rail Based on the Test Run Id and TestCase ID.
+// Now you can call the TestRail post API call to update the result in TestRail database based on the TestRun Id and TestCase Id.
 
 JSONObject r = (JSONObject) client.sendPost(&quot;add_result_for_case/TestCaseID/TestRunID&quot;, data);
 }
@@ -277,11 +277,11 @@ JSONObject r = (JSONObject) client.sendPost(&quot;add_result_for_case/TestCaseID
 
 <h4 id="final-result-and-reporting">Final Result and Reporting</h4>
 
-<p>Now Integrating TestRail UseCases Id with Automated Test, We will have the test Run result history for the particular UseCases.</p>
+<p>Now integrating TestRail UseCases Id with automated test, We will have the test run result history for the particular UseCases.</p>
 
 <p><img src="https://pgaria.github.io/realAutomation/img/testRail/TestRailUseCaseReport.png" alt="Image Title" /></p>
 
-<p>You can change and improve the code and Logic based on your requirements and send me feedback about your experience with the integration.</p>
+<p>You can change and improve the code and logic based on your requirements and send me feedback about your experience with the integration.</p>
 
 <p>Thanks for reading!</p>
 
