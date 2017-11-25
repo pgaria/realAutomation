@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Welcome To My Blog</title>
-    <link>https://pgaria.github.io/realAutomation/categories/</link>
+    <link>https://www.pawangaria.com/categories/</link>
     <description>Recent content in Categories on Welcome To My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>pawangaria@gmail.com (Pawan garia)</managingEditor>
     <webMaster>pawangaria@gmail.com (Pawan garia)</webMaster>
     
-	<atom:link href="https://pgaria.github.io/realAutomation/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.pawangaria.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
