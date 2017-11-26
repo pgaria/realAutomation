@@ -34,28 +34,10 @@ googleAnalytics = "UA-110208829-1"
 
 [Author]
   name = "Pawan garia"
-  website = "yourwebsite.com"
+  website = "www.pawangaria.com"
   email = "pawangaria@gmail.com"
-  facebook = "username"
-  googleplus = "+username" # or xxxxxxxxxxxxxxxxxxxxx
-  github = "username"
-  gitlab = "username"
-  twitter = "username"
-  reddit = "username"
-  linkedin = "username"
-  xing = "username"
-  stackoverflow = "users/XXXXXXX/username"
-  snapchat = "username"
-  instagram = "username"
-  youtube = "user/username" # or channel/channelname
-  soundcloud = "username"
-  spotify = "username"
-  bandcamp = "username"
-  itchio = "username"
-  vk = "username"
-  paypal = "username"
-  telegram = "username"
-
+  facebook = "pawan.garia"
+  linkedin = "pawan-garia-a947a24a"
 [[menu.main]]
     name = "Blog"
     url = ""

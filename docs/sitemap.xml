@@ -12,7 +12,26 @@
   </url>
   
   <url>
+    <loc>https://www.pawangaria.com/categories/automation/</loc>
+    <lastmod>2017-11-23T14:15:09+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.pawangaria.com/tags/automation/</loc>
+    <lastmod>2017-11-23T14:15:09+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.pawangaria.com/categories/</loc>
+    <lastmod>2017-11-23T14:15:09+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.pawangaria.com/tags/java/</loc>
+    <lastmod>2017-11-23T14:15:09+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -28,7 +47,44 @@
   </url>
   
   <url>
+    <loc>https://www.pawangaria.com/categories/reporting/</loc>
+    <lastmod>2017-11-23T14:15:09+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.pawangaria.com/tags/</loc>
+    <lastmod>2017-11-23T14:15:09+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.pawangaria.com/tags/testing/</loc>
+    <lastmod>2017-11-23T14:15:09+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.pawangaria.com/categories/testng/</loc>
+    <lastmod>2017-11-23T14:15:09+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.pawangaria.com/tags/testng/</loc>
+    <lastmod>2017-11-23T14:15:09+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.pawangaria.com/tags/testrail/</loc>
+    <lastmod>2017-11-23T14:15:09+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.pawangaria.com/tags/webdriver/</loc>
+    <lastmod>2017-11-23T14:15:09+01:00</lastmod>
     <priority>0</priority>
   </url>
   

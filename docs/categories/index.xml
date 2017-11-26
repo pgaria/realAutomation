@@ -7,9 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>pawangaria@gmail.com (Pawan garia)</managingEditor>
     <webMaster>pawangaria@gmail.com (Pawan garia)</webMaster>
+    <lastBuildDate>Thu, 23 Nov 2017 14:15:09 +0100</lastBuildDate>
     
 	<atom:link href="https://www.pawangaria.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Automation</title>
+      <link>https://www.pawangaria.com/categories/automation/</link>
+      <pubDate>Thu, 23 Nov 2017 14:15:09 +0100</pubDate>
+      <author>pawangaria@gmail.com (Pawan garia)</author>
+      <guid>https://www.pawangaria.com/categories/automation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reporting</title>
+      <link>https://www.pawangaria.com/categories/reporting/</link>
+      <pubDate>Thu, 23 Nov 2017 14:15:09 +0100</pubDate>
+      <author>pawangaria@gmail.com (Pawan garia)</author>
+      <guid>https://www.pawangaria.com/categories/reporting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Testng</title>
+      <link>https://www.pawangaria.com/categories/testng/</link>
+      <pubDate>Thu, 23 Nov 2017 14:15:09 +0100</pubDate>
+      <author>pawangaria@gmail.com (Pawan garia)</author>
+      <guid>https://www.pawangaria.com/categories/testng/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
