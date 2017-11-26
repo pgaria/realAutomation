@@ -7,15 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>pawangaria@gmail.com (Pawan garia)</managingEditor>
     <webMaster>pawangaria@gmail.com (Pawan garia)</webMaster>
-    <lastBuildDate>Thu, 23 Nov 2017 14:15:09 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 26 Nov 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.pawangaria.com/categories/reporting/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Capture Full page Screenshots using Chrome Browser</title>
+      <link>https://www.pawangaria.com/post/capturefullscreenshotinchrome/</link>
+      <pubDate>Sun, 26 Nov 2017 00:00:00 +0000</pubDate>
+      <author>pawangaria@gmail.com (Pawan garia)</author>
+      <guid>https://www.pawangaria.com/post/capturefullscreenshotinchrome/</guid>
+      <description>While working everyone feels the need of taking full-page screenshots but Its always hard to take the full page screenshot as normal screenshot works on the page area which is in the frame. Like on Mac we use Command + Shift + 4 and select the area and take the screenshot but in this method, we can not scroll down and take the part hidden in the screenshot. Like I took a screenshot of BBC.</description>
+    </item>
+    
+    <item>
       <title>Integrate TestRail with Automated TestCases in Java&#43;TestNG</title>
       <link>https://www.pawangaria.com/post/testrailwithjavaintegration/</link>
-      <pubDate>Thu, 23 Nov 2017 14:15:09 +0100</pubDate>
+      <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
       <author>pawangaria@gmail.com (Pawan garia)</author>
       <guid>https://www.pawangaria.com/post/testrailwithjavaintegration/</guid>
       <description>What is TestRail? TestRail (http://www.gurock.com/testrail/) is a modern and very nice tool for the Test Case Management by Quality Assurance and Development Team. TestManagement tools are very helpful for managing the test cases and TestRail is pack with very useful features like web-based application, Rest API integration etc.

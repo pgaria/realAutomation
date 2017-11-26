@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>pawangaria@gmail.com (Pawan garia)</managingEditor>
     <webMaster>pawangaria@gmail.com (Pawan garia)</webMaster>
-    <lastBuildDate>Thu, 23 Nov 2017 14:15:09 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 23 Nov 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.pawangaria.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,25 +15,61 @@
     <item>
       <title>Automation</title>
       <link>https://www.pawangaria.com/tags/automation/</link>
-      <pubDate>Thu, 23 Nov 2017 14:15:09 +0100</pubDate>
+      <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
       <author>pawangaria@gmail.com (Pawan garia)</author>
       <guid>https://www.pawangaria.com/tags/automation/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Chrome</title>
+      <link>https://www.pawangaria.com/tags/chrome/</link>
+      <pubDate>Sun, 26 Nov 2017 00:00:00 +0000</pubDate>
+      <author>pawangaria@gmail.com (Pawan garia)</author>
+      <guid>https://www.pawangaria.com/tags/chrome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Custom Domain</title>
+      <link>https://www.pawangaria.com/tags/custom-domain/</link>
+      <pubDate>Sat, 25 Nov 2017 00:00:00 +0000</pubDate>
+      <author>pawangaria@gmail.com (Pawan garia)</author>
+      <guid>https://www.pawangaria.com/tags/custom-domain/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google Firebase</title>
+      <link>https://www.pawangaria.com/tags/google-firebase/</link>
+      <pubDate>Sun, 26 Nov 2017 00:00:00 +0000</pubDate>
+      <author>pawangaria@gmail.com (Pawan garia)</author>
+      <guid>https://www.pawangaria.com/tags/google-firebase/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Java</title>
       <link>https://www.pawangaria.com/tags/java/</link>
-      <pubDate>Thu, 23 Nov 2017 14:15:09 +0100</pubDate>
+      <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
       <author>pawangaria@gmail.com (Pawan garia)</author>
       <guid>https://www.pawangaria.com/tags/java/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Screenshot</title>
+      <link>https://www.pawangaria.com/tags/screenshot/</link>
+      <pubDate>Sun, 26 Nov 2017 00:00:00 +0000</pubDate>
+      <author>pawangaria@gmail.com (Pawan garia)</author>
+      <guid>https://www.pawangaria.com/tags/screenshot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Testing</title>
       <link>https://www.pawangaria.com/tags/testing/</link>
-      <pubDate>Thu, 23 Nov 2017 14:15:09 +0100</pubDate>
+      <pubDate>Sun, 26 Nov 2017 00:00:00 +0000</pubDate>
       <author>pawangaria@gmail.com (Pawan garia)</author>
       <guid>https://www.pawangaria.com/tags/testing/</guid>
       <description></description>
@@ -42,7 +78,7 @@
     <item>
       <title>Testng</title>
       <link>https://www.pawangaria.com/tags/testng/</link>
-      <pubDate>Thu, 23 Nov 2017 14:15:09 +0100</pubDate>
+      <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
       <author>pawangaria@gmail.com (Pawan garia)</author>
       <guid>https://www.pawangaria.com/tags/testng/</guid>
       <description></description>
@@ -51,16 +87,25 @@
     <item>
       <title>Testrail</title>
       <link>https://www.pawangaria.com/tags/testrail/</link>
-      <pubDate>Thu, 23 Nov 2017 14:15:09 +0100</pubDate>
+      <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
       <author>pawangaria@gmail.com (Pawan garia)</author>
       <guid>https://www.pawangaria.com/tags/testrail/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Web Hosting</title>
+      <link>https://www.pawangaria.com/tags/web-hosting/</link>
+      <pubDate>Sun, 26 Nov 2017 00:00:00 +0000</pubDate>
+      <author>pawangaria@gmail.com (Pawan garia)</author>
+      <guid>https://www.pawangaria.com/tags/web-hosting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Webdriver</title>
       <link>https://www.pawangaria.com/tags/webdriver/</link>
-      <pubDate>Thu, 23 Nov 2017 14:15:09 +0100</pubDate>
+      <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
       <author>pawangaria@gmail.com (Pawan garia)</author>
       <guid>https://www.pawangaria.com/tags/webdriver/</guid>
       <description></description>

@@ -173,6 +173,7 @@ img {
   left: 50%;
   width: 50px;
   margin-top: -25px;
+  display: none;
 }
 .navbar-custom .avatar-container  .avatar-img-border {
   width: 100%;

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Deploy and host your website on Google Firebase</title>
+  <meta property="og:title" content="Deploy and host your website on Google Firebase" />
+  <meta name="twitter:title" content="Deploy and host your website on Google Firebase" />
+  <meta name="description" content="Deploying and hosting your website on Google Firebase service is easy and free of cost.">
+  <meta property="og:description" content="Deploying and hosting your website on Google Firebase service is easy and free of cost.">
+  <meta name="twitter:description" content="Deploying and hosting your website on Google Firebase service is easy and free of cost.">
+  <meta name="author" content="Pawan garia"/>
+  <link href='https://www.pawangaria.com/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://www.pawangaria.com/img/avatar-icon.png" />
+  <meta name="twitter:image" content="https://www.pawangaria.com/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://www.pawangaria.com/post/deployyourwebsiteonfirebase/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Welcome To My Blog" />
+
+  <meta name="generator" content="Hugo 0.31" />
+  <link rel="canonical" href="https://www.pawangaria.com/post/deployyourwebsiteonfirebase/" />
+  <link rel="alternate" href="" type="application/rss+xml" title="Welcome To My Blog">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.pawangaria.com/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://www.pawangaria.com/css/highlighting.css" />
+  <link rel="stylesheet" href="https://www.pawangaria.com/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://www.pawangaria.com/css/highlight.min.css" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-110208829-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://www.pawangaria.com/">Welcome To My Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="/">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="/tags">Tags</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Welcome To My Blog" href="https://www.pawangaria.com/">
+            <img class="avatar-img" src="https://www.pawangaria.com/img/avatar-icon.png" alt="Welcome To My Blog" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>Deploy and host your website on Google Firebase</h1>
+                
+                
+                  <span class="post-meta">
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on November 26, 2017
+  &nbsp;|&nbsp; <i class="fa fa-clock-o"></i> 2 min (399 mots)
+  
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<p>After finishing the first draft of my <a href="https://www.pawangaria.com">new website</a> I wanted to host my website on <a href="https://firebase.google.com/">firebase</a> because I found Firebaseas hosting server very useful, easy to use and free of cost for limited hosting.</p>
+
+<p>So I decided to write down my knowdledge and experience of hosting website with firebase here and if you are also looking for hosting your website in firebase please follow thesteps below.</p>
+
+<h3 id="create-account-or-login-on-firebase-console">Create account or Login on Firebase Console</h3>
+
+<p>To deploy your website on firebase first you need to create an account on <a href="https://console.firebase.google.com/">Google Firebase</a>. For Account, you can use your normal Gmail user or create new Gmail account. After successful login to Firebase console, you can easily create a new project.
+<img src="/img/firebasehosting/AddFirebaseProject.png" alt="FireBase addProject" /></p>
+
+<h3 id="setup-of-firebase-cli">Setup of Firebase CLI</h3>
+
+<p>Firebase hosting and deployments are done by the use of Firebase CLI (command line tool). CLI depends on <a href="https://nodejs.org/en/">node.js</a> and npn so before installing Firebasewe need to install node.js and npm in your local machine.<a href="https://changelog.com/posts/install-node-js-with-homebrew-on-os-x">Reference</a></p>
+
+<h4 id="on-mac">on Mac</h4>
+
+<pre><code>brew install node
+</code></pre>
+
+<h4 id="on-windows">on Windows</h4>
+
+<p>Download from <a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a> and follow installation instructions.</p>
+
+<p>After installing node and npm you can verify the installation and check the version</p>
+
+<pre><code>node -v
+
+npm -v
+
+</code></pre>
+
+<p>You will see the version installed after running the above commands.</p>
+
+<h3 id="install-firebase-cli">Install Firebase CLI</h3>
+
+<p>Now after node.js and npm installed properly we can install the Firebase CLI using the below command</p>
+
+<pre><code>npm install -g firebase-tools
+</code></pre>
+
+<h3 id="initialise-website-setup-with-firebase">Initialise website setup with firebase</h3>
+
+<p>Go to the base directory of your website project in the command line and run the command</p>
+
+<pre><code>firebase init 
+</code></pre>
+
+<p>and then follow the instructions on the terminal</p>
+
+<p><img src="/img/firebasehosting/firebaseInit.png" alt="FireBase Deploy" /></p>
+
+<p>After firebase init you can see one firebase.json file generated in your website directory. This JSON file is a  basic configuration file for the Firebase deployment. You can find more details about firebase.json <a href="https://firebase.google.com/docs/hosting/deploying#section-firebase-json">here</a></p>
+
+<h3 id="deploy-your-website-to-firebase">Deploy your website to Firebase</h3>
+
+<p>Now your website is ready to depoy on the firebase server.Run the following command from the base directory of your website</p>
+
+<pre><code>firebase deploy
+</code></pre>
+
+<p><img src="/img/firebasehosting/firebaseDeploy.png" alt="FireBase Deploy" /></p>
+
+<h3 id="access-your-website">Access your website</h3>
+
+<p>After successfull deployement of your website you can get your website url from firebase account and generally URL&rsquo;s looks like this</p>
+
+<p><strong>yourProjectName-ID.firebaseapp.com</strong></p>
+
+<p><img src="/img/firebasehosting/FirebaseWebHosting.png" alt="FireBase hosting" /></p>
+
+<p>Now you can view and open your website in any of the browsers using the above URL.</p>
+
+<p>I took the installation reference from <a href="https://firebase.google.com/docs/hosting/deploying#section-hosting-setup">here</a></p>
+
+<h3 id="what-is-next-step">What is Next Step?</h3>
+
+<p>Now the next step is to connect your hosted website on Firebase with Real Domain. I will cover this as separate topic in the next articles.</p>
+
+<p>Thanks for reading!</p>
+
+      </article>
+
+      <ul class="pager blog-pager">
+        
+          <li class="previous">
+            <a href="https://www.pawangaria.com/post/mapcustomdomainwithgodaddyandfirebase/" data-toggle="tooltip" data-placement="top" title="Google Firebase custom domain mapping with GoDaddy">&larr; Previous Post</a>
+          </li>
+        
+        
+          <li class="next">
+            <a href="https://www.pawangaria.com/post/capturefullscreenshotinchrome/" data-toggle="tooltip" data-placement="top" title="Capture Full page Screenshots using Chrome Browser">Next Post &rarr;</a>
+          </li>
+        
+      </ul>
+
+
+      
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:pawangaria@gmail.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/pawan.garia" title="Facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/pawan-garia-a947a24a" title="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="www.pawangaria.com">Pawan garia</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;
+          2017
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://www.pawangaria.com/">Welcome To My Blog</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.31</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://www.pawangaria.com/js/main.js"></script>
+<script src="https://www.pawangaria.com/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script><script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+<script src="https://www.pawangaria.com/js/load-photoswipe.js"></script>
+
+
+
+  </body>
+</html>
+

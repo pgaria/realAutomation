@@ -1,0 +1,41 @@
+---
+title: "Capture Full page Screenshots using Chrome Browser"
+date: 2017-11-26
+draft: false
+description: "Capture Full page Screenshots of any website page using google chrome developer tools."
+categories: [ "Testing", "Reporting","Chrome","Screenshot" ]
+tags: [
+    "Chrome",
+    "Screenshot",
+    "Testing"
+]
+---
+
+While working everyone feels the need of taking full-page screenshots but Its always hard to take the full page screenshot as normal screenshot works on the page area which is in the frame. Like on Mac we use Command + Shift + 4 and select the area and take the screenshot but in this method, we can not scroll down and take the part hidden in the screenshot. Like I took a screenshot of BBC.com website here.
+
+![Screenshot With Frame Only](/img/screenshot/ScreenshotWithFrame.png)
+
+Screenshot covers only the part of the website which is in the frame and in focus and we can not scroll down.
+Now we will use the Google Chrome in build screenshot capturing tools which are very easy to use. I took a screenshot of the same BBC.com website using the chrome tool and following is the result.
+
+![Full Page Screenshot](/img/screenshot/FullPageScreenshot.png)
+
+Looks nice!!!
+
+So how we can use Google developer tools to take this screenshot, Follow the simple steps below.
+On Mac
+1. Do Alt + Command + I which will open the Developers tool.
+2. Now do Command + Shift + P and search for “Capture Screenshot”
+3. Select the option of taking the screenshot from the list appeared.
+
+![Image Title](/img/screenshot/googleChromeDevTool.png)
+
+After selecting the option from the list Screenshot file would be downloaded automatically to your Downloads folder on the local machine.
+
+Following is the GIF I made to show how it looks like in Chrome developer tool.
+![Capture screenshot GIF](/img/screenshot/capturegif.gif)
+
+I have written the same article on LinkedIn also :
+https://www.linkedin.com/pulse/capture-full-page-screenshots-pawan-garia
+
+Thanks for reading!

@@ -1,6 +1,6 @@
 ---
 title: "Integrate TestRail with Automated TestCases in Java+TestNG"
-date: 2017-11-23T14:15:09+01:00
+date: 2017-11-23
 draft: false
 description: "Integrating your Automated Usecases in java with Test Rail API's and pushing test results to Testrail UI."
 categories: [ "Automation", "Reporting","testNG" ]

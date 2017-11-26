@@ -3,12 +3,15 @@ DefaultContentLanguage = "en"
 #DefaultContentLanguage = "ja"
 publishDir = "docs"
 title = "Welcome To My Blog"
+description = "The blog of Pawan Garia about information technology, he is an automation testing architect and design expert and web developer."
 theme = "beautifulhugo"
 metaDataFormat = "yaml"
 pygmentsUseClasses = true
 pygmentCodeFences = true
 #disqusShortname = "XXX"
 googleAnalytics = "UA-110208829-1"
+
+home = "Home"
 
 [Params]
   subtitle = "My blog contains topics about information technology"
