@@ -348,6 +348,7 @@ footer .theme-by {
   font-size: 18px;
   font-style: italic;
   margin: 0 0 10px;
+  font-weight: bold;
 }
 .post-preview .post-meta a,
 .post-heading .post-meta a {

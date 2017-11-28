@@ -55,13 +55,13 @@
   </url>
   
   <url>
-    <loc>https://www.pawangaria.com/tags/chrome/</loc>
+    <loc>https://www.pawangaria.com/categories/chrome/</loc>
     <lastmod>2017-11-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.pawangaria.com/categories/chrome/</loc>
+    <loc>https://www.pawangaria.com/tags/chrome/</loc>
     <lastmod>2017-11-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -73,20 +73,14 @@
   </url>
   
   <url>
-    <loc>https://www.pawangaria.com/tags/gas-mask/</loc>
-    <lastmod>2017-11-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.pawangaria.com/categories/gas-mask/</loc>
     <lastmod>2017-11-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.pawangaria.com/tags/google-firebase/</loc>
-    <lastmod>2017-11-28T00:00:00+00:00</lastmod>
+    <loc>https://www.pawangaria.com/tags/gas-mask/</loc>
+    <lastmod>2017-11-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -97,13 +91,19 @@
   </url>
   
   <url>
-    <loc>https://www.pawangaria.com/tags/hostfile/</loc>
-    <lastmod>2017-11-27T00:00:00+00:00</lastmod>
+    <loc>https://www.pawangaria.com/tags/google-firebase/</loc>
+    <lastmod>2017-11-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.pawangaria.com/categories/hostfile/</loc>
+    <lastmod>2017-11-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.pawangaria.com/tags/hostfile/</loc>
     <lastmod>2017-11-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -132,25 +132,25 @@
   </url>
   
   <url>
-    <loc>https://www.pawangaria.com/tags/screenshot/</loc>
-    <lastmod>2017-11-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.pawangaria.com/categories/screenshot/</loc>
     <lastmod>2017-11-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.pawangaria.com/tags/selenium-webdriver/</loc>
-    <lastmod>2017-11-28T12:00:00+00:00</lastmod>
+    <loc>https://www.pawangaria.com/tags/screenshot/</loc>
+    <lastmod>2017-11-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.pawangaria.com/categories/selenium-webdriver/</loc>
+    <lastmod>2017-11-28T12:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.pawangaria.com/tags/selenium-webdriver/</loc>
     <lastmod>2017-11-28T12:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -168,25 +168,31 @@
   </url>
   
   <url>
-    <loc>https://www.pawangaria.com/tags/testing/</loc>
-    <lastmod>2017-11-28T12:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.pawangaria.com/categories/testing/</loc>
     <lastmod>2017-11-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.pawangaria.com/tags/testng/</loc>
-    <lastmod>2017-11-23T00:00:00+00:00</lastmod>
+    <loc>https://www.pawangaria.com/tags/testing/</loc>
+    <lastmod>2017-11-28T12:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.pawangaria.com/</loc>
+    <lastmod>2017-11-28T12:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.pawangaria.com/categories/testng/</loc>
+    <lastmod>2017-11-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.pawangaria.com/tags/testng/</loc>
     <lastmod>2017-11-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -198,20 +204,14 @@
   </url>
   
   <url>
-    <loc>https://www.pawangaria.com/tags/web-hosting/</loc>
-    <lastmod>2017-11-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.pawangaria.com/categories/web-hosting/</loc>
     <lastmod>2017-11-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.pawangaria.com/</loc>
-    <lastmod>2017-11-28T12:00:00+00:00</lastmod>
+    <loc>https://www.pawangaria.com/tags/web-hosting/</loc>
+    <lastmod>2017-11-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
