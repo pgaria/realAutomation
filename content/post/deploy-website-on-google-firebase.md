@@ -72,6 +72,6 @@ Now you can view and open your website in any of the browsers using the above UR
 I took the installation reference from [here](https://firebase.google.com/docs/hosting/deploying#section-hosting-setup)
 
 ### What is Next Step?
-Now the next step is to connect your hosted website on Firebase with Real Domain. I will cover this as separate topic in the next articles. 
+Now the next step is to connect your hosted website on Firebase with Real Domain. I will cover this as separate topic in the [next articles](https://www.pawangaria.com/post/mapcustomdomainwithgodaddyandfirebase/). 
 
 Thanks for reading!

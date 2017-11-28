@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Integrate TestRail with Automated TestCases in Java&#43;TestNG</title>
+  <meta property="og:title" content="Integrate TestRail with Automated TestCases in Java&#43;TestNG" />
+  <meta name="twitter:title" content="Integrate TestRail with Automated TestCases in Java&#43;TestNG" />
+  <meta name="description" content="Integrating your Automated Usecases in java with Test Rail API&#39;s and pushing test results to Testrail UI.">
+  <meta property="og:description" content="Integrating your Automated Usecases in java with Test Rail API&#39;s and pushing test results to Testrail UI.">
+  <meta name="twitter:description" content="Integrating your Automated Usecases in java with Test Rail API&#39;s and pushing test results to Testrail UI.">
+  <meta name="author" content="Pawan garia"/>
+  <link href='https://www.pawangaria.com/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://www.pawangaria.com/img/avatar-icon.png" />
+  <meta name="twitter:image" content="https://www.pawangaria.com/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://www.pawangaria.com/post/automation/testrail-integration-with-java-testng/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Welcome To My Blog" />
+
+  <meta name="generator" content="Hugo 0.31" />
+  <link rel="canonical" href="https://www.pawangaria.com/post/automation/testrail-integration-with-java-testng/" />
+  <link rel="alternate" href="" type="application/rss+xml" title="Welcome To My Blog">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.pawangaria.com/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://www.pawangaria.com/css/highlighting.css" />
+  <link rel="stylesheet" href="https://www.pawangaria.com/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://www.pawangaria.com/css/highlight.min.css" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-110208829-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://www.pawangaria.com/">Home</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="/">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="/tags">Tags</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Welcome To My Blog" href="https://www.pawangaria.com/">
+            <img class="avatar-img" src="https://www.pawangaria.com/img/avatar-icon.png" alt="Welcome To My Blog" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>Integrate TestRail with Automated TestCases in Java&#43;TestNG</h1>
+                
+                
+                  <span class="post-meta">
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on November 23, 2017
+  &nbsp;|&nbsp; <i class="fa fa-clock-o"></i> 3 min (467 mots)
+  
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<h4 id="what-is-testrail">What is TestRail?</h4>
+
+<p>TestRail (<a href="http://www.gurock.com/testrail/">http://www.gurock.com/testrail/</a>) is a modern and very nice tool for the Test Case Management by Quality Assurance and Development Team.
+TestManagement tools are very helpful for managing the test cases and TestRail is pack with very useful features like web-based application, Rest API integration etc.</p>
+
+<p><img src="/img/testRail/TestRailReport.png" alt="Image Title" /></p>
+
+<h4 id="why-to-use-testmanagement-tool-with-automation">Why to use TestManagement Tool with Automation?</h4>
+
+<p>While making Regression or any kind of Test Automation suit there is a need of maintaining Use cases and maintain the repository which anyone can access and see what use cases are been automated and what is left. It is very helpful for the continues Integration Pipeline that we can generate and see the reports in one place for Automated Test results.</p>
+
+<p><img src="/img/testRail/TestCaseResult.png" alt="Image Title" /></p>
+
+<p>There is a need for Integrating Test Management Tool like TestRail with the Java and TestNG based Automated Test Framework to mark every test run results in the common web-based platform.
+In this blog, I am going to use TestRail as Test Management tool and will explain the steps to integrate your framework using Rest API&rsquo;s.</p>
+
+<h4 id="how-to-integrate-automated-test-with-testrail">How to integrate Automated Test with TestRail?</h4>
+
+<p>I am explaining the steps to write your logic in Java and you can also follow the steps to make integration work for your framework</p>
+
+<p>STEP 1: First create one new <em>Annotation Class</em></p>
+
+<pre><code class="language-java">@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.METHOD)
+public @interface UseAsTestRailId
+{
+int testRailId() default 0;
+String[] tags() default &quot;&quot;;
+}
+</code></pre>
+
+<p>STEP 2: Use the above annotation in TestNg class file with other test.</p>
+
+<p>Every <em>@Test</em> here is mapped with the use case in TestRail, So we got the TestRail unique Id for every test.</p>
+
+<pre><code class="language-java">@Test
+@UseAsTestRailId(testRailId=&lt;TestRail Id for this Usecase&gt;)
+public void yourTestNumberSomething()
+{
+  // Do your testing steps here which are mapped to TestRail usecase.
+}
+</code></pre>
+
+<p>STEP 3: You can use TestNG for every test, so that you can execute the TestRail API after the test execution.</p>
+
+<pre><code class="language-java">@Listeners(com.gurock.testrail.Listener.class)
+public class TestClass {
+    // All the Test will be here ...
+}
+</code></pre>
+
+<p>STEP 4: You need to call the TestRail from Listener Class. Like I am calling the API in the <em>onTestSuccess</em> Method.</p>
+
+<pre><code class="language-java">public void onTestSuccess(ITestResult result) {
+String TestID=null;
+IClass obj = result.getTestClass();
+Class newobj = obj.getRealClass();
+Method testMethod = newobj.getMethod(result.getName());
+if (testMethod.isAnnotationPresent(UseAsTestRailId.class)) 
+{
+UseAsTestRailId useAsTestName = testMethod.getAnnotation(UseAsTestRailId.class);
+// Get the TestCase ID for TestRail
+TestID = Integer.toString(useAsTestName.testRailId());
+System.out.println(&quot;Test Rail ID = &quot; + TestID);
+}
+// Now you can call the TestRail post API call to update the result in TestRail database based on the TestRun Id and TestCase Id.
+
+JSONObject r = (JSONObject) client.sendPost(&quot;add_result_for_case/TestCaseID/TestRunID&quot;, data);
+}
+</code></pre>
+
+<h4 id="final-result-and-reporting">Final Result and Reporting</h4>
+
+<p>Now integrating TestRail UseCases Id with automated test, We will have the test run result history for the particular UseCases.</p>
+
+<p><img src="/img/testRail/TestRailUseCaseReport.png" alt="Image Title" /></p>
+
+<p>You can change and improve the code and logic based on your requirements and send me feedback about your experience with the integration.</p>
+
+<p>Thanks for reading!</p>
+
+      </article>
+
+      <ul class="pager blog-pager">
+        
+        
+          <li class="next">
+            <a href="https://www.pawangaria.com/post/capture-fullpage-screenshot-chrome/" data-toggle="tooltip" data-placement="top" title="Capture Full page Screenshots using Chrome Browser">Next Post &rarr;</a>
+          </li>
+        
+      </ul>
+
+
+      
+        
+          <div class="disqus-comments">
+            <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "www-pawangaria-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          </div>
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:pawangaria@gmail.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/pawan.garia" title="Facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/pawan-garia-a947a24a" title="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="www.pawangaria.com">Pawan garia</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;
+          2017
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://www.pawangaria.com/">Welcome To My Blog</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.31</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://www.pawangaria.com/js/main.js"></script>
+<script src="https://www.pawangaria.com/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script><script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+<script src="https://www.pawangaria.com/js/load-photoswipe.js"></script>
+
+
+
+  </body>
+</html>
+

@@ -8,16 +8,14 @@ theme = "beautifulhugo"
 metaDataFormat = "yaml"
 pygmentsUseClasses = true
 pygmentCodeFences = true
-#disqusShortname = "XXX"
 googleAnalytics = "UA-110208829-1"
-
-home = "Home"
 
 #DisqueCommenting
 disqusShortname = "www-pawangaria-com"
 
 [Params]
-  subtitle = "My blog contains topics about information technology"
+  subtitle = "My blog contains topics about Information Technology"
+  home = "Home"
   logo = "img/avatar-icon.png"
   favicon = "img/favicon.ico"
   dateFormat = "January 2, 2006"

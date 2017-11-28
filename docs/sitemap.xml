@@ -3,27 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.pawangaria.com/post/mapcustomdomainwithgodaddyandfirebase/</loc>
+    <loc>https://www.pawangaria.com/post/automation/what-is-selenium-webdriver/</loc>
+    <lastmod>2017-11-28T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.pawangaria.com/post/map-custom-domain-with-godaddy-firebase/</loc>
     <lastmod>2017-11-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.pawangaria.com/post/hostfileeditinggasmask/</loc>
+    <loc>https://www.pawangaria.com/post/host-file-editing-gasmask/</loc>
     <lastmod>2017-11-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.pawangaria.com/post/deployyourwebsiteonfirebase/</loc>
+    <loc>https://www.pawangaria.com/post/deploy-website-on-google-firebase/</loc>
     <lastmod>2017-11-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.pawangaria.com/post/capturefullscreenshotinchrome/</loc>
+    <loc>https://www.pawangaria.com/post/capture-fullpage-screenshot-chrome/</loc>
     <lastmod>2017-11-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.pawangaria.com/post/testrailwithjavaintegration/</loc>
+    <loc>https://www.pawangaria.com/post/automation/testrail-integration-with-java-testng/</loc>
     <lastmod>2017-11-23T00:00:00+00:00</lastmod>
   </url>
   
@@ -34,6 +39,12 @@
   <url>
     <loc>https://www.pawangaria.com/categories/automation/</loc>
     <lastmod>2017-11-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.pawangaria.com/categories/automation-testing/</loc>
+    <lastmod>2017-11-28T12:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -110,7 +121,7 @@
   
   <url>
     <loc>https://www.pawangaria.com/post/</loc>
-    <lastmod>2017-11-28T00:00:00+00:00</lastmod>
+    <lastmod>2017-11-28T12:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -134,7 +145,13 @@
   
   <url>
     <loc>https://www.pawangaria.com/tags/selenium-webdriver/</loc>
-    <lastmod>2017-11-23T00:00:00+00:00</lastmod>
+    <lastmod>2017-11-28T12:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.pawangaria.com/categories/selenium-webdriver/</loc>
+    <lastmod>2017-11-28T12:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -146,13 +163,13 @@
   
   <url>
     <loc>https://www.pawangaria.com/tags/test-automation/</loc>
-    <lastmod>2017-11-23T00:00:00+00:00</lastmod>
+    <lastmod>2017-11-28T12:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.pawangaria.com/tags/testing/</loc>
-    <lastmod>2017-11-24T00:00:00+00:00</lastmod>
+    <lastmod>2017-11-28T12:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -194,7 +211,7 @@
   
   <url>
     <loc>https://www.pawangaria.com/</loc>
-    <lastmod>2017-11-28T00:00:00+00:00</lastmod>
+    <lastmod>2017-11-28T12:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
