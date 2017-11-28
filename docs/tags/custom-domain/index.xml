@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>pawangaria@gmail.com (Pawan garia)</managingEditor>
     <webMaster>pawangaria@gmail.com (Pawan garia)</webMaster>
-    <lastBuildDate>Sat, 25 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Nov 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.pawangaria.com/tags/custom-domain/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Google Firebase custom domain mapping with GoDaddy</title>
       <link>https://www.pawangaria.com/post/mapcustomdomainwithgodaddyandfirebase/</link>
-      <pubDate>Sat, 25 Nov 2017 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 28 Nov 2017 00:00:00 +0000</pubDate>
       <author>pawangaria@gmail.com (Pawan garia)</author>
       <guid>https://www.pawangaria.com/post/mapcustomdomainwithgodaddyandfirebase/</guid>
       <description>In my last post, I explained about hosting our website on Google Firebase and we are able to access the website using the firebase Url. Now in this article, we are going to talk and learn about adding our website with custom domain like your own domains purchased on the domain providing websites like GoDaddy and NameCheap. I this article we are going to integrate our domain in GoDaddy with Firebase hosted website.</description>

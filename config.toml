@@ -13,6 +13,9 @@ googleAnalytics = "UA-110208829-1"
 
 home = "Home"
 
+#DisqueCommenting
+disqusShortname = "www-pawangaria-com"
+
 [Params]
   subtitle = "My blog contains topics about information technology"
   logo = "img/avatar-icon.png"

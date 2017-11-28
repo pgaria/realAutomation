@@ -8,9 +8,9 @@ tags: [
     "Java",
     "testNG",
     "TestRail",
-    "Automation",
+    "Test Automation",
     "Testing",
-    "Webdriver"
+    "Selenium WebDriver"
 ]
 ---
 

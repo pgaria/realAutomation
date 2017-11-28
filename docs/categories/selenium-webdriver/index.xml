@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Selenium Webdriver on Welcome To My Blog</title>
+    <link>https://www.pawangaria.com/categories/selenium-webdriver/</link>
+    <description>Recent content in Selenium Webdriver on Welcome To My Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>pawangaria@gmail.com (Pawan garia)</managingEditor>
+    <webMaster>pawangaria@gmail.com (Pawan garia)</webMaster>
+    <lastBuildDate>Thu, 23 Nov 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.pawangaria.com/categories/selenium-webdriver/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What is Selenium WebDriver!</title>
+      <link>https://www.pawangaria.com/post/whatiswebdriver/</link>
+      <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
+      <author>pawangaria@gmail.com (Pawan garia)</author>
+      <guid>https://www.pawangaria.com/post/whatiswebdriver/</guid>
+      <description>Selenium WebDriver is an open source application for driving browsers for automation testing. Using WebDriver libraries you can drive the browser and perform actions like Click, Open URL, Enter Text, Clear Text, Take Screenshot of browser and many more actions. WebDriver works on a very simple principle of Client Server architecture. The communication between the server and client is through HTTP request and response.
+WebDriver uses JSON wire protocol works on RESTful Web Services over HTTP.</description>
+    </item>
+    
+  </channel>
+</rss>
