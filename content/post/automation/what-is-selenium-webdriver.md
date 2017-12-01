@@ -3,7 +3,8 @@ title: "What is Selenium WebDriver?"
 date: "2017-11-28T12:00:00-00:00"
 author: "Pawan Garia"
 draft: false
-description: "What is Selenium WebDriver and how it works in background"
+description: "What is Selenium WebDriver and how it works in background."
+summaryDescription: "An introduction about Selenium WebDriver."
 categories: [ "Automation Testing", "Selenium WebDriver"]
 tags: [
     "Test Automation",

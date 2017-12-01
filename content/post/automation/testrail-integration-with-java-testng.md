@@ -1,8 +1,8 @@
 ---
-title: "Integrate TestRail with Automated TestCases in Java+TestNG"
+title: "Integrate Gurock TestRail with Automated TestCases in Java+TestNG"
 date: 2017-11-23
 draft: false
-description: "Integrating your Automated Usecases in java with Test Rail API's and pushing test results to Testrail UI."
+description: "Integrating your Automated Usecases in java with Gurock Test Rail API's and pushing test results to Testrail UI."
 categories: [ "Automation", "Reporting","testNG" ]
 tags: [
     "Java",
@@ -15,7 +15,7 @@ tags: [
 ---
 
 #### What is TestRail?
-TestRail (http://www.gurock.com/testrail/) is a modern and very nice tool for the Test Case Management by Quality Assurance and Development Team.
+[Gurock TestRail](http://www.gurock.com/testrail/) is a modern and very nice tool for the Test Case Management by Quality Assurance and Development Team.
 TestManagement tools are very helpful for managing the test cases and TestRail is pack with very useful features like web-based application, Rest API integration etc.
 
 ![Image Title](/img/testRail/TestRailReport.png)

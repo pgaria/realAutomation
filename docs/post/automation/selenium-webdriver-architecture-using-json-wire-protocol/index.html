@@ -5,24 +5,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>What is Selenium WebDriver!</title>
-  <meta property="og:title" content="What is Selenium WebDriver!" />
-  <meta name="twitter:title" content="What is Selenium WebDriver!" />
-  <meta name="description" content="What is Selenium WebDriver and how it works in background">
-  <meta property="og:description" content="What is Selenium WebDriver and how it works in background">
-  <meta name="twitter:description" content="What is Selenium WebDriver and how it works in background">
+  <title>Understanding the Architecture of Selenium WebDriver</title>
+  <meta property="og:title" content="Understanding the Architecture of Selenium WebDriver" />
+  <meta name="twitter:title" content="Understanding the Architecture of Selenium WebDriver" />
+  <meta name="description" content="Understanding the Architecture of Selenium WebDriver and what is  JSON Wire Protocol.">
+  <meta property="og:description" content="Understanding the Architecture of Selenium WebDriver and what is  JSON Wire Protocol.">
+  <meta name="twitter:description" content="Understanding the Architecture of Selenium WebDriver and what is  JSON Wire Protocol.">
   <meta name="author" content="Pawan garia"/>
   <link href='https://www.pawangaria.com/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://www.pawangaria.com/img/avatar-icon.png" />
   <meta name="twitter:image" content="https://www.pawangaria.com/img/avatar-icon.png" />
   <meta name="twitter:card" content="summary" />
-  <meta property="og:url" content="https://www.pawangaria.com/post/webdriver/what-is-selenium-webdriver/" />
+  <meta property="og:url" content="https://www.pawangaria.com/post/automation/selenium-webdriver-architecture-using-json-wire-protocol/" />
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Welcome To My Blog" />
+  <meta property="og:site_name" content="Testing, Automation, Programming and Latest Technology Articles" />
 
   <meta name="generator" content="Hugo 0.31" />
-  <link rel="canonical" href="https://www.pawangaria.com/post/webdriver/what-is-selenium-webdriver/" />
-  <link rel="alternate" href="" type="application/rss+xml" title="Welcome To My Blog">
+  <link rel="canonical" href="https://www.pawangaria.com/post/automation/selenium-webdriver-architecture-using-json-wire-protocol/" />
+  <link rel="alternate" href="" type="application/rss+xml" title="Testing, Automation, Programming and Latest Technology Articles">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -101,7 +101,7 @@ ga('send', 'pageview');
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="https://www.pawangaria.com/">Welcome To My Blog</a>
+      <a class="navbar-brand" href="https://www.pawangaria.com/">PawanGaria.com</a>
     </div>
 
     <div class="collapse navbar-collapse" id="main-navbar">
@@ -135,8 +135,8 @@ ga('send', 'pageview');
     <div class="avatar-container">
       <div class="avatar-img-border">
         
-          <a title="Welcome To My Blog" href="https://www.pawangaria.com/">
-            <img class="avatar-img" src="https://www.pawangaria.com/img/avatar-icon.png" alt="Welcome To My Blog" />
+          <a title="Testing, Automation, Programming and Latest Technology Articles" href="https://www.pawangaria.com/">
+            <img class="avatar-img" src="https://www.pawangaria.com/img/avatar-icon.png" alt="Testing, Automation, Programming and Latest Technology Articles" />
           </a>
         
       </div>
@@ -166,12 +166,12 @@ ga('send', 'pageview');
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
-              <h1>What is Selenium WebDriver!</h1>
+              <h1>Understanding the Architecture of Selenium WebDriver</h1>
                 
                 
                   <span class="post-meta">
-  <i class="fa fa-calendar-o"></i>&nbsp;Posted on November 27, 2017
-  &nbsp;|&nbsp; <i class="fa fa-clock-o"></i> 2 min (358 mots)
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on November 30, 2017
+  &nbsp;|&nbsp; <i class="fa fa-clock-o"></i> 4 min (746 mots)
   
 </span>
 
@@ -192,37 +192,100 @@ ga('send', 'pageview');
       <article role="main" class="blog-post">
         
 
-<p><a href="http://www.seleniumhq.org/projects/webdriver/">Selenium WebDriver</a> is an open source application for driving browsers for automation testing. Using WebDriver libraries you can drive the browser and perform actions like Click, Open URL, Enter Text, Clear Text, Take Screenshot of browser and many more actions.
-WebDriver works on a very simple principle of <a href="https://en.wikipedia.org/wiki/Client%E2%80%93server_model">Client Server architecture</a>. The communication between the server and client is through <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP</a> request and response.</p>
+<p><a href="http://www.seleniumhq.org/projects/webdriver/">Selenium WebDriver</a> provides a programming interface for driving the browser for automation testing. You can find the introduction of WebDriver in my other <a href="https://www.pawangaria.com/post/automation/what-is-selenium-webdriver/">article</a>. This article is more about the architecture and understanding how selenium WebDriver uses JSON Wire Protocol.</p>
 
-<p>WebDriver uses <a href="https://www.json.org/">JSON</a> wire protocol works on <a href="https://docs.oracle.com/javaee/6/tutorial/doc/gijqy.html">RESTful Web Services</a> over HTTP. In simple terms, WebDriver uses JSON wire protocol for communication between client libraries like Java, PHP, C#, and servers which are different drivers like ChromeDriver, FirefoxDriver etc. WebDriver is nothing but sending request and response.</p>
+<p><a href="https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol">JSON Wire Protocol</a> is an abstract specification of how automation behavior like clicking or typing or whatever you actually want to do with your automation script is mapped to selenium or appium or HTTP requests and response.</p>
 
-<h3 id="what-is-json-wire-protocol">What is JSON Wire protocol?</h3>
+<h3 id="why-json-wire-protocol-used-in-first-place">Why JSON Wire Protocol used in first place?</h3>
 
-<p>JSON (JavaScript Object Notation) is a lightweight format for data exchange between client and server. Applications use JSON objects to send and receive data between each other in the web world. JSON data structure is industry standard and can be used for sending and receiving data as <a href="https://developers.squarespace.com/what-is-json/">Key &amp; Value pair</a>. Some people say its a very nice alternative for <a href="https://www.w3schools.com/xml/">XML</a>.  We can save JSON files as .json extension.</p>
+<p>To implement a client-server architecture which can give us the following benefits.</p>
 
-<h3 id="how-json-looks-like">How JSON looks like?</h3>
+<ul>
+<li>You write test in any programming language.</li>
+<li>You can perform or run test on cloud services like <a href="https://saucelabs.com/">SauceLabs</a>, <a href="https://www.browserstack.com/">BrowserStack</a> or <a href="http://www.seleniumhq.org/projects/grid/">Selenium Grid</a> setup.</li>
+<li>You are not bound to run test only on the local machine.</li>
+<li>Different Drivers(FirefoxDriver, ChromeDriver) can be crated for browsers and separate implementation by using the same standards.</li>
+</ul>
 
-<p>A simple json file looks like below and there are many <a href="http://www.jsoneditoronline.org/">online editors</a> which can be used to edit and verify JSON structure.</p>
+<p>So client-server implementation requires a standard set of the specification beforehand so that Server and Client should be in sync with each other in term of what is coming and going on request and response. It&rsquo;s something like a language of communication with each other. So we need some common specification to solve this kind of requirement and the solution is HTTP.</p>
 
-<pre><code class="language-json">{
- &quot;Student&quot;:{
-   &quot;FirstName&quot;:&quot;Pawan&quot;,
-   &quot;LastName&quot;:&quot;Garia&quot;,
-   &quot;IdNumber&quot;:&quot;12345&quot;,
-   &quot;City&quot; : &quot;New Delhi&quot;,
-   &quot;EmailID&quot; : &quot;email@gmail.com&quot; }
-}
+<h3 id="why-http-is-the-solution">Why HTTP is the solution?</h3>
+
+<p>HTTP is a standard for web and can be a good base for the specification. Every <a href="https://en.wikipedia.org/wiki/Programming_language">programming language</a> has a good HTTP libraries which can be used for creating client and server for request and response calls.</p>
+
+<h3 id="how-json-wire-protocol-works-with-http">How JSON Wire protocol works with HTTP?</h3>
+
+<p>HTTP request and response are generally made of <strong>verbs, route, body and response code</strong> which I am explaining here in details:</p>
+
+<p><strong>HTTP Verbs:</strong></p>
+
+<p>GET: Retrieve some information from server for example: <em>getText, getTitle</em></p>
+
+<p>POST: Make something happen for example: <em>startSession, findElement, Click</em></p>
+
+<p>DELETE: Delete some resource for example: <em>deleteSession</em></p>
+
+<p><strong>HTTP Route:</strong></p>
+
+<p>There are many routes in JSON Wire Protocol used by WebDriver which you can check out <a href="https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#command-summary">here</a>. Few examples:</p>
+
+<pre><code>GET   /status
+
+POST  /session
+
+GET   /Session 
 </code></pre>
 
-<h3 id="how-webdriver-interacts-with-browsers">How WebDriver interacts with Browsers?</h3>
+<p><img src="/img/webdriver/client-server-request-response-webdriver.png" alt="client server request response in webdriver" /></p>
 
-<p>WebDriver does not directly interact with the browser. WebDriver creates a request and send the request to the proxy driver server which is running in between the Client and Browser. For example, to run WebDriver script on Chrome Browser we need to first start the ChromeDriver server and then driver launches the Chrome Browser and starts listening on a particular PORT like localhost:12570. Listening on the <a href="https://www.lifewire.com/port-numbers-on-computer-networks-817939">PORT</a> is nothing but accepting the HTTP request methods which can be GET, POST, DELETE etc. which are HTTP standard methods.
-<img src="/img/webdriver/ClientserverWebdriver.png" alt="Client server WebDriver" /></p>
+<p><strong>HTTP Response Code:</strong></p>
 
-<h3 id="what-is-next">What is next?</h3>
+<p>HTTP status codes are not specific enough for all the kind of things might happen in Selenium WebDriver testing session. So for a specific case like <em>NoSuchElement</em> or Errors, we have a status code so that client can give a particular and useful information back to the user. There are many response codes defined in WebDriver which you can find <a href="https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#response-status-codes">here</a> in details but here are some examples:</p>
 
-<p>In the next articles, I will be covering interaction between the Client, Driver and Browser with examples and depth. I am going to explain how a particular action get performed on browser using <a href="https://sites.google.com/a/chromium.org/chromedriver/">ChromeDriver</a>.</p>
+<pre><code>0:   Success
+7:   NoSuchElement
+11:  ElementNotVisible
+200: Everything OK
+500: Something is wrong
+404: Resource not there 
+501: Valid request but action not done by the server
+</code></pre>
+
+<p><strong>HTTP Request and Response Body:</strong></p>
+
+<p>Everything is JSON in request and response body. JSON is used for data transfer between client and server.</p>
+
+<p><em>JSON Wire Protocol Request</em> has route and body described in JSON like:</p>
+
+<pre><code>POST /session
+{&quot;desiredCapabilities&quot; : {&quot;browserName&quot; : &quot;chrome&quot;}}
+</code></pre>
+
+<p><em>JSON Wire Protocol Response</em> has status code and value in body like a successfull findElement request will give you the following response:</p>
+
+<pre><code>{&quot;status&quot; : 0, &quot;value&quot; : {&quot;element&quot; : &quot;123422&quot;}}
+</code></pre>
+
+<h3 id="how-test-work-with-http-and-json-wire-protocol">How Test work with HTTP and JSON Wire Protocol?</h3>
+
+<p>HTTP is a <a href="https://stackoverflow.com/questions/13200152/why-say-that-http-is-a-stateless-protocol">stateless protocol</a> which means multiple requests are not associated with each other and server is not required to track the state of a particular client&rsquo;s previous request. Your test might be getting an Element in one request and clicking on the same Element in some another request, So Client and Server should share <a href="https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/remote/server/Session.html">session</a>, element, frame etc. with each other in subsequent requests.
+So the server assigns a unique ID to these Items like session and Element and then shares them with Client. The client can decide in the request like what needs to be done on the particular ID like click on an element.</p>
+
+<p>Client makes a <a href="https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/remote/server/handler/FindElement.html">findElement</a> call to server and gets the response:</p>
+
+<pre><code>  Request:  POST  /session/::sessionId/element
+  Response: {“status”:0, “value”:{“element&quot;:”elementID”}}
+</code></pre>
+
+<p>Now client knows the elementID from the previous request&rsquo;s response and sends a click request with elementID.</p>
+
+<pre><code>   Request:  POST  /session/::sessionId/element/::elementID/click
+   Response: {“status” : 0}
+</code></pre>
+
+<h3 id="what-webdriver-is-doing-in-json-wire-protocol">What WebDriver is doing in JSON Wire protocol ?</h3>
+
+<p>Selenium WebDriver is a client which is giving an interface to write test in programming languages like Java or Python or many other languages in the market. Server doesn&rsquo;t care or know about what language you are using for writing your tests because it only cares about the correct protocol which is <strong>JSON Wire protocol</strong>. So you can also make your own Selenium Webdriver in your choice of programming language. :)</p>
 
 <p>Thanks for reading!</p>
 
@@ -231,13 +294,9 @@ WebDriver works on a very simple principle of <a href="https://en.wikipedia.org/
       <ul class="pager blog-pager">
         
           <li class="previous">
-            <a href="https://www.pawangaria.com/post/deployyourwebsiteonfirebase/" data-toggle="tooltip" data-placement="top" title="Deploy and host your website on Google Firebase">&larr; Previous Post</a>
+            <a href="https://www.pawangaria.com/post/automation/what-is-selenium-webdriver/" data-toggle="tooltip" data-placement="top" title="What is Selenium WebDriver?">&larr; Previous Post</a>
           </li>
         
-        
-          <li class="next">
-            <a href="https://www.pawangaria.com/post/hostfileeditinggasmask/" data-toggle="tooltip" data-placement="top" title="Editing Host file using GasMask on Mac OS X">Next Post &rarr;</a>
-          </li>
         
       </ul>
 
@@ -327,7 +386,7 @@ WebDriver works on a very simple principle of <a href="https://en.wikipedia.org/
 
           
             &nbsp;&bull;&nbsp;
-            <a href="https://www.pawangaria.com/">Welcome To My Blog</a>
+            <a href="https://www.pawangaria.com/">Testing, Automation, Programming and Latest Technology Articles</a>
           
         </p>
         
