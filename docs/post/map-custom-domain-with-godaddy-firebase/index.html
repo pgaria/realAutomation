@@ -171,7 +171,7 @@ ga('send', 'pageview');
                 
                   <span class="post-meta">
   <i class="fa fa-calendar-o"></i>&nbsp;Posted on November 28, 2017
-  &nbsp;|&nbsp; <i class="fa fa-clock-o"></i> 2 min (407 mots)
+  &nbsp;|&nbsp; <i class="fa fa-clock-o"></i> 2 min (417 mots)
   
 </span>
 
@@ -190,19 +190,19 @@ ga('send', 'pageview');
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>In my <a href="https://www.pawangaria.com/post/deployyourwebsiteonfirebase">last post</a>, I explained about hosting our website on Google Firebase and we are able to access the website using the firebase Url. Now in this article, we are going to talk and learn about adding our website with custom domain like your own domains purchased on the domain providing websites like <a href="https://www.godaddy.com/">GoDaddy</a> and <a href="https://www.namecheap.com/">NameCheap</a>.
-I this article we are going to integrate our domain in GoDaddy with Firebase hosted website. I tried and Integrated my custom domain by taking reference from this <a href="https://firebase.google.com/docs/hosting/custom-domain">documentation</a></p>
+        <p>In my post about <a href="https://www.pawangaria.com/post/deploy-website-on-google-firebase/">how to deploy your website on firebase</a>, I explained about hosting our website on Google Firebase and we are able to access the website using the firebase Url. Now in this article, we are going to talk and learn about adding our website with custom domain like your own domains purchased on the domain providing websites like <a href="https://www.godaddy.com/">GoDaddy</a> and <a href="https://www.namecheap.com/">NameCheap</a>.
+I this article we are going to integrate our domain in GoDaddy with Firebase hosted website. I tried and Integrated my custom domain by taking reference from <a href="https://firebase.google.com/docs/hosting/custom-domain">google firebase documentation</a></p>
 
 <p>Step 1: Go to firebase console and check your project.
-<img src="/img/customDomain/projectHomeFireBase.png" alt="Firebase console" /></p>
+<img src="/img/customDomain/firebase-project-overview-console-page.png" alt="firebase-project-overview-console-page" /></p>
 
 <p>Step 2: Click <strong>Hosting</strong> Link from the left side and you can see your default website deployed.
-<img src="/img/customDomain/hostingProjectPageAfterDeploy.png" alt="Hosting link" /></p>
+<img src="/img/customDomain/firebase-web-hosting-project-page.png" alt="firebase-web-hosting-project-page" /></p>
 
 <p>Step 3: Click <strong>Connect Domain</strong> link from the page.</p>
 
-<p>Step 4: Add Domain name in the connect domain popup.
-<img src="/img/customDomain/domainNamePopup.png" alt="Add Domain name" /></p>
+<p>Step 4: Add Domain name in the connect custom domain popup.
+<img src="/img/customDomain/add-domain-name-in-customdomain.png" alt="add-domain-name-in-customdomain" /></p>
 
 <p>Step 5: Now you will get the google site verification ID and Copy the Id
 Note: Do not copy the only value, you should copy the whole text like:</p>
@@ -210,20 +210,20 @@ Note: Do not copy the only value, you should copy the whole text like:</p>
 <p><strong>google-site-verification=9xUIjWlRgKX-jsM8Hhlaj3HHtDK0xnEoA98Ms</strong></p>
 
 <p>We need this google site verification Id to add to <strong>TXT</strong> record in DNS provider.
-<img src="/img/customDomain/verifyOwnershipVerificationId.png" alt="Add google site" /></p>
+<img src="/img/customDomain/verify-ownership-verification-customdomain.png" alt="verify-ownership-verification-in-customdomaine" /></p>
 
 <p>Step 6: Now go back to GoDaddy and login to your account and go to <a href="https://dcc.godaddy.com/domains/">Domain Page</a></p>
 
 <p>Step 7: Now click on the three dots near to <strong>Use My Domain</strong> button and click <strong>Manage DNS</strong> link.
- <img src="/img/customDomain/manageDomainDnS.png" alt="click use domain" /></p>
+ <img src="/img/customDomain/godaddy-manage-domain-dns.png" alt="godaddy-manage-domain-dns" /></p>
 
 <p>Step 8: On manage DNS page add the value of google site verification Id as TXT value in the list.
- <img src="/img/customDomain/TXTvalueforGoogleVerification.png" alt="Add TXT value in DNS" /></p>
+ <img src="/img/customDomain/TXT-value-for-google-verification.png" alt="TXT-value-for-google-verification" /></p>
 
 <p>Step 9: Now after adding this <strong>TXT</strong> value in the DNS list, Go back to firebase console and click the verify link from the custom domain popup.</p>
 
 <p>Step 10: In FireBase on GoOnline Step you will get 2 IP address which you need to add in the GoDaddy DNS table again as <strong>Type A</strong> value.
- <img src="/img/customDomain/typeAvalueinDNStable.png" alt="Add IP address as A value" /></p>
+ <img src="/img/customDomain/typeA-value-update-in-dns-table.png" alt="add-typeA- value-in-dns-records" /></p>
 
 <p>Step 11: Now go back to Firebase console again and Connect.</p>
 
@@ -232,7 +232,7 @@ Note: Do not copy the only value, you should copy the whole text like:</p>
 
 <p>Above steps, I used to connect my custom domain with GoDaddy and It worked for me. I wrote this article because I didn&rsquo;t find any recently updated article on the internet about the whole process.</p>
 
-<p>Feel Free to write me If you feel any issue with your custom domain.</p>
+<p>Please feel free to write me incase you face issues while connecting your custom domain.</p>
 
 <p>Thanks for reading!</p>
 

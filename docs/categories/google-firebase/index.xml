@@ -18,7 +18,7 @@
       <pubDate>Tue, 28 Nov 2017 00:00:00 +0000</pubDate>
       <author>pawangaria@gmail.com (Pawan garia)</author>
       <guid>https://www.pawangaria.com/post/map-custom-domain-with-godaddy-firebase/</guid>
-      <description>In my last post, I explained about hosting our website on Google Firebase and we are able to access the website using the firebase Url. Now in this article, we are going to talk and learn about adding our website with custom domain like your own domains purchased on the domain providing websites like GoDaddy and NameCheap. I this article we are going to integrate our domain in GoDaddy with Firebase hosted website.</description>
+      <description>In my post about how to deploy your website on firebase, I explained about hosting our website on Google Firebase and we are able to access the website using the firebase Url. Now in this article, we are going to talk and learn about adding our website with custom domain like your own domains purchased on the domain providing websites like GoDaddy and NameCheap. I this article we are going to integrate our domain in GoDaddy with Firebase hosted website.</description>
     </item>
     
     <item>

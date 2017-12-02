@@ -19,13 +19,13 @@ As per the documentation of Gas mask you can run it on the following versions :
 
 ### How to Install Gas Mask?
 
-You can download the Gas Mask .zip file from the Github URL [here](https://github.com/2ndalpha/gasmask)
+You can download the Gas Mask .zip file from the Github URL of [gasmask](https://github.com/2ndalpha/gasmask).
 
 Now unzip the downloaded file and you will be able to see the Gas Mask application editor.
 
 Open Gas Mask Application and you will see the Editor and you can create multiple files there and select any of the files and Click **Activate** Button to activate Host file.
 
- ![Add TXT value in DNS](/img/gasmask/gasMaskEditor.png)
+ ![gas-mask-editor-on-mac](/img/gasmask/gasMask-editor.png)
 
 After creating multiple files you don't need to open host file **(/etc/hosts)** and changing and editing the file again and again. 
 

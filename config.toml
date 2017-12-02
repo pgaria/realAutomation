@@ -13,6 +13,11 @@ enableRobotsTXT= true
 #DisqueCommenting
 disqusShortname = "www-pawangaria-com"
 
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
 [Params]
   subtitle = "This blog comprises topics about Information Technology"
   description = ""

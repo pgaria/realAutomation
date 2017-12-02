@@ -18,12 +18,12 @@ tags: [
 [Gurock TestRail](http://www.gurock.com/testrail/) is a modern and very nice tool for the Test Case Management by Quality Assurance and Development Team.
 TestManagement tools are very helpful for managing the test cases and TestRail is pack with very useful features like web-based application, Rest API integration etc.
 
-![Image Title](/img/testRail/TestRailReport.png)
+![TestRail-test-management-report-web](/img/testRail/TestRail-report-test-management.png)
 
 #### Why to use TestManagement Tool with Automation?
 While making Regression or any kind of Test Automation suit there is a need of maintaining Use cases and maintain the repository which anyone can access and see what use cases are been automated and what is left. It is very helpful for the continues Integration Pipeline that we can generate and see the reports in one place for Automated Test results.
 
-![Image Title](/img/testRail/TestCaseResult.png)
+![TestRail-testcase-result-status-update](/img/testRail/TestRail-testcase-result-status-update.png)
 
 There is a need for Integrating Test Management Tool like TestRail with the Java and TestNG based Automated Test Framework to mark every test run results in the common web-based platform.
 In this blog, I am going to use TestRail as Test Management tool and will explain the steps to integrate your framework using Rest API's.
@@ -81,7 +81,7 @@ JSONObject r = (JSONObject) client.sendPost("add_result_for_case/TestCaseID/Test
 #### Final Result and Reporting
 Now integrating TestRail UseCases Id with automated test, We will have the test run result history for the particular UseCases.
 
-![Image Title](/img/testRail/TestRailUseCaseReport.png)  
+![testRail-usecase-updated-back-in-automation](/img/testRail/TestRail-usecase-report-automation.png)  
 
 You can change and improve the code and logic based on your requirements and send me feedback about your experience with the integration.
 
