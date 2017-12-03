@@ -1,8 +1,8 @@
 ---
 title: "How Selenium-WebDriver API commands work?"
-date: 2017-12-01
-draft: true
-description: "How Selenium WebDriver API calls and commands work in background and understanding what happens on the code level in test."
+date: 2017-12-03
+draft: false
+description: "How Selenium WebDriver API commands work in background and understanding what happens on code level wehn we run our test."
 categories: [ "Automation Testing", "Selenium WebDriver"]
 tags: [
     "Test Automation",
@@ -10,7 +10,7 @@ tags: [
     "Selenium WebDriver"
 ]
 ---
-[Selenium WebDriver](http://www.seleniumhq.org/projects/webdriver/) provides cool interface API's to perform many actions on the browser and simulate the user behaviors like the click or enter Text in the TextBoxes. There are many good articles about the WebDriver on the internet but the purpose of this article is to understand what happens in the background when we use actions like **click, finding an element or getting title** etc. I will be using [Java](https://java.com/en/download/) as a programming language in this article. 
+[Selenium WebDriver](http://www.seleniumhq.org/projects/webdriver/) provides cool interface API's to perform many actions on the browser and simulate the user behaviors like the click or enter Text in the TextBoxes. There are many good articles about the WebDriver on the internet but the purpose of this article is to understand what happens in the background when we use actions like **[click](https://saucelabs.com/resources/articles/the-selenium-click-command), finding an element or getting title** etc. I will be using [Java](https://java.com/en/download/) as a programming language in this article. 
 
 Let's have a look at one of the [@Test](http://junit.sourceforge.net/javadoc/org/junit/Test.html) code which is performing steps like Opening [Google.com](https://www.google.com), Finding Search Button, Click SearchButton, Get Page Title and then Quit Driver instance.
  

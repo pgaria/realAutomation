@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.pawangaria.com/post/automation/how-selenium-webdriver-api-commands-work/</loc>
+    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.pawangaria.com/post/automation/selenium-webdriver-architecture-using-json-wire-protocol/</loc>
     <lastmod>2017-11-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -66,7 +73,7 @@
   
   <url>
     <loc>https://www.pawangaria.com/categories/automation-testing/</loc>
-    <lastmod>2017-11-30T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -143,7 +150,7 @@
   
   <url>
     <loc>https://www.pawangaria.com/tags/java/</loc>
-    <lastmod>2017-11-23T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -163,7 +170,7 @@
   
   <url>
     <loc>https://www.pawangaria.com/post/</loc>
-    <lastmod>2017-11-30T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -191,14 +198,14 @@
   
   <url>
     <loc>https://www.pawangaria.com/tags/selenium-webdriver/</loc>
-    <lastmod>2017-11-30T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.pawangaria.com/categories/selenium-webdriver/</loc>
-    <lastmod>2017-11-30T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -212,7 +219,7 @@
   
   <url>
     <loc>https://www.pawangaria.com/tags/test-automation/</loc>
-    <lastmod>2017-11-30T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -233,7 +240,7 @@
   
   <url>
     <loc>https://www.pawangaria.com/</loc>
-    <lastmod>2017-11-30T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
