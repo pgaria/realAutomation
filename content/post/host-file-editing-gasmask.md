@@ -5,6 +5,8 @@ draft: false
 description: "Gas Mask can be used to edit host file and switching between them on MAC OS X"
 keywords: "GasMask,HostFile,Edit"
 categories: [ "Gas Mask", "HostFile"]
+image: "/img/gasmask/gasMask-editor-thumb.png"
+logothumb: "/img/logothumb/chromebrowser.png"
 tags: [
     "Gas Mask", "HostFile"
 ]
@@ -28,6 +30,6 @@ Open Gas Mask Application and you will see the Editor and you can create multipl
 
  ![gas-mask-editor-on-mac](/img/gasmask/gasMask-editor.png)
 
-After creating multiple files you don't need to open host file **(/etc/hosts)** and changing and editing the file again and again. 
+After creating multiple files you don't need to open host file **(/etc/hosts)** and changing and editing the file again and again.
 
 Thanks for reading!

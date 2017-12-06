@@ -84,13 +84,26 @@ img::-moz-selection {
   color: white;
   background: transparent;
 }
-
-img {
-  display: block;
-  margin: auto;
-  max-width: 100%;
+.post-preview img {
+  margin-top:  10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  max-width: 5%;
+  float: left;
+}
+.post-entry img {
+  margin-top:  10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  max-width: 30%;
+  float: left;
 }
 
+.blog-post img {
+  margin-right: 10px;
+  float:left;
+  max-width: 100%;
+}
 .img-title {
   width: 100%;
 }
@@ -153,7 +166,7 @@ img {
 
 @media only screen and (min-width: 768px) {
   .navbar-custom {
-    padding: 20px 0;
+
     -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
     -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
     transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -334,7 +347,7 @@ footer .theme-by {
 }
 
 .post-preview .post-title {
-  font-size: 30px;
+  font-size: 36px;
   margin-top: 0;
 }
 .post-preview .post-subtitle {
@@ -388,7 +401,7 @@ footer .theme-by {
 
 @media only screen and (min-width: 768px) {
   .post-preview .post-title {
-    font-size: 36px;
+    font-size: 26px;
   }
 }
 
@@ -520,7 +533,7 @@ footer .theme-by {
 }
 @media only screen and (min-width: 768px) {
   .intro-header {
-    margin-top: 130px;
+    margin-top: 80px;
   }
   .intro-header.big-img {
     margin-top: 91px;  /* Full navbar is small navbar + 20px padding on each side when expanded */

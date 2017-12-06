@@ -5,16 +5,18 @@ draft: false
 description: "How Selenium WebDriver API commands work in background and understanding what happens on code level when we run our test."
 keywords: "Selenium,WebDriver,Commands,Testing"
 categories: [ "Automation Testing", "Selenium WebDriver"]
+image: "/img/webdriver/create-session-webdriver-command-thumb.png"
+logothumb: "/img/logothumb/SeleniumWebDriver.png"
 tags: [
     "Test Automation",
     "Java",
     "Selenium WebDriver"
 ]
 ---
-[Selenium WebDriver](http://www.seleniumhq.org/projects/webdriver/) provides cool interface API's to perform many actions on the browser and simulate the user behaviors like the click or enter Text in the TextBoxes. There are many good articles about the WebDriver on the internet but the purpose of this article is to understand what happens in the background when we use actions like **[click](https://saucelabs.com/resources/articles/the-selenium-click-command), finding an element or getting title** etc. I will be using [Java](https://java.com/en/download/) as a programming language in this article. 
+[Selenium WebDriver](http://www.seleniumhq.org/projects/webdriver/) provides cool interface API's to perform many actions on the browser and simulate the user behaviors like the click or enter Text in the TextBoxes. There are many good articles about the WebDriver on the internet but the purpose of this article is to understand what happens in the background when we use actions like **[click](https://saucelabs.com/resources/articles/the-selenium-click-command), finding an element or getting title** etc. I will be using [Java](https://java.com/en/download/) as a programming language in this article.
 
 Let's have a look at one of the [@Test](http://junit.sourceforge.net/javadoc/org/junit/Test.html) code which is performing steps like Opening [Google.com](https://www.google.com), Finding Search Button, Click SearchButton, Get Page Title and then Quit Driver instance.
- 
+
 ```java
   @Test
   public void clickGoogleSearchAndGetTitle() throws Exception{
@@ -74,4 +76,3 @@ After every Test finished you should quit the driver, Quit call close the browse
 `driver.quit();`
 
 ![quit-webdriver-command](/img/webdriver/quit-webdriver-command.png)
-

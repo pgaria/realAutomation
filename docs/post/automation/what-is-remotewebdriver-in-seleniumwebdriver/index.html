@@ -16,8 +16,8 @@
   <meta name="twitter:description" content="What is RemoteWebDriver in Selenium WebDriver and when where and how to use RemoteWebDriver in our test design?">
   <meta name="author" content="Pawan garia"/>
   <link href='https://www.pawangaria.com/img/favicon.ico' rel='icon' type='image/x-icon'/>
-  <meta property="og:image" content="https://www.pawangaria.com/img/avatar-icon.png" />
-  <meta name="twitter:image" content="https://www.pawangaria.com/img/avatar-icon.png" />
+  <meta property="og:image" content="https://www.pawangaria.com/img/webdriver/remote-webdriver-in-cloud-thumb.png" />
+  <meta name="twitter:image" content="https://www.pawangaria.com/img/webdriver/remote-webdriver-in-cloud-thumb.png" />
   <meta name="twitter:card" content="summary" />
   <meta property="og:url" content="https://www.pawangaria.com/post/automation/what-is-remotewebdriver-in-seleniumwebdriver/" />
   <meta property="og:type" content="website" />
@@ -206,7 +206,7 @@ ga('send', 'pageview');
 public class RemoteWebDriver implements WebDriver, JavascriptExecutor,
       FindsById, FindsByClassName, FindsByLinkText, FindsByName,
       FindsByCssSelector, FindsByTagName, FindsByXPath,
-      HasInputDevices, HasCapabilities, Interactive, TakesScreenshot 
+      HasInputDevices, HasCapabilities, Interactive, TakesScreenshot
 </code></pre>
 
 <p><a href="https://en.wikipedia.org/wiki/Javadoc">JavaDoc</a> for the RemoteWebdriver explains all the details about the Class and its Methods,SubClasses and Interface implement in <a href="https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/remote/RemoteWebDriver.html">gitHub Url</a>.</p>
@@ -235,7 +235,7 @@ public class RemoteWebDriver implements WebDriver, JavascriptExecutor,
 <pre><code class="language-java">public void createChromeDriverForRemote(){
  WebDriver driver = new RemoteWebDriver(remoteUrl,
           DesiredCapabilities.chrome());
-    } 
+    }
 </code></pre>
 
 <p><img src="/img/webdriver/remote-webdriver-in-cloud.png" alt="remote-webdriver-in-cloud" /></p>

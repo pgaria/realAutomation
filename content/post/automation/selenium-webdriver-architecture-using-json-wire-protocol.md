@@ -5,14 +5,16 @@ draft: false
 description: "Understanding the Architecture of Selenium WebDriver and what is  JSON Wire Protocol."
 keywords: "Selenium,WebDriver,JSON-Wire-Protocol,HTTP,JSON,Testing"
 categories: [ "Automation Testing", "Selenium WebDriver"]
+image: "/img/webdriver/client-server-request-response-webdriver-thumb.png"
+logothumb: "/img/logothumb/SeleniumWebDriver.png"
 tags: [
     "Test Automation",
     "JSON Wire Protocol",
     "Selenium WebDriver"
 ]
 ---
-[Selenium WebDriver](http://www.seleniumhq.org/projects/webdriver/) provides a programming interface for driving the browser for automation testing. You can find the introduction of WebDriver in my other [article](https://www.pawangaria.com/post/automation/what-is-selenium-webdriver/). This article is more about the architecture and understanding how selenium WebDriver uses JSON Wire Protocol. 
- 
+[Selenium WebDriver](http://www.seleniumhq.org/projects/webdriver/) provides a programming interface for driving the browser for automation testing. You can find the introduction of WebDriver in my other [article](https://www.pawangaria.com/post/automation/what-is-selenium-webdriver/). This article is more about the architecture and understanding how selenium WebDriver uses JSON Wire Protocol.
+
 [JSON Wire Protocol](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol) is an abstract specification of how automation behavior like clicking or typing or whatever you actually want to do with your automation script is mapped to selenium or appium or HTTP requests and response.
 
 ### Why JSON Wire Protocol used in first place?
@@ -47,11 +49,11 @@ GET   /status
 
 POST  /session
 
-GET   /Session 
+GET   /Session
 ```
 
 ![client server request response in webdriver](/img/webdriver/client-server-request-response-webdriver.png)    
- 
+
 **HTTP Response Code:**
 
 HTTP status codes are not specific enough for all the kind of things might happen in Selenium WebDriver testing session. So for a specific case like *NoSuchElement* or Errors, we have a status code so that client can give a particular and useful information back to the user. There are many response codes defined in WebDriver which you can find [here](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#response-status-codes) in details but here are some examples:
@@ -61,28 +63,28 @@ HTTP status codes are not specific enough for all the kind of things might happe
 11:  ElementNotVisible
 200: Everything OK
 500: Something is wrong
-404: Resource not there 
+404: Resource not there
 501: Valid request but action not done by the server
 ```
 **HTTP Request and Response Body:**
 
-Everything is JSON in request and response body. JSON is used for data transfer between client and server. 
+Everything is JSON in request and response body. JSON is used for data transfer between client and server.
 
 *JSON Wire Protocol Request* has route and body described in JSON like:
 ```
 POST /session
 {"desiredCapabilities" : {"browserName" : "chrome"}}
 ```
-*JSON Wire Protocol Response* has status code and value in body like a successfull findElement request will give you the following response: 
+*JSON Wire Protocol Response* has status code and value in body like a successfull findElement request will give you the following response:
 ```
 {"status" : 0, "value" : {"element" : "123422"}}
 ```
 ### How Test work with HTTP and JSON Wire Protocol?
 
-HTTP is a [stateless protocol](https://stackoverflow.com/questions/13200152/why-say-that-http-is-a-stateless-protocol) which means multiple requests are not associated with each other and server is not required to track the state of a particular client's previous request. Your test might be getting an Element in one request and clicking on the same Element in some another request, So Client and Server should share [session](https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/remote/server/Session.html), element, frame etc. with each other in subsequent requests. 
+HTTP is a [stateless protocol](https://stackoverflow.com/questions/13200152/why-say-that-http-is-a-stateless-protocol) which means multiple requests are not associated with each other and server is not required to track the state of a particular client's previous request. Your test might be getting an Element in one request and clicking on the same Element in some another request, So Client and Server should share [session](https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/remote/server/Session.html), element, frame etc. with each other in subsequent requests.
 So the server assigns a unique ID to these Items like session and Element and then shares them with Client. The client can decide in the request like what needs to be done on the particular ID like click on an element.
 
-Client makes a [findElement](https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/remote/server/handler/FindElement.html) call to server and gets the response: 
+Client makes a [findElement](https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/remote/server/handler/FindElement.html) call to server and gets the response:
   ```
   Request:  POST  /session/::sessionId/element
   Response: {“status”:0, “value”:{“element":”elementID”}}

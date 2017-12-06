@@ -7,6 +7,8 @@ description: "What is Selenium WebDriver and how it works in background."
 summaryDescription: "An introduction about Selenium WebDriver."
 keywords: "Selenium,WebDriver,Testing,JSON Wire protocol"
 categories: [ "Automation Testing", "Selenium WebDriver"]
+image: "/img/webdriver/ClientserverWebdriver-thumb.png"
+logothumb: "/img/logothumb/SeleniumWebDriver.png"
 tags: [
     "Test Automation",
     "Testing",
@@ -47,7 +49,5 @@ WebDriver does not directly interact with the browser. WebDriver creates a reque
 ### What is next?
 
 In the next articles, I will be covering interaction between the Client, Driver and Browser with examples and depth. I am going to explain how a particular action get performed on browser using [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/).
- 
+
 Thanks for reading!
-
-

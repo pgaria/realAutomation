@@ -5,6 +5,8 @@ draft: false
 description: "Capture Full page Screenshots of any website page using google chrome developer tools."
 keywords: "ScreenShot,Reporting,Testing"
 categories: [ "Testing", "Reporting","Chrome","Screenshot" ]
+image: "/img/screenshot/google-Chrome-Dev-tool-thumb.png"
+logothumb: "/img/logothumb/chromebrowser.png"
 tags: [
     "Chrome",
     "Screenshot",

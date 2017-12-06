@@ -4,7 +4,9 @@ date: 2017-11-23
 draft: false
 description: "Integrating your Automated Usecases in java with Gurock Test Rail API's and pushing test results to Testrail UI."
 keywords: "TestRail,Testing,Automation,Reporting,TestCaseManagement"
-categories: [ "Automation", "Reporting","TestNG", ]
+categories: [ "Automation", "Reporting","TestNG" ]
+image: "/img/testRail/TestRail-report-test-management-thumb.png"
+logothumb: "/img/logothumb/SeleniumWebDriver.png"
 tags: [
     "Java",
     "testNG",
@@ -32,7 +34,7 @@ In this blog, I am going to use TestRail as Test Management tool and will explai
 #### How to integrate Automated Test with TestRail?
 I am explaining the steps to write your logic in Java and you can also follow the steps to make integration work for your framework
 
-STEP 1: First create one new *Annotation Class* 
+STEP 1: First create one new *Annotation Class*
 ```java
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
@@ -67,7 +69,7 @@ String TestID=null;
 IClass obj = result.getTestClass();
 Class newobj = obj.getRealClass();
 Method testMethod = newobj.getMethod(result.getName());
-if (testMethod.isAnnotationPresent(UseAsTestRailId.class)) 
+if (testMethod.isAnnotationPresent(UseAsTestRailId.class))
 {
 UseAsTestRailId useAsTestName = testMethod.getAnnotation(UseAsTestRailId.class);
 // Get the TestCase ID for TestRail

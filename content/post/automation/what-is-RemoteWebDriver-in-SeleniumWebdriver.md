@@ -5,6 +5,8 @@ draft: false
 description: "What is RemoteWebDriver in Selenium WebDriver and when where and how to use RemoteWebDriver in our test design?"
 keywords: "SeleniumWebDriver,RemoteWebDriver,Testing,Automation"
 categories: [ "Automation Testing", "Selenium WebDriver"]
+image: "/img/webdriver/remote-webdriver-in-cloud-thumb.png"
+logothumb: "/img/logothumb/SeleniumWebDriver.png"
 tags: [
     "Test Automation",
     "Java",
@@ -22,7 +24,7 @@ package org.openqa.selenium.remote;
 public class RemoteWebDriver implements WebDriver, JavascriptExecutor,
       FindsById, FindsByClassName, FindsByLinkText, FindsByName,
       FindsByCssSelector, FindsByTagName, FindsByXPath,
-      HasInputDevices, HasCapabilities, Interactive, TakesScreenshot 
+      HasInputDevices, HasCapabilities, Interactive, TakesScreenshot
 ```
 [JavaDoc](https://en.wikipedia.org/wiki/Javadoc) for the RemoteWebdriver explains all the details about the Class and its Methods,SubClasses and Interface implement in [gitHub Url](https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/remote/RemoteWebDriver.html).  
 
@@ -49,9 +51,10 @@ Yes we can directly create an instance of the RemoteWebDriver Class as well beca
 public void createChromeDriverForRemote(){
  WebDriver driver = new RemoteWebDriver(remoteUrl,
           DesiredCapabilities.chrome());
-    } 
+    }
 ```
 ![remote-webdriver-in-cloud](/img/webdriver/remote-webdriver-in-cloud.png)
+
 #### How RemoteWebDriver Works?
 Let's understand what are the methods involved and class RemoteWebDriver use to perform any action from our test programme.  I am going to use [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/) here for the explanation and will be trying to explain step by step.
 
@@ -77,9 +80,3 @@ public Response execute(Command command) throws IOException {
 ![execute-command-in-HttpCommandExecuter](/img/webdriver/execute-command-in-HttpCommandExecuter.png)
 
 So every command like Get or findElement goes through this execute method and send to the server and return the Response Class object. All the details about the methods and class details are explained in the [selenium API javaDocs](https://seleniumhq.github.io/selenium/docs/api/java/overview-summary.html). I recommend everyone to [build webdriver](https://github.com/SeleniumHQ/selenium/wiki/Building-WebDriver) on there local machines and try to look into the classes and methods.
-
-
-
-
-
-

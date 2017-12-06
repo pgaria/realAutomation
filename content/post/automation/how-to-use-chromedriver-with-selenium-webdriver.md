@@ -5,6 +5,8 @@ draft: false
 description: "What is ChromeDriver and how to use ChromeDriver in our selenium WebDriver test scripts for automation testing in chrome browser."
 categories: [ "Automation Testing", "Selenium WebDriver"]
 keywords: "Selenium,WebDriver,ChromeDriver,Testing"
+image: "/img/webdriver/ChromeDriver-performing-actions-thumb.png"
+logothumb: "/img/logothumb/SeleniumWebDriver.png"
 tags: [
     "Test Automation",
     "Java",
