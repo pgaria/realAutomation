@@ -13,6 +13,7 @@ enableRobotsTXT= true
 #DisqueCommenting
 disqusShortname = "www-pawangaria-com"
 
+
 [sitemap]
   changefreq = "weekly"
   priority = 0.5
@@ -20,7 +21,8 @@ disqusShortname = "www-pawangaria-com"
 
 [Params]
   subtitle = "This blog comprises topics about Information Technology"
-  description = ""
+  description = "Resources for Java and Automation testing developers - Provides article about webdriver, automation testing, framework design and java."
+  keywords = "Selenium,WebDriver,Automation Testing,Java,TestNG,TestRail,Quality Assurance,HTTP,JSON,Automation testing tutorials"
   home = "PawanGaria.com"
   welcomeText ="Welcome"
   logo = "img/avatar-icon.png"

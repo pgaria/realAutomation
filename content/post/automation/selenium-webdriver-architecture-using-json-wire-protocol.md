@@ -3,6 +3,7 @@ title: "Understanding the Architecture of Selenium WebDriver"
 date: 2017-11-30
 draft: false
 description: "Understanding the Architecture of Selenium WebDriver and what is  JSON Wire Protocol."
+keywords: "Selenium,WebDriver,JSON-Wire-Protocol,HTTP,JSON,Testing"
 categories: [ "Automation Testing", "Selenium WebDriver"]
 tags: [
     "Test Automation",

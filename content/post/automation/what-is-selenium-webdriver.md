@@ -5,6 +5,7 @@ author: "Pawan Garia"
 draft: false
 description: "What is Selenium WebDriver and how it works in background."
 summaryDescription: "An introduction about Selenium WebDriver."
+keywords: "Selenium,WebDriver,Testing,JSON Wire protocol"
 categories: [ "Automation Testing", "Selenium WebDriver"]
 tags: [
     "Test Automation",

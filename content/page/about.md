@@ -1,5 +1,7 @@
 ---
-title: About me
+title: About - Pawan Garia
+description: "Learn a little more about the guy behind pawangaria.com."
+keywords: "author"
 
 comments: false
 ---

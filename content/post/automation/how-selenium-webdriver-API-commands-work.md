@@ -2,7 +2,8 @@
 title: "How Selenium-WebDriver API commands work?"
 date: 2017-12-03
 draft: false
-description: "How Selenium WebDriver API commands work in background and understanding what happens on code level wehn we run our test."
+description: "How Selenium WebDriver API commands work in background and understanding what happens on code level when we run our test."
+keywords: "Selenium,WebDriver,Commands,Testing"
 categories: [ "Automation Testing", "Selenium WebDriver"]
 tags: [
     "Test Automation",

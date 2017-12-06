@@ -7,10 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>pawangaria@gmail.com (Pawan garia)</managingEditor>
     <webMaster>pawangaria@gmail.com (Pawan garia)</webMaster>
-    <lastBuildDate>Sun, 03 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 Dec 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.pawangaria.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to use ChromeDriver with Selenium WebDriver?</title>
+      <link>https://www.pawangaria.com/post/automation/how-to-use-chromedriver-with-selenium-webdriver/</link>
+      <pubDate>Tue, 05 Dec 2017 00:00:00 +0000</pubDate>
+      <author>pawangaria@gmail.com (Pawan garia)</author>
+      <guid>https://www.pawangaria.com/post/automation/how-to-use-chromedriver-with-selenium-webdriver/</guid>
+      <description>ChromeDriver is a separate executable which can be used by all the Client libraries to Automate and control Chrome Browser. ChromeDriver implements all the standard for the WebDriver which is JSON WireProtocol and communicates based on those protocols. It receives HTTP request and provides HTTP response to the Client. ChromeDriver is not client dependent and separate from the clients like Java, Python, PHP etc. You can use the same ChromeDriver with any of the programming languages as the client.</description>
+    </item>
+    
+    <item>
+      <title>What is RemoteWebDriver in Selenium WebDriver?</title>
+      <link>https://www.pawangaria.com/post/automation/what-is-remotewebdriver-in-seleniumwebdriver/</link>
+      <pubDate>Mon, 04 Dec 2017 00:00:00 +0000</pubDate>
+      <author>pawangaria@gmail.com (Pawan garia)</author>
+      <guid>https://www.pawangaria.com/post/automation/what-is-remotewebdriver-in-seleniumwebdriver/</guid>
+      <description>What is RemoteWebDriver? RemoteWebDriver in Selenium Webdriver implements each of the JSONWireProtocol commands and maps them into an action that can be performed on a remote machine.
+RemoteWebDriver is a Class in the package org.openqa.selenium.remote inside the Client Project of WebDiver. RemoteWebDriver.class implements multiple interface like WebDriver(Yes WebDriver is an Interface not a Class as I have seen many people confused about this information), FindsById, FindsByClassName, FindsByLinkText etc.
+package org.</description>
+    </item>
     
     <item>
       <title>How Selenium-WebDriver API commands work?</title>

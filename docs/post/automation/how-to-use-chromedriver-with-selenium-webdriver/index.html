@@ -5,27 +5,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Chrome</title>
-  <meta property="og:title" content="Chrome" />
-  <meta name="twitter:title" content="Chrome" />
+  <title>How to use ChromeDriver with Selenium WebDriver?</title>
+  <meta property="og:title" content="How to use ChromeDriver with Selenium WebDriver?" />
+  <meta name="twitter:title" content="How to use ChromeDriver with Selenium WebDriver?" />
  
-  <meta name="keywords" content="Selenium,WebDriver,Automation Testing,Java,TestNG,TestRail,Quality Assurance,HTTP,JSON,Automation testing tutorials">
+  <meta name="keywords" content="Selenium,WebDriver,ChromeDriver,Testing">
  
-  <meta name="description" content="Resources for Java and Automation testing developers - Provides article about webdriver, automation testing, framework design and java.">
-  <meta property="og:description" content="Resources for Java and Automation testing developers - Provides article about webdriver, automation testing, framework design and java.">
-  <meta name="twitter:description" content="Resources for Java and Automation testing developers - Provides article about webdriver, automation testing, framework design and java.">
+  <meta name="description" content="What is ChromeDriver and how to use ChromeDriver in our selenium WebDriver test scripts for automation testing in chrome browser.">
+  <meta property="og:description" content="What is ChromeDriver and how to use ChromeDriver in our selenium WebDriver test scripts for automation testing in chrome browser.">
+  <meta name="twitter:description" content="What is ChromeDriver and how to use ChromeDriver in our selenium WebDriver test scripts for automation testing in chrome browser.">
   <meta name="author" content="Pawan garia"/>
   <link href='https://www.pawangaria.com/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://www.pawangaria.com/img/avatar-icon.png" />
   <meta name="twitter:image" content="https://www.pawangaria.com/img/avatar-icon.png" />
   <meta name="twitter:card" content="summary" />
-  <meta property="og:url" content="https://www.pawangaria.com/categories/chrome/" />
+  <meta property="og:url" content="https://www.pawangaria.com/post/automation/how-to-use-chromedriver-with-selenium-webdriver/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Testing, Automation, Programming and Latest Technology Articles" />
 
   <meta name="generator" content="Hugo 0.31" />
-  <link rel="canonical" href="https://www.pawangaria.com/categories/chrome/" />
-  <link rel="alternate" href="https://www.pawangaria.com/categories/chrome/index.xml" type="application/rss+xml" title="Testing, Automation, Programming and Latest Technology Articles">
+  <link rel="canonical" href="https://www.pawangaria.com/post/automation/how-to-use-chromedriver-with-selenium-webdriver/" />
+  <link rel="alternate" href="" type="application/rss+xml" title="Testing, Automation, Programming and Latest Technology Articles">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -152,14 +152,34 @@ ga('send', 'pageview');
 
 
     
+  
+  
+  
+
+
+
+
+  
+
   <header class="header-section ">
+    
     <div class="intro-header no-img">
+      
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="page-heading">
-              <h1>#Chrome</h1>
-              <hr class="small">
+            <div class="post-heading">
+              <h1>How to use ChromeDriver with Selenium WebDriver?</h1>
+                
+                
+                  <span class="post-meta">
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on December 5, 2017
+  &nbsp;|&nbsp; <i class="fa fa-clock-o"></i> 3 min (577 mots)
+  
+</span>
+
+
+                
             </div>
           </div>
         </div>
@@ -167,49 +187,134 @@ ga('send', 'pageview');
     </div>
   </header>
 
+
     
-  <div class="container" role="main">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
         
-        <div class="posts-list">
-          
-            <article class="post-preview">
-              <a href="https://www.pawangaria.com/post/capture-fullpage-screenshot-chrome/">
-                <h2 class="post-title">Capture Full page Screenshots using Chrome Browser</h2>
 
-                
-              </a>
+<p><a href="https://sites.google.com/a/chromium.org/chromedriver/">ChromeDriver</a> is a separate executable which can be used by all the Client libraries to Automate and control Chrome Browser. ChromeDriver implements all the standard for the WebDriver which is <a href="https://www.pawangaria.com/post/automation/selenium-webdriver-architecture-using-json-wire-protocol/">JSON WireProtocol</a> and communicates based on those protocols. It receives HTTP request and provides HTTP response to the Client. <a href="https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver">ChromeDriver</a> is not client dependent and separate from the clients like Java, Python, PHP etc. You can use the same ChromeDriver with any of the programming languages as the client. <a href="https://www.pawangaria.com/post/automation/what-is-selenium-webdriver/">Read</a> if you want to know more about the Selenium WebDriver.</p>
 
-              <p class="post-meta">
-                Posted on November 24, 2017
-              </p>
-              <div class="post-entry">
-                
-                  While working everyone feels the need of taking full-page screenshots but Its always hard to take the full page screenshot as normal screenshot works on the page area which is in the frame. Like on Mac we use Command + Shift + 4 and select the area and take the screenshot but in this method, we can not scroll down and take the part hidden in the screenshot. Like I took a screenshot of BBC.
-                  <a href="https://www.pawangaria.com/post/capture-fullpage-screenshot-chrome/" class="post-read-more">[Read More]</a>
-                
-              </div>
+<p><img src="/img/webdriver/ChromeDriver-performing-actions.png" alt="ChromeDriver actions using WebDriver" /></p>
 
-              
-                <span class="post-meta">
-                  
-                    #<a href="https://www.pawangaria.com/tags/chrome/">Chrome</a>&nbsp;
-                  
-                    #<a href="https://www.pawangaria.com/tags/screenshot/">Screenshot</a>&nbsp;
-                  
-                    #<a href="https://www.pawangaria.com/tags/testing/">Testing</a>&nbsp;
-                  
-                </span>
-              
+<p>ChromeDriver is maintained by the Chrome Dev team in Google these days and all the improvements are coming directly from the Chrome Dev Team. It uses Chrome DevTools to control chrome browser. ChromeDriver requires Chrome Browser installed on the local system and uses the same chrome only for performing actions.</p>
 
-            </article>
-          
-        </div>
+<h4 id="how-to-use-chromedriver-in-our-webdriver-test">How to Use ChromeDriver in Our WebDriver Test?</h4>
+
+<p>There are multiple ways to use the Chrome Driver in our WebDriver test cases. It depends on architecture and design you are planning for your test. Here I will try to explain few example of the common ways people are using <a href="https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/chrome/ChromeDriver.html">ChromeDriver class</a> and running Testcases on Chrome.</p>
+
+<p><strong>From where I can download ChromeDriver?</strong><br />
+You can download the ChromeDriver executable from <a href="https://sites.google.com/a/chromium.org/chromedriver/downloads">GoogleChrome Download URL</a>. From the download page, you can download the driver as per your operating systems like mac or windows.</p>
+
+<p><strong>1. Run Driver From Test Script.</strong><br />
+This is a basic example of the test where we are setting ChromeDriver Path in the property <em>webdriver.chrome.driver</em>. When you will Run this test the ChromeDriver will Start first in the same thread and then other Steps of @Test.</p>
+
+<p>You can see the Following line in your Console:<br />
+<code>
+Starting ChromeDriver 2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061) on port 12302
+Only local connections are allowed.
+</code></p>
+
+<pre><code class="language-java">@Test
+public void searchGoogle() {
+  //Assign ChromeDriver Path to the Property.
+  System.setProperty(&quot;webdriver.chrome.driver&quot;, &quot;/path/to/chromedriver&quot;);
+  //Create New ChromeDriver instance
+  WebDriver driver = new ChromeDriver();
+  //Open URL
+  driver.get(&quot;https://www.google.com&quot;);
+  //Find the search textbox WebElement and enter text
+  driver.findElement(By.name(&quot;q&quot;)).sendKeys(&quot;chrome&quot;);
+  //Then search button and click
+  driver.findElement(By.name(&quot;btnK&quot;)).submit();
+  //Quit Driver
+  driver.quit();
+}
+</code></pre>
+
+<p><strong>2. Run Driver On Local Machine.</strong><br />
+Our second example is, If you want to run the chromeDriver separately in your machine and then running your test case on the same ChromeDriver Instance.</p>
+
+<p>So first go to the local directory where you have Downloaded the ChromeDriver executable and start the ChromeDriver like below:</p>
+
+<pre><code class="language-shell">$ ./chromedriver.sh  
+
+Starting ChromeDriver 2.33.50616 (8a06c39c4c38a9173bfb1a2) on port 9515
+Only local connections are allowed.
+</code></pre>
+
+<p>Now after the ChromeDriver server started successfully on your local machine you can access the Driver from your Test.</p>
+
+<p><strong>How to access the chrome server running on local?</strong><br />
+If you look carefully above in the console messages there is a port no <strong>9515</strong> in which ChromeDriver is running. So we need to give this port no in our URL while creating WebDriver Instance.</p>
+
+<p>Let&rsquo;s rewrite the same test case again with already running ChromeDriver.</p>
+
+<pre><code class="language-java">@Test
+ public void testOnPreRunningChromeDriver(){
+   //Create WebDriver Instance With URL
+   WebDriver driver = new RemoteWebDriver(new URL(&quot;http://127.0.0.1:9515&quot;), DesiredCapabilities.chrome());
+   driver.get(&quot;https://www.google.com/&quot;);
+   //Find Element and Enter Text
+   driver.findElement(By.name(&quot;q&quot;)).sendKeys(&quot;chrome&quot;);
+   //Then search button and click
+   driver.findElement(By.name(&quot;btnK&quot;)).submit();
+   //Quit Driver
+   driver.quit();
+ }
+</code></pre>
+
+<p>As you can see there are many ways of using the chromeDriver for the same Test. It is a good practice to implement base on your testing infrastructure and design.</p>
+
+<p>In my next article, I am planning to deep dive in to ChromeDriver and try to explain what exactly happens in ChromeDriver when you run your test and how it works.</p>
+
+<p>Thanks for reading!</p>
+
+      </article>
+
+      <ul class="pager blog-pager">
         
-      </div>
+          <li class="previous">
+            <a href="https://www.pawangaria.com/post/automation/what-is-remotewebdriver-in-seleniumwebdriver/" data-toggle="tooltip" data-placement="top" title="What is RemoteWebDriver in Selenium WebDriver?">&larr; Previous Post</a>
+          </li>
+        
+        
+      </ul>
+
+
+      
+        
+          <div class="disqus-comments">
+            <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "www-pawangaria-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          </div>
+        
+        
+      
+
     </div>
   </div>
+</div>
 
     <footer>
   <div class="container">
@@ -243,7 +348,7 @@ ga('send', 'pageview');
               </li>
           
           <li>
-            <a href="https://www.pawangaria.com/categories/chrome/index.xml" title="RSS">
+            <a href="" title="RSS">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-rss fa-stack-1x fa-inverse"></i>

@@ -3,7 +3,8 @@ title: "Integrate Gurock TestRail with Automated TestCases in Java+TestNG"
 date: 2017-11-23
 draft: false
 description: "Integrating your Automated Usecases in java with Gurock Test Rail API's and pushing test results to Testrail UI."
-categories: [ "Automation", "Reporting","testNG" ]
+keywords: "TestRail,Testing,Automation,Reporting,TestCaseManagement"
+categories: [ "Automation", "Reporting","TestNG", ]
 tags: [
     "Java",
     "testNG",

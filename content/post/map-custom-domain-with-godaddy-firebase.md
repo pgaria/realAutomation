@@ -3,6 +3,7 @@ title: "Google Firebase custom domain mapping with GoDaddy"
 date: 2017-11-28
 draft: false
 description: "How to Map your custom domain in FireBase with GoDaddy instructions."
+keywords: "WebHosting,Google,Firebase,GoDaddy,Domain"
 categories: [ "Web Hosting", "Google Firebase"]
 tags: [
     "Web Hosting","Google Firebase","Custom Domain"
