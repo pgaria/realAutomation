@@ -5,26 +5,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>How to use ChromeDriver with Selenium WebDriver?</title>
-  <meta property="og:title" content="How to use ChromeDriver with Selenium WebDriver?" />
-  <meta name="twitter:title" content="How to use ChromeDriver with Selenium WebDriver?" />
+  <title>How to use ChromeDriver without WebDriverClient?</title>
+  <meta property="og:title" content="How to use ChromeDriver without WebDriverClient?" />
+  <meta name="twitter:title" content="How to use ChromeDriver without WebDriverClient?" />
  
-  <meta name="keywords" content="Selenium,WebDriver,ChromeDriver,Testing">
+  <meta name="keywords" content="Selenium,WebDriver,ChromeDriver,Testing,PostMan">
  
-  <meta name="description" content="What is ChromeDriver and how to use ChromeDriver in our selenium WebDriver test scripts for automation testing in chrome browser.">
-  <meta property="og:description" content="What is ChromeDriver and how to use ChromeDriver in our selenium WebDriver test scripts for automation testing in chrome browser.">
-  <meta name="twitter:description" content="What is ChromeDriver and how to use ChromeDriver in our selenium WebDriver test scripts for automation testing in chrome browser.">
+  <meta name="description" content="How to use ChromeDriver without Selenium WebDriver Client and How can we perform actions on chrome browser using PostMan API calls?">
+  <meta property="og:description" content="How to use ChromeDriver without Selenium WebDriver Client and How can we perform actions on chrome browser using PostMan API calls?">
+  <meta name="twitter:description" content="How to use ChromeDriver without Selenium WebDriver Client and How can we perform actions on chrome browser using PostMan API calls?">
   <meta name="author" content="Pawan garia"/>
   <link href='https://www.pawangaria.com/img/favicon.ico' rel='icon' type='image/x-icon'/>
-  <meta property="og:image" content="https://www.pawangaria.com/img/webdriver/ChromeDriver-performing-actions-thumb.png" />
-  <meta name="twitter:image" content="https://www.pawangaria.com/img/webdriver/ChromeDriver-performing-actions-thumb.png" />
+  <meta property="og:image" content="https://www.pawangaria.com/img/webdriver/create-session-request-postman-thumb.png" />
+  <meta name="twitter:image" content="https://www.pawangaria.com/img/webdriver/create-session-request-postman-thumb.png" />
   <meta name="twitter:card" content="summary" />
-  <meta property="og:url" content="https://www.pawangaria.com/post/automation/how-to-use-chromedriver-with-selenium-webdriver/" />
+  <meta property="og:url" content="https://www.pawangaria.com/post/automation/chromedriver-deep-dive-understanding/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Testing, Automation, Programming and Latest Technology Articles" />
 
   <meta name="generator" content="Hugo 0.31" />
-  <link rel="canonical" href="https://www.pawangaria.com/post/automation/how-to-use-chromedriver-with-selenium-webdriver/" />
+  <link rel="canonical" href="https://www.pawangaria.com/post/automation/chromedriver-deep-dive-understanding/" />
   <link rel="alternate" href="" type="application/rss+xml" title="Testing, Automation, Programming and Latest Technology Articles">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -169,12 +169,12 @@ ga('send', 'pageview');
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
-              <h1>How to use ChromeDriver with Selenium WebDriver?</h1>
+              <h1>How to use ChromeDriver without WebDriverClient?</h1>
                 
                 
                   <span class="post-meta">
-  <i class="fa fa-calendar-o"></i>&nbsp;Posted on December 5, 2017
-  &nbsp;|&nbsp; <i class="fa fa-clock-o"></i> 3 min (577 mots)
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on December 7, 2017
+  &nbsp;|&nbsp; <i class="fa fa-clock-o"></i> 3 min (611 mots)
   
 </span>
 
@@ -195,80 +195,159 @@ ga('send', 'pageview');
       <article role="main" class="blog-post">
         
 
-<p><a href="https://sites.google.com/a/chromium.org/chromedriver/">ChromeDriver</a> is a separate executable which can be used by all the Client libraries to Automate and control Chrome Browser. ChromeDriver implements all the standard for the WebDriver which is <a href="https://www.pawangaria.com/post/automation/selenium-webdriver-architecture-using-json-wire-protocol/">JSON WireProtocol</a> and communicates based on those protocols. It receives HTTP request and provides HTTP response to the Client. <a href="https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver">ChromeDriver</a> is not client dependent and separate from the clients like Java, Python, PHP etc. You can use the same ChromeDriver with any of the programming languages as the client. <a href="https://www.pawangaria.com/post/automation/what-is-selenium-webdriver/">Read</a> if you want to know more about the Selenium WebDriver.</p>
+<p>If you are using WebDriver or learning how to use Selenium for automation, you must be using some programming language like Java or PHP etc. for automation and performing actions on browsers like Chrome. But in this article, I am going to show you how we can run the same test and perform an action on Chrome using ChromeDriver and PostMan.</p>
 
-<p><img src="/img/webdriver/ChromeDriver-performing-actions.png" alt="ChromeDriver actions using WebDriver" /></p>
+<p>I am going to use <a href="https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol">JSON Wire Protocol</a> for driving chrome driver. You can read more in details about what is <a href="https://www.pawangaria.com/post/automation/selenium-webdriver-architecture-using-json-wire-protocol/">JSON Wire Protocol</a> in my old posts.</p>
 
-<p>ChromeDriver is maintained by the Chrome Dev team in Google these days and all the improvements are coming directly from the Chrome Dev Team. It uses Chrome DevTools to control chrome browser. ChromeDriver requires Chrome Browser installed on the local system and uses the same chrome only for performing actions.</p>
+<h4 id="download-chromedriver-and-postman">Download ChromeDriver and PostMan</h4>
 
-<h4 id="how-to-use-chromedriver-in-our-webdriver-test">How to Use ChromeDriver in Our WebDriver Test?</h4>
+<p>The first step is to download the ChromeDrive executable from Google ChromeDriver Page.
+If you already have ChromeDriver downloaded, you can use the same executable. I am going to use the ChromeDrive for MAC OS here in this article. Windows users can also download the .exe file and perform all the steps.</p>
 
-<p>There are multiple ways to use the Chrome Driver in our WebDriver test cases. It depends on architecture and design you are planning for your test. Here I will try to explain few example of the common ways people are using <a href="https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/chrome/ChromeDriver.html">ChromeDriver class</a> and running Testcases on Chrome.</p>
+<p>We also need to download <a href="https://www.getpostman.com/">Postman</a>. PostMan is a super cool tool for API development. You can send and receive API request from PostMan. you can read more about <a href="https://www.getpostman.com/postman">Postman Download Page</a>.</p>
 
-<p><strong>From where I can download ChromeDriver?</strong><br />
-You can download the ChromeDriver executable from <a href="https://sites.google.com/a/chromium.org/chromedriver/downloads">GoogleChrome Download URL</a>. From the download page, you can download the driver as per your operating systems like mac or windows.</p>
+<h4 id="start-chromedriver-on-terminal">Start ChromeDriver on Terminal:</h4>
 
-<p><strong>1. Run Driver From Test Script.</strong><br />
-This is a basic example of the test where we are setting ChromeDriver Path in the property <em>webdriver.chrome.driver</em>. When you will Run this test the ChromeDriver will Start first in the same thread and then other Steps of @Test.</p>
+<p>After downloading ChromeDriver we need to first start the ChromeDriver executable on the local machine.</p>
 
-<p>You can see the Following line in your Console:<br />
-<code>
-Starting ChromeDriver 2.32.498537 (cb2f855cbc7b82e20387eaf9a43f6b99b6105061) on port 12302
+<pre><code>$ Downloads ./chromedriver
+
+Starting ChromeDriver 2.33.506 (8a06c39c9173bfb1a2) on port 9515
 Only local connections are allowed.
-</code></p>
+</code></pre>
 
-<pre><code class="language-java">@Test
-public void searchGoogle() {
-  //Assign ChromeDriver Path to the Property.
-  System.setProperty(&quot;webdriver.chrome.driver&quot;, &quot;/path/to/chromedriver&quot;);
-  //Create New ChromeDriver instance
-  WebDriver driver = new ChromeDriver();
-  //Open URL
-  driver.get(&quot;https://www.google.com&quot;);
-  //Find the search textbox WebElement and enter text
-  driver.findElement(By.name(&quot;q&quot;)).sendKeys(&quot;chrome&quot;);
-  //Then search button and click
-  driver.findElement(By.name(&quot;btnK&quot;)).submit();
-  //Quit Driver
-  driver.quit();
+<p>Now we have a successfully running ChromeDriver. Please pay attention to the port no in the Starting message of ChromeDriver. It always starts on 9515 by default and start listening on the same port.</p>
+
+<h4 id="open-google-chrome-browser">Open Google Chrome Browser:</h4>
+
+<p>Now open Postman which is installed on your machine and you should make a POST call to ChromeDriver.
+<img src="/img/webdriver/create-session-request-postman.png" alt="create-webdriver-session-from-postman" /></p>
+
+<p><strong>POST:</strong> <a href="http://localhost:9515/session">http://localhost:9515/session</a></p>
+
+<p><strong>Request Body:</strong></p>
+
+<pre><code class="language-json">{
+    &quot;desiredCapabilities&quot;: {
+        &quot;caps&quot;: {
+            &quot;nativeEvents&quot;: false,
+            &quot;browserName&quot;: &quot;chrome&quot;,
+            &quot;version&quot;: &quot;&quot;,
+            &quot;platform&quot;: &quot;ANY&quot;
+        }
+    }
 }
 </code></pre>
 
-<p><strong>2. Run Driver On Local Machine.</strong><br />
-Our second example is, If you want to run the chromeDriver separately in your machine and then running your test case on the same ChromeDriver Instance.</p>
+<p><strong>Response:</strong></p>
 
-<p>So first go to the local directory where you have Downloaded the ChromeDriver executable and start the ChromeDriver like below:</p>
-
-<pre><code class="language-shell">$ ./chromedriver.sh  
-
-Starting ChromeDriver 2.33.50616 (8a06c39c4c38a9173bfb1a2) on port 9515
-Only local connections are allowed.
+<pre><code class="language-json">{
+    &quot;sessionId&quot;: &quot;05567e0fc54f5859a7418632a8988cc7&quot;,
+    &quot;status&quot;: 0,
+    &quot;value&quot;: {
+        &quot;acceptSslCerts&quot;: true,
+        &quot;browserName&quot;: &quot;chrome&quot;,
+        &quot;chrome&quot;: {
+            &quot;chromedriverVersion&quot;: &quot;2.33.506 (8a06c39c9173bfb1a2)&quot;,
+            &quot;userDataDir&quot;: &quot;/var/folders/v2/5jldd5952fng_t6cbl3064csc8p6dn/T/.org.chromium.Chromium.0ETZRP&quot;
+        },
+        &quot;cssSelectorsEnabled&quot;: true,
+        &quot;pageLoadStrategy&quot;: &quot;normal&quot;,
+        &quot;platform&quot;: &quot;Mac OS X&quot;,
+        &quot;version&quot;: &quot;62.0.3202.94&quot;,
+    }
+}
 </code></pre>
 
-<p>Now after the ChromeDriver server started successfully on your local machine you can access the Driver from your Test.</p>
+<p><em>You should save the SessionID from the Response you received as we are going to need SessionID for further communication.</em></p>
 
-<p><strong>How to access the chrome server running on local?</strong><br />
-If you look carefully above in the console messages there is a port no <strong>9515</strong> in which ChromeDriver is running. So we need to give this port no in our URL while creating WebDriver Instance.</p>
+<h4 id="now-let-s-redirect-to-the-url">Now let&rsquo;s redirect to the URL</h4>
 
-<p>Let&rsquo;s rewrite the same test case again with already running ChromeDriver.</p>
+<p>Now As you can see the ChromeBrowser is open and ready to open any URL.
+We need to do POST call again with the session ID which we saved from our last API response.You can replace the sessionID which I have used within the request.</p>
 
-<pre><code class="language-java">@Test
- public void testOnPreRunningChromeDriver(){
-   //Create WebDriver Instance With URL
-   WebDriver driver = new RemoteWebDriver(new URL(&quot;http://127.0.0.1:9515&quot;), DesiredCapabilities.chrome());
-   driver.get(&quot;https://www.google.com/&quot;);
-   //Find Element and Enter Text
-   driver.findElement(By.name(&quot;q&quot;)).sendKeys(&quot;chrome&quot;);
-   //Then search button and click
-   driver.findElement(By.name(&quot;btnK&quot;)).submit();
-   //Quit Driver
-   driver.quit();
- }
+<p><img src="/img/webdriver/get-url-post-request-postman.png" alt="get-url-post-request-from-postman" /></p>
+
+<p><strong>Example:</strong> <a href="http://localhost:9515/session/:SessionID/url">http://localhost:9515/session/:SessionID/url</a></p>
+
+<p><strong>Post:</strong> <a href="http://localhost:9515/session/05567e0fc54f5859a7418632a8988cc7/url">http://localhost:9515/session/05567e0fc54f5859a7418632a8988cc7/url</a></p>
+
+<p><strong>Request Body:</strong></p>
+
+<pre><code class="language-json">{&quot;url&quot;:&quot;https://www.google.com&quot;}
 </code></pre>
 
-<p>As you can see there are many ways of using the chromeDriver for the same Test. It is a good practice to implement base on your testing infrastructure and design.</p>
+<p><strong>Response:</strong></p>
 
-<p>In my next article, I am planning to deep dive in to ChromeDriver and try to explain what exactly happens in ChromeDriver when you run your test and how it works.</p>
+<pre><code class="language-json">{
+    &quot;sessionId&quot;: &quot;05567e0fc54f5859a7418632a8988cc7&quot;,
+    &quot;status&quot;: 0,
+    &quot;value&quot;: null
+}
+</code></pre>
+
+<h4 id="now-let-s-find-the-element-on-the-page">Now let&rsquo;s find the Element on the page</h4>
+
+<p>Now we have the URL opened in our chrome browser and lets find the search textBox from the page in our next request.
+<img src="/img/webdriver/post-request-find-searchButton-postman.png" alt="post-request-find-searchButton-postman" /></p>
+
+<p><strong>Post:</strong> <a href="http://localhost:9515/session/05567e0fc54f5859a7418632a8988cc7/element">http://localhost:9515/session/05567e0fc54f5859a7418632a8988cc7/element</a></p>
+
+<p><strong>Request Body:</strong></p>
+
+<pre><code class="language-json">{&quot;using&quot;:&quot;name&quot;,&quot;value&quot;:&quot;q&quot;}
+</code></pre>
+
+<p><strong>Response:</strong></p>
+
+<pre><code class="language-json">{
+    &quot;sessionId&quot;: &quot;05567e0fc54f5859a7418632a8988cc7&quot;,
+    &quot;status&quot;: 0,
+    &quot;value&quot;: {
+        &quot;ELEMENT&quot;: &quot;0.1450256429796304-1&quot;
+    }
+}
+</code></pre>
+
+<p><em>You should save the ELEMENT value from the response as this is the Element ID and we need to pass this in next request</em></p>
+
+<h4 id="now-let-s-send-the-value-chrome-to-this-search-element-textbox">Now let&rsquo;s send the value &ldquo;Chrome&rdquo; to this search Element textBox</h4>
+
+<p>Now we have received the elementID of the SearchTextBox and now we can send any Text to this TextBox using the POST call.
+<img src="/img/webdriver/enter-text-in-chrome-request-postman.png" alt="enter-text-in-chrome-request-postman" />
+<strong>Post:</strong> <a href="http://localhost:9515/session/05567e0fc54f5859a7418632a8988cc7/element/0.1450256429796304-1/value">http://localhost:9515/session/05567e0fc54f5859a7418632a8988cc7/element/0.1450256429796304-1/value</a>
+<strong>Request Body:</strong></p>
+
+<pre><code class="language-json">{&quot;value&quot;:[&quot;chrome&quot;]}
+</code></pre>
+
+<p><strong>Response:</strong></p>
+
+<pre><code class="language-json">{
+    &quot;sessionId&quot;: &quot;05567e0fc54f5859a7418632a8988cc7&quot;,
+    &quot;status&quot;: 0,
+    &quot;value&quot;: null
+}
+</code></pre>
+
+<h4 id="now-quit-driver-instance">Now Quit Driver instance:</h4>
+
+<p>Now to Quit Driver session and close the Chrome Browser, we should send the DELETE request with the session ID.</p>
+
+<p><strong>DELETE:</strong> <a href="http://localhost:9515/session/05567e0fc54f5859a7418632a8988cc7">http://localhost:9515/session/05567e0fc54f5859a7418632a8988cc7</a></p>
+
+<p><strong>Response:</strong></p>
+
+<pre><code class="language-json">{
+    &quot;sessionId&quot;: &quot;05567e0fc54f5859a7418632a8988cc7&quot;,
+    &quot;status&quot;: 0,
+    &quot;value&quot;: null
+}
+</code></pre>
+
+<p>I have used <a href="https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#command-reference">JsonWireProtocol</a> standards about requests to perform few actions on browser. You can try to do more actions using the PostMan tool.</p>
+
+<p>If you don&rsquo;t want to use PostMan tool for API requests and you can use Java as programming language with any HTTPClient available.</p>
 
 <p>Thanks for reading!</p>
 
@@ -277,13 +356,9 @@ If you look carefully above in the console messages there is a port no <strong>9
       <ul class="pager blog-pager">
         
           <li class="previous">
-            <a href="https://www.pawangaria.com/post/automation/what-is-remotewebdriver-in-seleniumwebdriver/" data-toggle="tooltip" data-placement="top" title="What is RemoteWebDriver in Selenium WebDriver?">&larr; Previous Post</a>
+            <a href="https://www.pawangaria.com/post/automation/how-to-use-chromedriver-with-selenium-webdriver/" data-toggle="tooltip" data-placement="top" title="How to use ChromeDriver with Selenium WebDriver?">&larr; Previous Post</a>
           </li>
         
-        
-          <li class="next">
-            <a href="https://www.pawangaria.com/post/automation/chromedriver-deep-dive-understanding/" data-toggle="tooltip" data-placement="top" title="How to use ChromeDriver without WebDriverClient?">Next Post &rarr;</a>
-          </li>
         
       </ul>
 

@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>pawangaria@gmail.com (Pawan garia)</managingEditor>
     <webMaster>pawangaria@gmail.com (Pawan garia)</webMaster>
-    <lastBuildDate>Tue, 05 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 07 Dec 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.pawangaria.com/categories/automation-testing/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to use ChromeDriver without WebDriverClient?</title>
+      <link>https://www.pawangaria.com/post/automation/chromedriver-deep-dive-understanding/</link>
+      <pubDate>Thu, 07 Dec 2017 00:00:00 +0000</pubDate>
+      <author>pawangaria@gmail.com (Pawan garia)</author>
+      <guid>https://www.pawangaria.com/post/automation/chromedriver-deep-dive-understanding/</guid>
+      <description>If you are using WebDriver or learning how to use Selenium for automation, you must be using some programming language like Java or PHP etc. for automation and performing actions on browsers like Chrome. But in this article, I am going to show you how we can run the same test and perform an action on Chrome using ChromeDriver and PostMan.
+I am going to use JSON Wire Protocol for driving chrome driver.</description>
+    </item>
     
     <item>
       <title>How to use ChromeDriver with Selenium WebDriver?</title>
