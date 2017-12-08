@@ -7,19 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>pawangaria@gmail.com (Pawan garia)</managingEditor>
     <webMaster>pawangaria@gmail.com (Pawan garia)</webMaster>
-    <lastBuildDate>Thu, 07 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 Dec 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.pawangaria.com/tags/test-automation/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>How to use ChromeDriver without WebDriverClient?</title>
-      <link>https://www.pawangaria.com/post/automation/chromedriver-deep-dive-understanding/</link>
-      <pubDate>Thu, 07 Dec 2017 00:00:00 +0000</pubDate>
+      <title>Browser automation using ChromeDriver and Postman</title>
+      <link>https://www.pawangaria.com/post/automation/browser-automation-using-chromedriver-and-postman/</link>
+      <pubDate>Fri, 08 Dec 2017 00:00:00 +0000</pubDate>
       <author>pawangaria@gmail.com (Pawan garia)</author>
-      <guid>https://www.pawangaria.com/post/automation/chromedriver-deep-dive-understanding/</guid>
-      <description>If you are using WebDriver or learning how to use Selenium for automation, you must be using some programming language like Java or PHP etc. for automation and performing actions on browsers like Chrome. But in this article, I am going to show you how we can run the same test and perform an action on Chrome using ChromeDriver and PostMan.
-I am going to use JSON Wire Protocol for driving chrome driver.</description>
+      <guid>https://www.pawangaria.com/post/automation/browser-automation-using-chromedriver-and-postman/</guid>
+      <description>If you are using WebDriver or learning how to use Selenium for test automation, you must be using some programming language like Java or PHP, etc. for automation and performing actions on browsers like Chrome. But in this article we are not going to use WebDriver Client Like Java or PHP, etc. and we will perform actions like open URL, Click Button or Enter Text using ChromeDriver and PostMan tool.</description>
     </item>
     
     <item>

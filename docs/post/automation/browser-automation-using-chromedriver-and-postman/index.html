@@ -5,26 +5,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>How to use ChromeDriver without WebDriverClient?</title>
-  <meta property="og:title" content="How to use ChromeDriver without WebDriverClient?" />
-  <meta name="twitter:title" content="How to use ChromeDriver without WebDriverClient?" />
+  <title>Browser automation using ChromeDriver and Postman</title>
+  <meta property="og:title" content="Browser automation using ChromeDriver and Postman" />
+  <meta name="twitter:title" content="Browser automation using ChromeDriver and Postman" />
  
   <meta name="keywords" content="Selenium,WebDriver,ChromeDriver,Testing,PostMan">
  
-  <meta name="description" content="How to use ChromeDriver without Selenium WebDriver Client and How can we perform actions on chrome browser using PostMan API calls?">
-  <meta property="og:description" content="How to use ChromeDriver without Selenium WebDriver Client and How can we perform actions on chrome browser using PostMan API calls?">
-  <meta name="twitter:description" content="How to use ChromeDriver without Selenium WebDriver Client and How can we perform actions on chrome browser using PostMan API calls?">
+  <meta name="description" content="How to use ChromeDriver without Selenium WebDriver Client and How can we perform actions on chrome browser using PostMan for API calls?">
+  <meta property="og:description" content="How to use ChromeDriver without Selenium WebDriver Client and How can we perform actions on chrome browser using PostMan for API calls?">
+  <meta name="twitter:description" content="How to use ChromeDriver without Selenium WebDriver Client and How can we perform actions on chrome browser using PostMan for API calls?">
   <meta name="author" content="Pawan garia"/>
   <link href='https://www.pawangaria.com/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://www.pawangaria.com/img/webdriver/create-session-request-postman-thumb.png" />
   <meta name="twitter:image" content="https://www.pawangaria.com/img/webdriver/create-session-request-postman-thumb.png" />
   <meta name="twitter:card" content="summary" />
-  <meta property="og:url" content="https://www.pawangaria.com/post/automation/chromedriver-deep-dive-understanding/" />
+  <meta property="og:url" content="https://www.pawangaria.com/post/automation/browser-automation-using-chromedriver-and-postman/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Testing, Automation, Programming and Latest Technology Articles" />
 
   <meta name="generator" content="Hugo 0.31" />
-  <link rel="canonical" href="https://www.pawangaria.com/post/automation/chromedriver-deep-dive-understanding/" />
+  <link rel="canonical" href="https://www.pawangaria.com/post/automation/browser-automation-using-chromedriver-and-postman/" />
   <link rel="alternate" href="" type="application/rss+xml" title="Testing, Automation, Programming and Latest Technology Articles">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -169,12 +169,12 @@ ga('send', 'pageview');
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
-              <h1>How to use ChromeDriver without WebDriverClient?</h1>
+              <h1>Browser automation using ChromeDriver and Postman</h1>
                 
                 
                   <span class="post-meta">
-  <i class="fa fa-calendar-o"></i>&nbsp;Posted on December 7, 2017
-  &nbsp;|&nbsp; <i class="fa fa-clock-o"></i> 3 min (611 mots)
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on December 8, 2017
+  &nbsp;|&nbsp; <i class="fa fa-clock-o"></i> 3 min (623 mots)
   
 </span>
 
@@ -195,9 +195,9 @@ ga('send', 'pageview');
       <article role="main" class="blog-post">
         
 
-<p>If you are using WebDriver or learning how to use Selenium for automation, you must be using some programming language like Java or PHP etc. for automation and performing actions on browsers like Chrome. But in this article, I am going to show you how we can run the same test and perform an action on Chrome using ChromeDriver and PostMan.</p>
+<p>If you are using WebDriver or learning how to use Selenium for test automation, you must be using some programming language like Java or PHP, etc. for automation and performing actions on browsers like Chrome. But in this article we are not going to use WebDriver Client Like Java or PHP, etc. and we will perform actions like open URL, Click Button or Enter Text using ChromeDriver and PostMan tool.</p>
 
-<p>I am going to use <a href="https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol">JSON Wire Protocol</a> for driving chrome driver. You can read more in details about what is <a href="https://www.pawangaria.com/post/automation/selenium-webdriver-architecture-using-json-wire-protocol/">JSON Wire Protocol</a> in my old posts.</p>
+<p>I am going to use <a href="https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol">JSON Wire Protocol</a> for driving chrome driver. You can read more in details about <a href="https://www.pawangaria.com/post/automation/selenium-webdriver-architecture-using-json-wire-protocol/">what is JSON Wire Protocol in my old posts.</a></p>
 
 <h4 id="download-chromedriver-and-postman">Download ChromeDriver and PostMan</h4>
 
@@ -223,7 +223,7 @@ Only local connections are allowed.
 <p>Now open Postman which is installed on your machine and you should make a POST call to ChromeDriver.
 <img src="/img/webdriver/create-session-request-postman.png" alt="create-webdriver-session-from-postman" /></p>
 
-<p><strong>POST:</strong> <a href="http://localhost:9515/session">http://localhost:9515/session</a></p>
+<p><strong>POST:</strong> <code>http://localhost:9515/session</code></p>
 
 <p><strong>Request Body:</strong></p>
 
@@ -261,16 +261,16 @@ Only local connections are allowed.
 
 <p><em>You should save the SessionID from the Response you received as we are going to need SessionID for further communication.</em></p>
 
-<h4 id="now-let-s-redirect-to-the-url">Now let&rsquo;s redirect to the URL</h4>
+<h4 id="now-let-s-redirect-to-the-url">Now let&rsquo;s redirect to the URL:</h4>
 
 <p>Now As you can see the ChromeBrowser is open and ready to open any URL.
 We need to do POST call again with the session ID which we saved from our last API response.You can replace the sessionID which I have used within the request.</p>
 
 <p><img src="/img/webdriver/get-url-post-request-postman.png" alt="get-url-post-request-from-postman" /></p>
 
-<p><strong>Example:</strong> <a href="http://localhost:9515/session/:SessionID/url">http://localhost:9515/session/:SessionID/url</a></p>
+<p><strong>Example:</strong> <code>http://localhost:9515/session/:SessionID/url</code></p>
 
-<p><strong>Post:</strong> <a href="http://localhost:9515/session/05567e0fc54f5859a7418632a8988cc7/url">http://localhost:9515/session/05567e0fc54f5859a7418632a8988cc7/url</a></p>
+<p><strong>Post:</strong> <code>http://localhost:9515/session/05567e0fc54f5859a7418632a8988cc7/url</code></p>
 
 <p><strong>Request Body:</strong></p>
 
@@ -286,12 +286,12 @@ We need to do POST call again with the session ID which we saved from our last A
 }
 </code></pre>
 
-<h4 id="now-let-s-find-the-element-on-the-page">Now let&rsquo;s find the Element on the page</h4>
+<h4 id="now-let-s-find-an-element-on-the-page">Now let&rsquo;s find an Element on the page:</h4>
 
 <p>Now we have the URL opened in our chrome browser and lets find the search textBox from the page in our next request.
 <img src="/img/webdriver/post-request-find-searchButton-postman.png" alt="post-request-find-searchButton-postman" /></p>
 
-<p><strong>Post:</strong> <a href="http://localhost:9515/session/05567e0fc54f5859a7418632a8988cc7/element">http://localhost:9515/session/05567e0fc54f5859a7418632a8988cc7/element</a></p>
+<p><strong>Post:</strong> <code>http://localhost:9515/session/05567e0fc54f5859a7418632a8988cc7/element</code></p>
 
 <p><strong>Request Body:</strong></p>
 
@@ -311,12 +311,16 @@ We need to do POST call again with the session ID which we saved from our last A
 
 <p><em>You should save the ELEMENT value from the response as this is the Element ID and we need to pass this in next request</em></p>
 
-<h4 id="now-let-s-send-the-value-chrome-to-this-search-element-textbox">Now let&rsquo;s send the value &ldquo;Chrome&rdquo; to this search Element textBox</h4>
+<h4 id="now-let-s-send-the-value-chrome-to-this-search-element-textbox">Now let&rsquo;s send the value &ldquo;Chrome&rdquo; to this search Element textBox:</h4>
 
-<p>Now we have received the elementID of the SearchTextBox and now we can send any Text to this TextBox using the POST call.
-<img src="/img/webdriver/enter-text-in-chrome-request-postman.png" alt="enter-text-in-chrome-request-postman" />
-<strong>Post:</strong> <a href="http://localhost:9515/session/05567e0fc54f5859a7418632a8988cc7/element/0.1450256429796304-1/value">http://localhost:9515/session/05567e0fc54f5859a7418632a8988cc7/element/0.1450256429796304-1/value</a>
-<strong>Request Body:</strong></p>
+<p>Now we have received the elementID of the SearchTextBox and now we can send any Text to this TextBox using the POST call.</p>
+
+<p><img src="/img/webdriver/enter-text-in-chrome-request-postman.png" alt="enter-text-in-chrome-request-postman" />
+<strong>Example:</strong> <code>http://localhost:9515/session/:sessionID/element/:elementID/value</code></p>
+
+<p><strong>Post:</strong> <code>http://localhost:9515/session/05567e0fc54f5859a7418632a8988cc7/element/0.1450256429796304-1/value</code></p>
+
+<p><strong>Request Body:</strong></p>
 
 <pre><code class="language-json">{&quot;value&quot;:[&quot;chrome&quot;]}
 </code></pre>
@@ -334,7 +338,7 @@ We need to do POST call again with the session ID which we saved from our last A
 
 <p>Now to Quit Driver session and close the Chrome Browser, we should send the DELETE request with the session ID.</p>
 
-<p><strong>DELETE:</strong> <a href="http://localhost:9515/session/05567e0fc54f5859a7418632a8988cc7">http://localhost:9515/session/05567e0fc54f5859a7418632a8988cc7</a></p>
+<p><strong>DELETE:</strong> <code>http://localhost:9515/session/05567e0fc54f5859a7418632a8988cc7</code></p>
 
 <p><strong>Response:</strong></p>
 
@@ -345,7 +349,7 @@ We need to do POST call again with the session ID which we saved from our last A
 }
 </code></pre>
 
-<p>I have used <a href="https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#command-reference">JsonWireProtocol</a> standards about requests to perform few actions on browser. You can try to do more actions using the PostMan tool.</p>
+<p>I have used <a href="https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#command-reference">JsonWireProtocol</a> standards about requests to perform few actions on the browser. You can try to perform more actions using the PostMan tool.</p>
 
 <p>If you don&rsquo;t want to use PostMan tool for API requests and you can use Java as programming language with any HTTPClient available.</p>
 

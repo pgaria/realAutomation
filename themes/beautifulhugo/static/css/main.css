@@ -16,8 +16,9 @@ body {
 }
 p {
   line-height: 1.5;
-  margin: 30px 0;
+  margin: 15px 0;
 }
+
 p a {
   /* text-decoration: underline */
   color: #008AFF;
@@ -101,9 +102,12 @@ img::-moz-selection {
 
 .blog-post img {
   margin-right: 10px;
+  margin-bottom: 10px;
   float:left;
   max-width: 100%;
+  border:1px solid black
 }
+
 .img-title {
   width: 100%;
 }
@@ -256,6 +260,13 @@ img::-moz-selection {
   }
   .navbar-custom .nav .navlinks-container.show-children .navlinks-children {
     display: block;
+  }
+  .container[role=main] {
+    width: 100%;
+    flex:none;
+  }
+  .container[role=main] p {
+    overflow: auto;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -678,6 +689,7 @@ table tr td :last-child {
   margin-bottom: 30px;
 }
 
+
 /* --- Google Custom Search Engine Popup --- */
 #modalSearch table tr, #modalSearch table tr td, #modalSearch table tr th {
   border:none;
@@ -690,4 +702,3 @@ table tr td :last-child {
 input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus, .gsc-search-button {
   box-sizing: content-box;
   line-height: normal;
-}

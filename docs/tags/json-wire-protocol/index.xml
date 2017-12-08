@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>pawangaria@gmail.com (Pawan garia)</managingEditor>
     <webMaster>pawangaria@gmail.com (Pawan garia)</webMaster>
-    <lastBuildDate>Thu, 30 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 Dec 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.pawangaria.com/tags/json-wire-protocol/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Browser automation using ChromeDriver and Postman</title>
+      <link>https://www.pawangaria.com/post/automation/browser-automation-using-chromedriver-and-postman/</link>
+      <pubDate>Fri, 08 Dec 2017 00:00:00 +0000</pubDate>
+      <author>pawangaria@gmail.com (Pawan garia)</author>
+      <guid>https://www.pawangaria.com/post/automation/browser-automation-using-chromedriver-and-postman/</guid>
+      <description>If you are using WebDriver or learning how to use Selenium for test automation, you must be using some programming language like Java or PHP, etc. for automation and performing actions on browsers like Chrome. But in this article we are not going to use WebDriver Client Like Java or PHP, etc. and we will perform actions like open URL, Click Button or Enter Text using ChromeDriver and PostMan tool.</description>
+    </item>
     
     <item>
       <title>Understanding the Architecture of Selenium WebDriver</title>

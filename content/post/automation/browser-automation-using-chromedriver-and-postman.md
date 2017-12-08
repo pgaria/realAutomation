@@ -1,21 +1,21 @@
 ---
-title: "How to use ChromeDriver without WebDriverClient?"
-date: 2017-12-07
+title: "Browser automation using ChromeDriver and Postman"
+date: 2017-12-08
 draft: false
-description: "How to use ChromeDriver without Selenium WebDriver Client and How can we perform actions on chrome browser using PostMan API calls?"
+description: "How to use ChromeDriver without Selenium WebDriver Client and How can we perform actions on chrome browser using PostMan for API calls?"
 categories: [ "Automation Testing", "Selenium WebDriver"]
 keywords: "Selenium,WebDriver,ChromeDriver,Testing,PostMan"
 image: "/img/webdriver/create-session-request-postman-thumb.png"
 logothumb: "/img/logothumb/SeleniumWebDriver.png"
 tags: [
     "Test Automation",
-    "Java",
+    "JSON Wire Protocol",
     "Selenium WebDriver"
 ]
 ---
-If you are using WebDriver or learning how to use Selenium for automation, you must be using some programming language like Java or PHP etc. for automation and performing actions on browsers like Chrome. But in this article, I am going to show you how we can run the same test and perform an action on Chrome using ChromeDriver and PostMan.
+If you are using WebDriver or learning how to use Selenium for test automation, you must be using some programming language like Java or PHP, etc. for automation and performing actions on browsers like Chrome. But in this article we are not going to use WebDriver Client Like Java or PHP, etc. and we will perform actions like open URL, Click Button or Enter Text using ChromeDriver and PostMan tool.
 
-I am going to use [JSON Wire Protocol](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol) for driving chrome driver. You can read more in details about what is [JSON Wire Protocol](https://www.pawangaria.com/post/automation/selenium-webdriver-architecture-using-json-wire-protocol/) in my old posts.
+I am going to use [JSON Wire Protocol](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol) for driving chrome driver. You can read more in details about [what is JSON Wire Protocol in my old posts.](https://www.pawangaria.com/post/automation/selenium-webdriver-architecture-using-json-wire-protocol/)
 
 #### Download ChromeDriver and PostMan
 The first step is to download the ChromeDrive executable from Google ChromeDriver Page.
@@ -37,7 +37,7 @@ Now we have a successfully running ChromeDriver. Please pay attention to the por
 Now open Postman which is installed on your machine and you should make a POST call to ChromeDriver.
 ![create-webdriver-session-from-postman](/img/webdriver/create-session-request-postman.png)
 
-**POST:** http://localhost:9515/session  
+**POST:** `http://localhost:9515/session`  
 
 **Request Body:**
 ```json
@@ -74,15 +74,15 @@ Now open Postman which is installed on your machine and you should make a POST c
 ```
 *You should save the SessionID from the Response you received as we are going to need SessionID for further communication.*
 
-#### Now let's redirect to the URL
+#### Now let's redirect to the URL:
 Now As you can see the ChromeBrowser is open and ready to open any URL.
 We need to do POST call again with the session ID which we saved from our last API response.You can replace the sessionID which I have used within the request.
 
 ![get-url-post-request-from-postman](/img/webdriver/get-url-post-request-postman.png)
 
-**Example:** http://localhost:9515/session/:SessionID/url  
+**Example:** `http://localhost:9515/session/:SessionID/url`  
 
-**Post:** http://localhost:9515/session/05567e0fc54f5859a7418632a8988cc7/url
+**Post:** `http://localhost:9515/session/05567e0fc54f5859a7418632a8988cc7/url`
 
 **Request Body:**
 ```json
@@ -97,11 +97,11 @@ We need to do POST call again with the session ID which we saved from our last A
     "value": null
 }
 ```
-#### Now let's find the Element on the page
+#### Now let's find an Element on the page:
 Now we have the URL opened in our chrome browser and lets find the search textBox from the page in our next request.
 ![post-request-find-searchButton-postman](/img/webdriver/post-request-find-searchButton-postman.png)
 
-**Post:** http://localhost:9515/session/05567e0fc54f5859a7418632a8988cc7/element
+**Post:** `http://localhost:9515/session/05567e0fc54f5859a7418632a8988cc7/element`
 
 **Request Body:**
 ```json
@@ -120,10 +120,14 @@ Now we have the URL opened in our chrome browser and lets find the search textBo
 ```
 *You should save the ELEMENT value from the response as this is the Element ID and we need to pass this in next request*
 
-#### Now let's send the value "Chrome" to this search Element textBox
+#### Now let's send the value "Chrome" to this search Element textBox:
 Now we have received the elementID of the SearchTextBox and now we can send any Text to this TextBox using the POST call.
+
 ![enter-text-in-chrome-request-postman](/img/webdriver/enter-text-in-chrome-request-postman.png)
-**Post:** http://localhost:9515/session/05567e0fc54f5859a7418632a8988cc7/element/0.1450256429796304-1/value
+**Example:** `http://localhost:9515/session/:sessionID/element/:elementID/value`
+
+**Post:** `http://localhost:9515/session/05567e0fc54f5859a7418632a8988cc7/element/0.1450256429796304-1/value`
+
 **Request Body:**
 ```json
 {"value":["chrome"]}
@@ -141,7 +145,7 @@ Now we have received the elementID of the SearchTextBox and now we can send any 
 #### Now Quit Driver instance:
 Now to Quit Driver session and close the Chrome Browser, we should send the DELETE request with the session ID.
 
-**DELETE:** http://localhost:9515/session/05567e0fc54f5859a7418632a8988cc7
+**DELETE:** `http://localhost:9515/session/05567e0fc54f5859a7418632a8988cc7`
 
 **Response:**
 ```json
@@ -151,7 +155,7 @@ Now to Quit Driver session and close the Chrome Browser, we should send the DELE
     "value": null
 }
 ```
-I have used [JsonWireProtocol](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#command-reference) standards about requests to perform few actions on browser. You can try to do more actions using the PostMan tool.
+I have used [JsonWireProtocol](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#command-reference) standards about requests to perform few actions on the browser. You can try to perform more actions using the PostMan tool.
 
 If you don't want to use PostMan tool for API requests and you can use Java as programming language with any HTTPClient available.
 
