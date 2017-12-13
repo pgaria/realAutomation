@@ -8,7 +8,7 @@
   <meta property="og:title" content="{{ . }}" />
   <meta name="twitter:title" content="{{ . | truncate 70 }}" />
 {{- end }}
- 
+
   <meta name="keywords" content="{{ with .Keywords }}{{ delimit . ", " }}{{ else }}{{ .Site.Params.keywords }}{{ end }}">
  {{ with .Description | default .Site.Params.Description }}
   <meta name="description" content="{{ . }}">
@@ -60,7 +60,13 @@
   {{- if .Site.Params.staticman.recaptcha -}}
   <script src='https://www.google.com/recaptcha/api.js'></script>
   {{- end -}}
-
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-3402213976589395",
+      enable_page_level_ads: true
+    });
+  </script>
 {{- partial "head_custom.html" . }}
 {{- partial "load-photoswipe-theme.html" . }}
 {{ template "_internal/google_analytics_async.html" . }}

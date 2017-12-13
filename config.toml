@@ -13,7 +13,7 @@ enableRobotsTXT= true
 #DisqueCommenting
 disqusShortname = "www-pawangaria-com"
 
-paginate = 5
+paginate = 6
 
 [sitemap]
   changefreq = "weekly"
@@ -33,7 +33,7 @@ paginate = 5
   rss = true
   comments = true
 #  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
-  recentArticlesLimit = 4
+  recentArticlesLimit = 5
 
 #[[Params.bigimg]]
  #src = "img/triangle.jpg"
