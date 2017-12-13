@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>pawangaria@gmail.com (Pawan garia)</managingEditor>
     <webMaster>pawangaria@gmail.com (Pawan garia)</webMaster>
-    <lastBuildDate>Fri, 08 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 Dec 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.pawangaria.com/tags/selenium-webdriver/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How ChromeDriver works in the background?</title>
+      <link>https://www.pawangaria.com/post/automation/how-chromedriver-works-in-background/</link>
+      <pubDate>Mon, 11 Dec 2017 00:00:00 +0000</pubDate>
+      <author>pawangaria@gmail.com (Pawan garia)</author>
+      <guid>https://www.pawangaria.com/post/automation/how-chromedriver-works-in-background/</guid>
+      <description>ChromeDriver is a Chromium project and ChromeDriver code is inside the Chromium repository. Chromium is an open source project started by Google to provide source code for Chrome browser. Chromium projects are divided into mainly two projects Chromium browser and Chromium OS which is an open source project for OS based browsers, you can watch What is Chrome OS Video for more information.
+Chromium dev teams are now responsible for the maintenance of the ChromeDriver code and updates which we use with Selenium WebDriver for automating Chrome.</description>
+    </item>
     
     <item>
       <title>Browser automation using ChromeDriver and Postman</title>

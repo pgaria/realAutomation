@@ -13,16 +13,17 @@ enableRobotsTXT= true
 #DisqueCommenting
 disqusShortname = "www-pawangaria-com"
 
+paginate = 5
 
 [sitemap]
   changefreq = "weekly"
-  priority = 0.5
+  priority = 0.9
   filename = "sitemap.xml"
 
 [Params]
   subtitle = "This blog comprises topics about Information Technology"
   description = "Resources for Java and Automation testing developers - Provides article about webdriver, automation testing, framework design and java."
-  keywords = "Selenium,WebDriver,Automation Testing,Java,TestNG,TestRail,Quality Assurance,HTTP,JSON,Automation testing tutorials"
+  keywords = "Selenium,WebDriver,ChromeDriver,Automation Testing,Java,TestNG,TestRail,Quality Assurance,HTTP,JSON,Automation testing tutorials"
   home = "PawanGaria.com"
   welcomeText ="Welcome"
   logo = "img/avatar-icon.png"
@@ -32,6 +33,7 @@ disqusShortname = "www-pawangaria-com"
   rss = true
   comments = true
 #  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
+  recentArticlesLimit = 4
 
 #[[Params.bigimg]]
  #src = "img/triangle.jpg"

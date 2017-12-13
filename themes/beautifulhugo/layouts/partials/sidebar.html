@@ -1,0 +1,26 @@
+<aside class="sidebar thirds">
+  <section class="first odd">
+
+    {{ with .Site.Params.sidebarHeader }}
+      <h1>{{ . | markdownify }}</h1>
+    {{ end }}
+
+    <p>
+      {{ with .Site.Params.sidebarText }}
+        {{ . | markdownify }}
+      {{ end }}
+    </p>
+  </section>
+
+
+
+  <section class="even">
+    <h1>Tags</h1>
+  <ul id="tags">
+   {{ range .Params.tags }}
+   <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
+   {{ end }}
+  </ul>
+</div>
+
+</aside>
