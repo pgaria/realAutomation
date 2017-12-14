@@ -4,13 +4,11 @@ date: 2017-11-24
 draft: false
 description: "Capture Full page Screenshots of any website page using google chrome developer tools."
 keywords: "ScreenShot,Reporting,Testing"
-categories: [ "Testing", "Reporting","Chrome","Screenshot" ]
+categories: [ "Resources And Guides" ]
 image: "/img/screenshot/google-Chrome-Dev-tool-thumb.png"
 logothumb: "/img/logothumb/chromebrowser.png"
 tags: [
-    "Chrome",
-    "Screenshot",
-    "Testing"
+    "Chrome"
 ]
 ---
 

@@ -3,12 +3,12 @@ title: "Google Firebase custom domain mapping with GoDaddy"
 date: 2017-11-28
 draft: false
 description: "How to Map your custom domain in FireBase with GoDaddy instructions."
-keywords: "WebHosting,Google,Firebase,GoDaddy,Domain"
-categories: [ "Web Hosting", "Google Firebase"]
+keywords: "WebHosting,Google,Firebase,GoDaddy,CustomDomain"
+categories: [ "Resources And Guides" ]
 image: "/img/customDomain/godaddy-manage-domain-dns-thumb.png"
 logothumb: "/img/logothumb/firebase.png"
 tags: [
-    "Web Hosting","Google Firebase","Custom Domain"
+    "Web Hosting","Google Firebase"
 ]
 ---
 In my post about [how to deploy your website on firebase](https://www.pawangaria.com/post/deploy-website-on-google-firebase/), I explained about hosting our website on Google Firebase and we are able to access the website using the firebase Url. Now in this article, we are going to talk and learn about adding our website with custom domain like your own domains purchased on the domain providing websites like [GoDaddy](https://www.godaddy.com/) and [NameCheap](https://www.namecheap.com/).

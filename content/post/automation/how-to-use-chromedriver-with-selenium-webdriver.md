@@ -9,7 +9,6 @@ image: "/img/webdriver/ChromeDriver-performing-actions-thumb.png"
 logothumb: "/img/logothumb/SeleniumWebDriver.png"
 tags: [
     "Test Automation",
-    "Java",
     "Selenium WebDriver"
 ]
 ---

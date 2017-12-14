@@ -123,14 +123,29 @@ ga('send', 'pageview');
           
         
           
-            <li>
-              <a title="About" href="/page/about/">About</a>
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">SELECT A CATEGORY</a>
+              <div class="navlinks-children">
+                
+                  <a href="/categories/automation-testing/">Automation Testing</a>
+                
+                  <a href="/categories/selenium-webdriver/">Selenium WebDriver</a>
+                
+                  <a href="/categories/resources-and-guides/">Resources And Guides</a>
+                
+              </div>
             </li>
           
         
           
             <li>
               <a title="Tags" href="/tags">Tags</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/page/about/">About</a>
             </li>
           
         
@@ -306,16 +321,6 @@ JSONObject r = (JSONObject) client.sendPost(&quot;add_result_for_case/TestCaseID
       Test Automation
       </a>&nbsp;
       
-      <a href="/tags/testing">
-      <i class="fa fa-tags" aria-hidden="true"></i>
-      Testing
-      </a>&nbsp;
-      
-      <a href="/tags/selenium-webdriver">
-      <i class="fa fa-tags" aria-hidden="true"></i>
-      Selenium WebDriver
-      </a>&nbsp;
-      
       </span>
 
       <ul class="pager blog-pager">
@@ -339,6 +344,10 @@ JSONObject r = (JSONObject) client.sendPost(&quot;add_result_for_case/TestCaseID
         <ul id="recent_posts">
           
             <li class="post">
+              <a href="/post/automation/browser-automation-from-command-line/">Browser Automation from CommandLine using Curl and ChromeDriver</a>
+            </li>
+          
+            <li class="post">
               <a href="/post/automation/how-chromedriver-works-in-background/">How ChromeDriver works in the background?</a>
             </li>
           
@@ -352,10 +361,6 @@ JSONObject r = (JSONObject) client.sendPost(&quot;add_result_for_case/TestCaseID
           
             <li class="post">
               <a href="/post/automation/what-is-remotewebdriver-in-seleniumwebdriver/">What is RemoteWebDriver in Selenium WebDriver?</a>
-            </li>
-          
-            <li class="post">
-              <a href="/post/automation/how-selenium-webdriver-api-commands-work/">How Selenium-WebDriver API commands work?</a>
             </li>
           
         </ul>

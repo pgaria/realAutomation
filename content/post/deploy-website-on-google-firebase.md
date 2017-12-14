@@ -4,7 +4,7 @@ date: 2017-11-26
 draft: false
 description: "Deploying and hosting your website on Google Firebase service is easy and free of cost."
 keywords: "WebHosting,Google,Firebase"
-categories: [ "Web Hosting", "Google Firebase"]
+categories: [ "Resources And Guides" ]
 image: "/img/firebasehosting/add-new-project-in-google-firebase-thumb.png"
 logothumb: "/img/logothumb/firebase.png"
 tags: [

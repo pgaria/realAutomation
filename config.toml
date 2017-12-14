@@ -32,6 +32,7 @@ paginate = 6
   commit = false
   rss = true
   comments = true
+  googleads = true
 #  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
   recentArticlesLimit = 5
 
@@ -48,6 +49,7 @@ paginate = 6
   email = "pawangaria@gmail.com"
   facebook = "pawan.garia"
   linkedin = "pawan-garia-a947a24a"
+
 [[menu.main]]
     name = "Blog"
     url = ""
@@ -56,9 +58,32 @@ paginate = 6
 [[menu.main]]
     name = "About"
     url = "page/about/"
-    weight = 3
+    weight = 4
 
 [[menu.main]]
     name = "Tags"
     url = "tags"
     weight = 3
+
+[[menu.main]]
+        identifier = "categories"
+        name = "SELECT A CATEGORY"
+        weight = 2
+
+[[menu.main]]
+        parent = "categories"
+        name = "Automation Testing"
+        url = "categories/automation-testing/"
+        weight = 1
+
+[[menu.main]]
+        parent = "categories"
+        name = "Selenium WebDriver"
+        url = "categories/selenium-webdriver/"
+        weight = 2
+[[menu.main]]
+        parent = "categories"
+        name = "Resources And Guides"
+        url = "categories/resources-and-guides/"
+        weight = 3
+# Categories: API/REST ,

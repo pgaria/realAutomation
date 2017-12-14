@@ -4,16 +4,14 @@ date: 2017-11-23
 draft: false
 description: "Integrating your Automated Usecases in java with Gurock Test Rail API's and pushing test results to Testrail UI."
 keywords: "TestRail,Testing,Automation,Reporting,TestCaseManagement"
-categories: [ "Automation", "Reporting","TestNG" ]
+categories: [ "Automation Testing", "Selenium WebDriver"]
 image: "/img/testRail/TestRail-report-test-management-thumb.png"
 logothumb: "/img/logothumb/SeleniumWebDriver.png"
 tags: [
     "Java",
     "testNG",
     "TestRail",
-    "Test Automation",
-    "Testing",
-    "Selenium WebDriver"
+    "Test Automation"
 ]
 ---
 

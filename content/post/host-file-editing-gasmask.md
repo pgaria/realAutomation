@@ -2,13 +2,13 @@
 title: "Editing Host file using GasMask on Mac OS X"
 date: 2017-11-27
 draft: false
-description: "Gas Mask can be used to edit host file and switching between them on MAC OS X"
+description: "How to use gasmask on mac? Gas Mask can be used to edit host file and switching between them on MAC OS X"
 keywords: "GasMask,HostFile,Edit"
-categories: [ "Gas Mask", "HostFile"]
+categories: [ "Resources And Guides"]
 image: "/img/gasmask/gasMask-editor-thumb.png"
 logothumb: "/img/logothumb/chromebrowser.png"
 tags: [
-    "Gas Mask", "HostFile"
+    "Gas Mask","HostFile"
 ]
 ---
 

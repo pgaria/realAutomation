@@ -11,7 +11,6 @@ image: "/img/webdriver/ClientserverWebdriver-thumb.png"
 logothumb: "/img/logothumb/SeleniumWebDriver.png"
 tags: [
     "Test Automation",
-    "Testing",
     "Selenium WebDriver"
 ]
 ---

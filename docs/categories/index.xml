@@ -7,116 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>pawangaria@gmail.com (Pawan garia)</managingEditor>
     <webMaster>pawangaria@gmail.com (Pawan garia)</webMaster>
-    <lastBuildDate>Thu, 23 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 Dec 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.pawangaria.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Automation</title>
-      <link>https://www.pawangaria.com/categories/automation/</link>
-      <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
-      <author>pawangaria@gmail.com (Pawan garia)</author>
-      <guid>https://www.pawangaria.com/categories/automation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Automation Testing</title>
       <link>https://www.pawangaria.com/categories/automation-testing/</link>
-      <pubDate>Mon, 11 Dec 2017 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 14 Dec 2017 00:00:00 +0000</pubDate>
       <author>pawangaria@gmail.com (Pawan garia)</author>
       <guid>https://www.pawangaria.com/categories/automation-testing/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Chrome</title>
-      <link>https://www.pawangaria.com/categories/chrome/</link>
-      <pubDate>Fri, 24 Nov 2017 00:00:00 +0000</pubDate>
-      <author>pawangaria@gmail.com (Pawan garia)</author>
-      <guid>https://www.pawangaria.com/categories/chrome/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Gas Mask</title>
-      <link>https://www.pawangaria.com/categories/gas-mask/</link>
-      <pubDate>Mon, 27 Nov 2017 00:00:00 +0000</pubDate>
-      <author>pawangaria@gmail.com (Pawan garia)</author>
-      <guid>https://www.pawangaria.com/categories/gas-mask/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Google Firebase</title>
-      <link>https://www.pawangaria.com/categories/google-firebase/</link>
+      <title>Resources and Guides</title>
+      <link>https://www.pawangaria.com/categories/resources-and-guides/</link>
       <pubDate>Tue, 28 Nov 2017 00:00:00 +0000</pubDate>
       <author>pawangaria@gmail.com (Pawan garia)</author>
-      <guid>https://www.pawangaria.com/categories/google-firebase/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hostfile</title>
-      <link>https://www.pawangaria.com/categories/hostfile/</link>
-      <pubDate>Mon, 27 Nov 2017 00:00:00 +0000</pubDate>
-      <author>pawangaria@gmail.com (Pawan garia)</author>
-      <guid>https://www.pawangaria.com/categories/hostfile/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Reporting</title>
-      <link>https://www.pawangaria.com/categories/reporting/</link>
-      <pubDate>Fri, 24 Nov 2017 00:00:00 +0000</pubDate>
-      <author>pawangaria@gmail.com (Pawan garia)</author>
-      <guid>https://www.pawangaria.com/categories/reporting/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Screenshot</title>
-      <link>https://www.pawangaria.com/categories/screenshot/</link>
-      <pubDate>Fri, 24 Nov 2017 00:00:00 +0000</pubDate>
-      <author>pawangaria@gmail.com (Pawan garia)</author>
-      <guid>https://www.pawangaria.com/categories/screenshot/</guid>
+      <guid>https://www.pawangaria.com/categories/resources-and-guides/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Selenium Webdriver</title>
       <link>https://www.pawangaria.com/categories/selenium-webdriver/</link>
-      <pubDate>Mon, 11 Dec 2017 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 14 Dec 2017 00:00:00 +0000</pubDate>
       <author>pawangaria@gmail.com (Pawan garia)</author>
       <guid>https://www.pawangaria.com/categories/selenium-webdriver/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Testing</title>
-      <link>https://www.pawangaria.com/categories/testing/</link>
-      <pubDate>Fri, 24 Nov 2017 00:00:00 +0000</pubDate>
-      <author>pawangaria@gmail.com (Pawan garia)</author>
-      <guid>https://www.pawangaria.com/categories/testing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Testng</title>
-      <link>https://www.pawangaria.com/categories/testng/</link>
-      <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
-      <author>pawangaria@gmail.com (Pawan garia)</author>
-      <guid>https://www.pawangaria.com/categories/testng/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Web Hosting</title>
-      <link>https://www.pawangaria.com/categories/web-hosting/</link>
-      <pubDate>Tue, 28 Nov 2017 00:00:00 +0000</pubDate>
-      <author>pawangaria@gmail.com (Pawan garia)</author>
-      <guid>https://www.pawangaria.com/categories/web-hosting/</guid>
       <description></description>
     </item>
     

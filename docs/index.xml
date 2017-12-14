@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>pawangaria@gmail.com (Pawan garia)</managingEditor>
     <webMaster>pawangaria@gmail.com (Pawan garia)</webMaster>
-    <lastBuildDate>Mon, 11 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 Dec 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.pawangaria.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Browser Automation from CommandLine using Curl and ChromeDriver</title>
+      <link>https://www.pawangaria.com/post/automation/browser-automation-from-command-line/</link>
+      <pubDate>Thu, 14 Dec 2017 00:00:00 +0000</pubDate>
+      <author>pawangaria@gmail.com (Pawan garia)</author>
+      <guid>https://www.pawangaria.com/post/automation/browser-automation-from-command-line/</guid>
+      <description>Browser automation from command-line is possible after the release of HTTP servers like ChromeDriver, GeckoDriver which are implementing the W3C WebDriver standard and follow all the standards of a normal server-client architecture in HTTP.
+In my other posts, I have described what is JSONWire Protocol and how it became a standard for the browser automation. I also described how we can perform browser automation using postman tool. Now in this article, I will show you how we can use simple curl HTTP commands to drive Chrome Browser.</description>
+    </item>
     
     <item>
       <title>How ChromeDriver works in the background?</title>

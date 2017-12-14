@@ -9,7 +9,6 @@ image: "/img/webdriver/remote-webdriver-in-cloud-thumb.png"
 logothumb: "/img/logothumb/SeleniumWebDriver.png"
 tags: [
     "Test Automation",
-    "Java",
     "Selenium WebDriver"
 ]
 ---

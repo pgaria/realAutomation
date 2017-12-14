@@ -123,14 +123,29 @@ ga('send', 'pageview');
           
         
           
-            <li>
-              <a title="About" href="/page/about/">About</a>
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">SELECT A CATEGORY</a>
+              <div class="navlinks-children">
+                
+                  <a href="/categories/automation-testing/">Automation Testing</a>
+                
+                  <a href="/categories/selenium-webdriver/">Selenium WebDriver</a>
+                
+                  <a href="/categories/resources-and-guides/">Resources And Guides</a>
+                
+              </div>
             </li>
           
         
           
             <li>
               <a title="Tags" href="/tags">Tags</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/page/about/">About</a>
             </li>
           
         
@@ -204,6 +219,57 @@ ga('send', 'pageview');
               
               <img src="/img/logothumb/SeleniumWebDriver.png" class="img-title" />
               
+              <a href="https://www.pawangaria.com/post/automation/selenium-webdriver-architecture-using-json-wire-protocol/">
+                <h2 class="post-title">Understanding the Architecture of Selenium WebDriver</h2>
+                
+
+              </a>
+
+              <span class="post-meta">
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on November 30, 2017
+  &nbsp;|&nbsp; <i class="fa fa-clock-o"></i> 4 min (746 mots)
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                <img src="/img/webdriver/client-server-request-response-webdriver-thumb.png" class="img-title" />
+                
+                
+                  Selenium WebDriver provides a programming interface for driving the browser for automation testing. You can find the introduction of WebDriver in my other article. This article is more about the architecture and understanding how selenium WebDriver uses JSON Wire Protocol.
+JSON Wire Protocol is an abstract specification of how automation behavior like clicking or typing or whatever you actually want to do with your automation script is mapped to selenium or appium or HTTP requests and response.
+                  <a href="https://www.pawangaria.com/post/automation/selenium-webdriver-architecture-using-json-wire-protocol/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  <a href="https://www.pawangaria.com/tags/test-automation/">
+                  <i class="fa fa-tags" aria-hidden="true"></i>
+                    Test Automation
+                  </a>&nbsp;
+                
+                  <a href="https://www.pawangaria.com/tags/json-wire-protocol/">
+                  <i class="fa fa-tags" aria-hidden="true"></i>
+                    JSON Wire Protocol
+                  </a>&nbsp;
+                
+                  <a href="https://www.pawangaria.com/tags/selenium-webdriver/">
+                  <i class="fa fa-tags" aria-hidden="true"></i>
+                    Selenium WebDriver
+                  </a>&nbsp;
+                
+                </span>
+              
+
+            </article>
+          
+            <article class="post-preview">
+              
+              <img src="/img/logothumb/SeleniumWebDriver.png" class="img-title" />
+              
               <a href="https://www.pawangaria.com/post/automation/what-is-selenium-webdriver/">
                 <h2 class="post-title">What is Selenium WebDriver?</h2>
                 
@@ -224,7 +290,6 @@ ga('send', 'pageview');
                 
                   Selenium WebDriver is an open source application for driving browsers for automation testing. Using WebDriver libraries you can drive the browser and perform actions like Click, Open URL, Enter Text, Clear Text, Take Screenshot of browser and many more actions. WebDriver works on a very simple principle of Client Server architecture. The communication between the server and client is through HTTP request and response.
 WebDriver uses JSON wire protocol works on RESTful Web Services over HTTP.
-
                   <a href="https://www.pawangaria.com/post/automation/what-is-selenium-webdriver/" class="post-read-more">[Read More]</a>
                 
               </div>
@@ -235,11 +300,6 @@ WebDriver uses JSON wire protocol works on RESTful Web Services over HTTP.
                   <a href="https://www.pawangaria.com/tags/test-automation/">
                   <i class="fa fa-tags" aria-hidden="true"></i>
                     Test Automation
-                  </a>&nbsp;
-                
-                  <a href="https://www.pawangaria.com/tags/testing/">
-                  <i class="fa fa-tags" aria-hidden="true"></i>
-                    Testing
                   </a>&nbsp;
                 
                   <a href="https://www.pawangaria.com/tags/selenium-webdriver/">
@@ -275,7 +335,6 @@ WebDriver uses JSON wire protocol works on RESTful Web Services over HTTP.
                 
                 
                   In my post about how to deploy your website on firebase, I explained about hosting our website on Google Firebase and we are able to access the website using the firebase Url. Now in this article, we are going to talk and learn about adding our website with custom domain like your own domains purchased on the domain providing websites like GoDaddy and NameCheap. I this article we are going to integrate our domain in GoDaddy with Firebase hosted website.
-
                   <a href="https://www.pawangaria.com/post/map-custom-domain-with-godaddy-firebase/" class="post-read-more">[Read More]</a>
                 
               </div>
@@ -291,11 +350,6 @@ WebDriver uses JSON wire protocol works on RESTful Web Services over HTTP.
                   <a href="https://www.pawangaria.com/tags/google-firebase/">
                   <i class="fa fa-tags" aria-hidden="true"></i>
                     Google Firebase
-                  </a>&nbsp;
-                
-                  <a href="https://www.pawangaria.com/tags/custom-domain/">
-                  <i class="fa fa-tags" aria-hidden="true"></i>
-                    Custom Domain
                   </a>&nbsp;
                 
                 </span>
@@ -328,7 +382,6 @@ WebDriver uses JSON wire protocol works on RESTful Web Services over HTTP.
                   R u using MAC OS X and tired of editing host file entries then Gas Mask is a very good solution for you.
 Gas Mask is an open source project which can be used as host file manager and it allows switching between the host files. Gas Mask is only available for MAC OS X operating systems.
 As per the documentation of Gas mask you can run it on the following versions :
-
                   <a href="https://www.pawangaria.com/post/host-file-editing-gasmask/" class="post-read-more">[Read More]</a>
                 
               </div>
@@ -376,7 +429,6 @@ As per the documentation of Gas mask you can run it on the following versions :
                   After finishing the first draft of my new website I wanted to host my website on firebase because I found Firebaseas hosting server very useful, easy to use and free of cost for limited hosting.
 So I decided to write down my knowdledge and experience of hosting website with firebase here and if you are also looking for hosting your website in firebase please follow thesteps below.
 Create account or Login on Firebase Console To deploy your website on firebase first you need to create an account on Google Firebase.
-
                   <a href="https://www.pawangaria.com/post/deploy-website-on-google-firebase/" class="post-read-more">[Read More]</a>
                 
               </div>
@@ -422,7 +474,6 @@ Create account or Login on Firebase Console To deploy your website on firebase f
                 
                 
                   While working everyone feels the need of taking full-page screenshots but Its always hard to take the full page screenshot as normal screenshot works on the page area which is in the frame. Like on Mac we use Command + Shift + 4 and select the area and take the screenshot but in this method, we can not scroll down and take the part hidden in the screenshot. Like I took a screenshot of BBC.
-
                   <a href="https://www.pawangaria.com/post/capture-fullpage-screenshot-chrome/" class="post-read-more">[Read More]</a>
                 
               </div>
@@ -433,83 +484,6 @@ Create account or Login on Firebase Console To deploy your website on firebase f
                   <a href="https://www.pawangaria.com/tags/chrome/">
                   <i class="fa fa-tags" aria-hidden="true"></i>
                     Chrome
-                  </a>&nbsp;
-                
-                  <a href="https://www.pawangaria.com/tags/screenshot/">
-                  <i class="fa fa-tags" aria-hidden="true"></i>
-                    Screenshot
-                  </a>&nbsp;
-                
-                  <a href="https://www.pawangaria.com/tags/testing/">
-                  <i class="fa fa-tags" aria-hidden="true"></i>
-                    Testing
-                  </a>&nbsp;
-                
-                </span>
-              
-
-            </article>
-          
-            <article class="post-preview">
-              
-              <img src="/img/logothumb/SeleniumWebDriver.png" class="img-title" />
-              
-              <a href="https://www.pawangaria.com/post/automation/testrail-integration-with-java-testng/">
-                <h2 class="post-title">Integrate Gurock TestRail with Automated TestCases in Java&#43;TestNG</h2>
-                
-
-              </a>
-
-              <span class="post-meta">
-  <i class="fa fa-calendar-o"></i>&nbsp;Posted on November 23, 2017
-  &nbsp;|&nbsp; <i class="fa fa-clock-o"></i> 3 min (467 mots)
-  
-</span>
-
-
-              <div class="post-entry">
-                
-                <img src="/img/testRail/TestRail-report-test-management-thumb.png" class="img-title" />
-                
-                
-                  What is TestRail? Gurock TestRail is a modern and very nice tool for the Test Case Management by Quality Assurance and Development Team. TestManagement tools are very helpful for managing the test cases and TestRail is pack with very useful features like web-based application, Rest API integration etc.
-Why to use TestManagement Tool with Automation? While making Regression or any kind of Test Automation suit there is a need of maintaining Use cases and maintain the repository which anyone can access and see what use cases are been automated and what is left.
-
-                  <a href="https://www.pawangaria.com/post/automation/testrail-integration-with-java-testng/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <span class="post-meta">
-                
-                  <a href="https://www.pawangaria.com/tags/java/">
-                  <i class="fa fa-tags" aria-hidden="true"></i>
-                    Java
-                  </a>&nbsp;
-                
-                  <a href="https://www.pawangaria.com/tags/testng/">
-                  <i class="fa fa-tags" aria-hidden="true"></i>
-                    testNG
-                  </a>&nbsp;
-                
-                  <a href="https://www.pawangaria.com/tags/testrail/">
-                  <i class="fa fa-tags" aria-hidden="true"></i>
-                    TestRail
-                  </a>&nbsp;
-                
-                  <a href="https://www.pawangaria.com/tags/test-automation/">
-                  <i class="fa fa-tags" aria-hidden="true"></i>
-                    Test Automation
-                  </a>&nbsp;
-                
-                  <a href="https://www.pawangaria.com/tags/testing/">
-                  <i class="fa fa-tags" aria-hidden="true"></i>
-                    Testing
-                  </a>&nbsp;
-                
-                  <a href="https://www.pawangaria.com/tags/selenium-webdriver/">
-                  <i class="fa fa-tags" aria-hidden="true"></i>
-                    Selenium WebDriver
                   </a>&nbsp;
                 
                 </span>
@@ -526,6 +500,10 @@ Why to use TestManagement Tool with Automation? While making Regression or any k
                 <a href="/page/1/">&larr; Newer Posts</a>
               </li>
             
+            
+              <li class="next">
+                <a href="/page/3/">Older Posts &rarr;</a>
+              </li>
             
           </ul>
         

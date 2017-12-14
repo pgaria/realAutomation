@@ -60,6 +60,8 @@
   {{- if .Site.Params.staticman.recaptcha -}}
   <script src='https://www.google.com/recaptcha/api.js'></script>
   {{- end -}}
+
+  {{- if .Site.Params.googleads -}}
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <script>
     (adsbygoogle = window.adsbygoogle || []).push({
@@ -67,6 +69,8 @@
       enable_page_level_ads: true
     });
   </script>
+  {{- end -}}
+  
 {{- partial "head_custom.html" . }}
 {{- partial "load-photoswipe-theme.html" . }}
 {{ template "_internal/google_analytics_async.html" . }}

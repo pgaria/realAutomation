@@ -9,7 +9,6 @@ image: "/img/webdriver/create-session-webdriver-command-thumb.png"
 logothumb: "/img/logothumb/SeleniumWebDriver.png"
 tags: [
     "Test Automation",
-    "Java",
     "Selenium WebDriver"
 ]
 ---
