@@ -66,9 +66,9 @@ paginate = 6
     weight = 3
 
 [[menu.main]]
-        identifier = "categories"
-        name = "SELECT A CATEGORY"
-        weight = 2
+    identifier = "categories"
+    name = "SELECT A CATEGORY"
+    weight = 2
 
 [[menu.main]]
         parent = "categories"
@@ -86,4 +86,9 @@ paginate = 6
         name = "Resources And Guides"
         url = "categories/resources-and-guides/"
         weight = 3
+[[menu.main]]
+        parent = "categories"
+        name = "Tutorials"
+        url = "categories/tutorials/"
+        weight = 4
 # Categories: API/REST ,

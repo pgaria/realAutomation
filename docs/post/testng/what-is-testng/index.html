@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>What is TestNG?</title>
+  <meta property="og:title" content="What is TestNG?" />
+  <meta name="twitter:title" content="What is TestNG?" />
+
+  <meta name="keywords" content="TestNG,Java,Eclipse,testing,unittesting">
+ 
+  <meta name="description" content="TestNG is a testing framework inspired by JUnit and NUnit but introducing some new functionalities that make it more powerful and easier to use.">
+  <meta property="og:description" content="TestNG is a testing framework inspired by JUnit and NUnit but introducing some new functionalities that make it more powerful and easier to use.">
+  <meta name="twitter:description" content="TestNG is a testing framework inspired by JUnit and NUnit but introducing some new functionalities that make it more powerful and easier to use.">
+  <meta name="author" content="Pawan garia"/>
+  <link href='https://www.pawangaria.com/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://www.pawangaria.com/img/testng/what-is-testng-thumb.png" />
+  <meta name="twitter:image" content="https://www.pawangaria.com/img/testng/what-is-testng-thumb.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://www.pawangaria.com/post/testng/what-is-testng/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Testing, Automation, Programming and Latest Technology Articles" />
+
+  <meta name="generator" content="Hugo 0.31" />
+  <link rel="canonical" href="https://www.pawangaria.com/post/testng/what-is-testng/" />
+  <link rel="alternate" href="" type="application/rss+xml" title="Testing, Automation, Programming and Latest Technology Articles">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.pawangaria.com/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://www.pawangaria.com/css/highlighting.css" />
+  <link rel="stylesheet" href="https://www.pawangaria.com/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://www.pawangaria.com/css/highlight.min.css" /><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-3402213976589395",
+      enable_page_level_ads: true
+    });
+  </script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-110208829-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://www.pawangaria.com/">PawanGaria.com</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="/">Blog</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">SELECT A CATEGORY</a>
+              <div class="navlinks-children">
+                
+                  <a href="/categories/automation-testing/">Automation Testing</a>
+                
+                  <a href="/categories/selenium-webdriver/">Selenium WebDriver</a>
+                
+                  <a href="/categories/resources-and-guides/">Resources And Guides</a>
+                
+                  <a href="/categories/tutorials/">Tutorials</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="/tags">Tags</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/page/about/">About</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Testing, Automation, Programming and Latest Technology Articles" href="https://www.pawangaria.com/">
+            <img class="avatar-img" src="https://www.pawangaria.com/img/avatar-icon.png" alt="Testing, Automation, Programming and Latest Technology Articles" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>What is TestNG?</h1>
+                
+                
+                  <span class="post-meta">
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on December 15, 2017
+  &nbsp;|&nbsp; <i class="fa fa-clock-o"></i> 2 min (425 mots)
+  
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<p><a href="http://testng.org/doc/">TestNG</a> is a test management framework inspired from <a href="http://junit.org/junit5/">JUnit</a> and <a href="http://nunit.org/">NUnit</a> frameworks. TestNG provided and introduced new functionalities and features which make TestNg very powerful and mostly used test management framework in Java programming language. As per the creator of TestNG Mr. Cédric Beust <em>NG</em> stands for <em>next generation</em>.</p>
+
+<p>TestNG can be used in all the phases of testing like Unit testing, integration testing or system testing. TestNG provides better support compare to Junit and other frameworks as the new release and bug fixes are very frequent compared to Junit. TestNG is supported by a variety of tools and plug-ins like (Eclipse, IntelliJ IDEA, Maven, Ant etc.</p>
+
+<h3 id="how-to-use-testng">How to use TestNG?</h3>
+
+<p>TestNG can be used as the <a href="https://maven.apache.org/">maven</a> dependency in our project or TestNg can be placed in the build path as the jar file.In this article, we will be using maven as dependency management tool.</p>
+
+<p><strong>Tools we will use:</strong></p>
+
+<ul>
+<li>TestNG</li>
+<li>Maven</li>
+<li>Eclipse</li>
+</ul>
+
+<h3 id="testng-maven-dependency">TestNG maven Dependency</h3>
+
+<p>We need to add TestNG dependency in to our <a href="https://maven.apache.org/guides/introduction/introduction-to-the-pom.html">Pom.xml</a> file.
+Pom is an XML file that contains information about the project and configuration details used by Maven to build the project.</p>
+
+<pre><code class="language-xml">&lt;dependency&gt;
+  &lt;groupId&gt;org.testng&lt;/groupId&gt;
+  &lt;artifactId&gt;testng&lt;/artifactId&gt;
+  &lt;version&gt;6.11&lt;/version&gt;
+  &lt;scope&gt;test&lt;/scope&gt;
+&lt;/dependency&gt;
+</code></pre>
+
+<p>You can get the latest version and dependency detail from the <a href="https://mvnrepository.com/artifact/org.testng/testng">maven central repository</a>.</p>
+
+<h3 id="how-to-use-testng-in-my-test-class">How to use TestNG in My Test Class?</h3>
+
+<p><strong>Create an Addition class for adding two integer values:</strong></p>
+
+<pre><code class="language-Java">package com.tutorial.testng;
+
+public class Addition {
+
+    public int addValues(int a, int b) {
+        return a + b;
+    }
+}
+</code></pre>
+
+<p><strong>Now we are going to create Test Class:</strong></p>
+
+<pre><code class="language-Java">package com.tutorial.testng;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import com.tutorial.testng.Addition;
+
+public class TestngIntroductionTest {
+
+    @Test
+    public void verifyAdditionOfIntegers() {
+
+        Addition obj = new Addition();
+        int additionResult = obj.addValues(5, 4);
+
+        Assert.assertNotNull(additionResult);
+        Assert.assertEquals(additionResult, 9);
+    }
+}
+</code></pre>
+
+<p>This is a simple class where <em>@Test</em> is defined as Test method. So every method annoted by <em>@Test</em> in our class will be considered as Test method or test case sometime.</p>
+
+<h3 id="how-to-run-my-test-class">How to run my Test Class?</h3>
+
+<p>Now the next step is running our Test and for that, we will use Eclipse TestNG plugin which is an IDE.</p>
+
+<p><strong>Install TestNG Eclipse plugin:</strong><br />
+To run and use TestNg in eclipse IDE we need to install the TestNG plugin in our Eclipse application. If you don&rsquo;t have TestNG installed already, you can follow the steps mentioned in the <a href="http://testng.org/doc/download.html">TestNg official download</a> or <a href="http://testng.org/doc/eclipse.html">eclipse guide</a>.</p>
+
+<p>Now to Run our test <em>Right Click</em> on the Test Class and click <em>Run As -&gt; TestNG Test</em>.</p>
+
+<p><img src="/img/testng/right-click-on-test-class-testng-run.png" alt="testng-eclipse-test-run" /></p>
+
+<p>After successfully running the Test, You will see the test results in two places:<br />
+<strong>Eclipse TestNG plugin View:</strong>
+<img src="/img/testng/testng-plugin-test-result.png" alt="testng-plugin-test-result" /></p>
+
+<p><strong>Eclipse Console View:</strong>
+<img src="/img/testng/console-test-result.png" alt="console-test-result" /></p>
+
+      </article>
+
+      <span class="post-meta">
+      
+      <a href="/tags/test-automation">
+      <i class="fa fa-tags" aria-hidden="true"></i>
+      Test Automation
+      </a>&nbsp;
+      
+      <a href="/tags/testng">
+      <i class="fa fa-tags" aria-hidden="true"></i>
+      TestNG
+      </a>&nbsp;
+      
+      </span>
+
+      <ul class="pager blog-pager">
+        
+          <li class="previous">
+            <a href="https://www.pawangaria.com/post/automation/browser-automation-from-command-line/" data-toggle="tooltip" data-placement="top" title="Browser Automation from CommandLine using Curl and ChromeDriver">&larr; Previous Post</a>
+          </li>
+        
+        
+          <li class="next">
+            <a href="https://www.pawangaria.com/post/testng/what-are-testng-annotations/" data-toggle="tooltip" data-placement="top" title="What are TestNG Annotations?">Next Post &rarr;</a>
+          </li>
+        
+      </ul>
+
+
+
+      
+  
+<aside class="even">
+  
+    
+      <section >
+        <h2>You may also like..</h2>
+        <ul id="recent_posts">
+          
+            <li class="post">
+              <a href="/post/testng/what-are-testng-annotations/">What are TestNG Annotations?</a>
+            </li>
+          
+            <li class="post">
+              <a href="/post/testng/what-is-testng/">What is TestNG?</a>
+            </li>
+          
+            <li class="post">
+              <a href="/post/automation/browser-automation-from-command-line/">Browser Automation from CommandLine using Curl and ChromeDriver</a>
+            </li>
+          
+            <li class="post">
+              <a href="/post/automation/how-chromedriver-works-in-background/">How ChromeDriver works in the background?</a>
+            </li>
+          
+            <li class="post">
+              <a href="/post/automation/browser-automation-using-chromedriver-and-postman/">Browser automation using ChromeDriver and Postman</a>
+            </li>
+          
+        </ul>
+      </section>
+    
+   
+   </aside>
+
+      
+        
+          <div class="disqus-comments">
+            <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "www-pawangaria-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          </div>
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:pawangaria@gmail.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/pawan.garia" title="Facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/pawan-garia-a947a24a" title="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="www.pawangaria.com">Pawan garia</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;
+          2017
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://www.pawangaria.com/">Testing, Automation, Programming and Latest Technology Articles</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.31</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://www.pawangaria.com/js/main.js"></script>
+<script src="https://www.pawangaria.com/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script><script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+<script src="https://www.pawangaria.com/js/load-photoswipe.js"></script>
+
+
+
+  </body>
+</html>
