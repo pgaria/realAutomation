@@ -14,9 +14,11 @@ tags: [
 ---
 Before talking about [annotations](https://docs.oracle.com/javase/tutorial/java/annotations/basics.html) we should talk a little bit about why TestNG is required and what is the need for using any test management frameworks in our test.
 
-All the tests are designed to allow you to quickly run tests on your application using a very large and diverse set of different data inputs. So test management tools are responsible for managing our test and provide many functionalities or you can say methods we can directly use in Test and no need to write the logic again like comparing two objects, pre-setup for Test, passing a different set of data and many more.
+All the tests are designed to allow you to quickly verify your application using a very large and diverse set of different data inputs. So test management tools are responsible for managing our test and provide many functionalities or you can say methods we can directly use in Test and no need to write the logic again like comparing two objects, pre-setup for Test, passing a different set of data and many more.
 
-TestNG use annotations for configuration in the test like creating data, pass data, setUp, cleanup and many more. Annotation is a Java feature and you can [read more about annotation](https://en.wikipedia.org/wiki/Java_annotation). So let's see what annotations are there in TestNG.
+TestNG use annotations for configuration in the test like creating data, pass data, setUp, cleanup and many more. Annotation is a Java feature and you can [read more about annotation](https://en.wikipedia.org/wiki/Java_annotation). So let's see what annotations are there in TestNG.  
+
+>Annotations, a form of metadata, provide data about a program that is not part of the program itself. Annotations have no direct effect on the operation of the code they annotate.
 
 ## TestNG Annotations and Execution order:
 ### @BeforeTest and @AfterTest

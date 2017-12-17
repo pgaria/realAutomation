@@ -1,7 +1,7 @@
 ---
 title: "What is the TestNG.xml file?"
-date: 2017-12-15
-draft: true
+date: 2017-12-17
+draft: false
 description: "What is the TestNG.xml and how to generate testng.xml file using eclipse. We will run multiple @test methods using testng.xml file in this article."
 categories: [ "Automation Testing","Tutorials"]
 keywords: "TestNG,testng.xml,test,Java,Eclipse,testing,unittesting"
