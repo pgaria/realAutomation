@@ -3,18 +3,18 @@ DefaultContentLanguage = "en"
 #DefaultContentLanguage = "ja"
 publishDir = "docs"
 title = "Testing, Automation, Programming and Latest Technology Articles"
-description = "Resources for Java and Automation testing developers - Provides article about webdriver, automation testing, framework design and java."
+description = "Resources for Java and Automation testing developers - Provides article about WebDriver, Automation Testing, Framework Design and Java."
 theme = "beautifulhugo"
 metaDataFormat = "yaml"
 pygmentsUseClasses = true
 pygmentCodeFences = true
-#googleAnalytics = "UA-110208829-1"
+googleAnalytics = "UA-110208829-1"
 enableRobotsTXT= true
 #DisqueCommenting
 disqusShortname = "www-pawangaria-com"
 
 paginate = 6
-
+#summaryLength = 40
 [sitemap]
   changefreq = "weekly"
   priority = 0.9
@@ -22,7 +22,7 @@ paginate = 6
 
 [Params]
   subtitle = "This blog comprises topics about Information Technology"
-  description = "Resources for Java and Automation testing developers - Provides article about webdriver, automation testing, framework design and java."
+  description = "Resources for Java and Automation testing developers - Provides article about WebDriver, Automation Testing, Framework Design and Java."
   keywords = "Selenium,WebDriver,ChromeDriver,Automation Testing,Java,TestNG,TestRail,Quality Assurance,HTTP,JSON,Automation testing tutorials"
   home = "PawanGaria.com"
   welcomeText ="Welcome"
@@ -32,7 +32,7 @@ paginate = 6
   commit = false
   rss = true
   comments = true
-  googleads = false
+  googleads = true
 #  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
   recentArticlesLimit = 5
 
@@ -40,8 +40,6 @@ paginate = 6
  #src = "img/triangle.jpg"
   #desc = "Triangle"
   #position = "center top"
-
-
 
 [Author]
   name = "Pawan garia"
@@ -51,31 +49,25 @@ paginate = 6
   linkedin = "pawan-garia-a947a24a"
 
 [[menu.main]]
-    name = "Blog"
-    url = ""
-    weight = 1
-
-[[menu.main]]
     name = "About"
     url = "page/about/"
-    weight = 4
+    weight = 3
 
 [[menu.main]]
     name = "Tags"
     url = "tags"
-    weight = 3
+    weight = 2
 
 [[menu.main]]
     identifier = "categories"
     name = "SELECT A CATEGORY"
-    weight = 2
+    weight = 1
 
 [[menu.main]]
         parent = "categories"
         name = "Automation Testing"
         url = "categories/automation-testing/"
         weight = 1
-
 [[menu.main]]
         parent = "categories"
         name = "Selenium WebDriver"

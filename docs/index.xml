@@ -7,10 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>pawangaria@gmail.com (Pawan garia)</managingEditor>
     <webMaster>pawangaria@gmail.com (Pawan garia)</webMaster>
-    <lastBuildDate>Sun, 17 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 Dec 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.pawangaria.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Expected Exceptions in TestNG</title>
+      <link>https://www.pawangaria.com/post/testng/expected-exception-in-testng/</link>
+      <pubDate>Tue, 19 Dec 2017 00:00:00 +0000</pubDate>
+      <author>pawangaria@gmail.com (Pawan garia)</author>
+      <guid>https://www.pawangaria.com/post/testng/expected-exception-in-testng/</guid>
+      <description>All exceptions are not bad in our product, means we have to test and verify the exceptions in our product. The ExpectedException is a way of verifying that your code throws a specific exception.
+ Verifying that code completes normally is important, but making sure the logic behaves as expected in failure and unexpected situations are also important.
+ In TestNG, we have an attribute as expectedExceptions which needs to be added to our test where we have to verify the Exception as expected.</description>
+    </item>
+    
+    <item>
+      <title>TestNG Results: Success, Failure and Assert</title>
+      <link>https://www.pawangaria.com/post/testng/testng-test-results/</link>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
+      <author>pawangaria@gmail.com (Pawan garia)</author>
+      <guid>https://www.pawangaria.com/post/testng/testng-test-results/</guid>
+      <description>In testing Test is considered successful if it completed without throwing an exception or test successfully validated expected results. Sometimes @test threw an exception that was expected and we mark test as success. TestNG can not just decide what should be the results of the Test by himself, So we need to provide the expected data and expected conditions.
+TestNG use the concept of Assert from Java and can be used for adding validation and conditions in your test cases.</description>
+    </item>
     
     <item>
       <title>What is the TestNG.xml file?</title>

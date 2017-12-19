@@ -28,11 +28,9 @@
         {{ end }}
       </ul>
 
-
-
       <!-- add recent posts - limit is .Site.Params.recentArticlesLimit - example copied from https://gohugo.io/templates/go-templates/ -->
   <!-- only display this section if recentArticlesLimit is not zero -->
-<aside class="even">
+ <aside class="even">
   {{ with .Site.Params.recentArticlesLimit }}
     {{ if not (eq . 0) }}
       <section >
@@ -47,6 +45,7 @@
       </section>
     {{ end }}
    {{ end }}
+
    </aside>
 
       {{ if (.Params.comments) | or (and (or (not (isset .Params "comments")) (eq .Params.comments nil)) (.Site.Params.comments)) }}
