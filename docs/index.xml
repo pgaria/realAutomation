@@ -7,10 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>pawangaria@gmail.com (Pawan garia)</managingEditor>
     <webMaster>pawangaria@gmail.com (Pawan garia)</webMaster>
-    <lastBuildDate>Tue, 19 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Dec 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.pawangaria.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to Skip @Test in TestNG</title>
+      <link>https://www.pawangaria.com/post/testng/how-to-skip-test-in-testng/</link>
+      <pubDate>Wed, 20 Dec 2017 00:00:00 +0000</pubDate>
+      <author>pawangaria@gmail.com (Pawan garia)</author>
+      <guid>https://www.pawangaria.com/post/testng/how-to-skip-test-in-testng/</guid>
+      <description>Skipping test is also an important concept in TestNG. You can skip the test from running as you don&amp;rsquo;t want to Run the @test and mark the @test as Skip in reports.
+To Skip the test we need to use org.testng.SkipException an Exception Class from TestNG. We have to throw an exception to the first line and code will come out from the test. You can have a look at Java document to read more about exception throwing.</description>
+    </item>
+    
+    <item>
+      <title>How to use Dependencies in TestNG?</title>
+      <link>https://www.pawangaria.com/post/testng/how-to-use-dependencies-in-testng/</link>
+      <pubDate>Wed, 20 Dec 2017 00:00:00 +0000</pubDate>
+      <author>pawangaria@gmail.com (Pawan garia)</author>
+      <guid>https://www.pawangaria.com/post/testng/how-to-use-dependencies-in-testng/</guid>
+      <description>Sometimes we have steps or tests which are depended on each other and can not be performed alone. Like example: To update Facebook account details User should be logged in already.I personally do not recommend making test cases dependent upon each other and should be independent.
+To make dependencies between tests, TestNG provides dependsOnMethods or dependsOnGroups attributes which can be used in the @Test. As per the TestNg documentation there are two types of dependencies:</description>
+    </item>
     
     <item>
       <title>Expected Exceptions in TestNG</title>

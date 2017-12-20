@@ -8,7 +8,7 @@ theme = "beautifulhugo"
 metaDataFormat = "yaml"
 pygmentsUseClasses = true
 pygmentCodeFences = true
-googleAnalytics = "UA-110208829-1"
+#googleAnalytics = "UA-110208829-1"
 enableRobotsTXT= true
 #DisqueCommenting
 disqusShortname = "www-pawangaria-com"
@@ -32,7 +32,7 @@ paginate = 6
   commit = false
   rss = true
   comments = true
-  googleads = true
+  googleads = false
 #  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
   recentArticlesLimit = 5
 
