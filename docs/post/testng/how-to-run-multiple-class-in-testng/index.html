@@ -5,9 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>How to run multiple test class in TestNG?</title>
-  <meta property="og:title" content="How to run multiple test class in TestNG?" />
-  <meta name="twitter:title" content="How to run multiple test class in TestNG?" />
+  <title>How to run multiple Test Classes in TestNG?</title>
+  <meta property="og:title" content="How to run multiple Test Classes in TestNG?" />
+  <meta name="twitter:title" content="How to run multiple Test Classes in TestNG?" />
 
   <meta name="keywords" content="TestNG,Java,class,suite,test,unit">
  
@@ -16,8 +16,8 @@
   <meta name="twitter:description" content="How to run multiple TestNG test classes together as a suite.">
   <meta name="author" content="Pawan garia"/>
   <link href='https://www.pawangaria.com/img/favicon.ico' rel='icon' type='image/x-icon'/>
-  <meta property="og:image" content="https://www.pawangaria.com/img/testng/enable-disable-test-thumb.png" />
-  <meta name="twitter:image" content="https://www.pawangaria.com/img/testng/enable-disable-test-thumb.png" />
+  <meta property="og:image" content="https://www.pawangaria.com/img/testng/multiple-class-testng-thumb.png" />
+  <meta name="twitter:image" content="https://www.pawangaria.com/img/testng/multiple-class-testng-thumb.png" />
   <meta name="twitter:card" content="summary" />
   <meta property="og:url" content="https://www.pawangaria.com/post/testng/how-to-run-multiple-class-in-testng/" />
   <meta property="og:type" content="website" />
@@ -186,12 +186,12 @@ ga('send', 'pageview');
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
-              <h1>How to run multiple test class in TestNG?</h1>
+              <h1>How to run multiple Test Classes in TestNG?</h1>
                 
                 
                   <span class="post-meta">
-  <i class="fa fa-calendar-o"></i>&nbsp;Posted on December 20, 2017
-  &nbsp;|&nbsp; <i class="fa fa-clock-o"></i> 1 min (198 mots)
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on December 23, 2017
+  &nbsp;|&nbsp; <i class="fa fa-clock-o"></i> 2 min (274 mots)
   
 </span>
 
@@ -212,69 +212,72 @@ ga('send', 'pageview');
       <article role="main" class="blog-post">
         
 
-<p>In TestNG we can divide our test cases in multiple classes. Every class can have multiple @test methods.Sometime Class represent a particular feature and all the test cases are inside the class. So in this article we are going to learn how we can run multiple test having multiple classes in TestNG.</p>
+<p>In TestNG, we can divide our test cases into multiple classes. Every class can have multiple @test methods.Sometimes Class represents a particular feature and all the test cases are inside the class. So in this article, we are going to learn how we can run multiple tests having multiple classes in TestNG.</p>
 
-<h3 id="lets-make-few-example-test-classes">Lets make few example test Classes</h3>
+<h3 id="lets-make-few-example-test-classes">Lets make few example test Classes:</h3>
 
-<h3 id="1st-test-class">1st test class</h3>
+<p>We will first make few Test Class with multiple @Test. To run all the Classes we should create a testng.xml file.</p>
+
+<h3 id="1st-test-class">1st Test Class</h3>
 
 <pre><code class="language-Java">package com.tutorial.testng.suitetest;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestClassOne {
-	@Test()
-	public void firstTestMethod() {
-		System.out.println(&quot;First test method from class 1&quot;);
-	}
+    @Test()
+    public void firstTestMethod() {
+        System.out.println(&quot;First test method from class 1&quot;);
+    }
 
-	@Test()
-	public void secondTestMethod() {
-		System.out.println(&quot;Second test method from class 1&quot;);
-	}
+    @Test()
+    public void secondTestMethod() {
+        System.out.println(&quot;Second test method from class 1&quot;);
+    }
 }
 </code></pre>
 
-<h3 id="2nd-test-class">2nd test class</h3>
+<h3 id="2nd-test-class">2nd Test Class</h3>
 
 <pre><code class="language-Java">package com.tutorial.testng.suitetest;
 
 import org.testng.annotations.Test;
 
 public class TestClassTwo {
-	@Test()
-	public void firstTestMethod() {
-		System.out.println(&quot;First test method from class 2&quot;);
-	}
+    @Test()
+    public void firstTestMethod() {
+        System.out.println(&quot;First test method from class 2&quot;);
+    }
 
-	@Test()
-	public void secondTestMethod() {
-		System.out.println(&quot;Second test method from class 2&quot;);
-	}
+    @Test()
+    public void secondTestMethod() {
+        System.out.println(&quot;Second test method from class 2&quot;);
+    }
 }
 </code></pre>
 
-<h3 id="3rd-test-class">3rd test class</h3>
+<h3 id="3rd-test-class">3rd Test Class</h3>
 
 <pre><code class="language-Java">package com.tutorial.testng.suitetest;
 
 import org.testng.annotations.Test;
 
 public class TestClassThree {
-	@Test()
-	public void firstTestMethod() {
-		System.out.println(&quot;First test method from class 3&quot;);
-	}
+    @Test()
+    public void firstTestMethod() {
+        System.out.println(&quot;First test method from class 3&quot;);
+    }
 
-	@Test()
-	public void secondTestMethod() {
-		System.out.println(&quot;Second test method from class 3&quot;);
-	}
+    @Test()
+    public void secondTestMethod() {
+        System.out.println(&quot;Second test method from class 3&quot;);
+    }
 }
 </code></pre>
 
-<h3 id="testng-xml-file">TestNg.xml file</h3>
+<h3 id="testng-xml-file">TestNg.xml file:</h3>
+
+<p>Lets create a testng.xml file which has two test tags and contains multiple test classes.</p>
 
 <pre><code class="language-XML">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
@@ -292,6 +295,11 @@ public class TestClassThree {
   &lt;/test&gt;
 &lt;/suite&gt;
 </code></pre>
+
+<h3 id="when-you-run-the-testng-xml-file">When you Run the testng.xml file:</h3>
+
+<p>When You run the above testng.xml and you can see two Test Run with multiple test in a Suite. If you are new and want to read more about testng xml files check our <a href="https://www.pawangaria.com/post/testng/what-is-testng-xml-file/">previous articles</a>.
+<img src="/img/testng/multiple-test-run-testng-result.png" alt="multiple-test-run-testng-result" /></p>
 
       </article>
 
@@ -312,13 +320,9 @@ public class TestClassThree {
       <ul class="pager blog-pager">
         
           <li class="previous">
-            <a href="https://www.pawangaria.com/post/testng/expected-exception-in-testng/" data-toggle="tooltip" data-placement="top" title="Expected Exceptions in TestNG">&larr; Previous Post</a>
+            <a href="https://www.pawangaria.com/post/testng/enable-and-disable-test-in-testng/" data-toggle="tooltip" data-placement="top" title="How to Enable and Disable @Test in TestNG">&larr; Previous Post</a>
           </li>
         
-        
-          <li class="next">
-            <a href="https://www.pawangaria.com/post/testng/how-to-skip-test-in-testng/" data-toggle="tooltip" data-placement="top" title="How to Skip @Test in TestNG">Next Post &rarr;</a>
-          </li>
         
       </ul>
 
@@ -332,11 +336,15 @@ public class TestClassThree {
         <ul id="recent_posts">
           
             <li class="post">
-              <a href="/post/testng/how-to-skip-test-in-testng/">How to Skip @Test in TestNG</a>
+              <a href="/post/testng/how-to-run-multiple-class-in-testng/">How to run multiple Test Classes in TestNG?</a>
             </li>
           
             <li class="post">
-              <a href="/post/testng/how-to-run-multiple-class-in-testng/">How to run multiple test class in TestNG?</a>
+              <a href="/post/testng/enable-and-disable-test-in-testng/">How to Enable and Disable @Test in TestNG</a>
+            </li>
+          
+            <li class="post">
+              <a href="/post/testng/how-to-skip-test-in-testng/">How to Skip @Test in TestNG</a>
             </li>
           
             <li class="post">
@@ -345,10 +353,6 @@ public class TestClassThree {
           
             <li class="post">
               <a href="/post/testng/testng-test-results/">TestNG Results: Success, Failure and Assert</a>
-            </li>
-          
-            <li class="post">
-              <a href="/post/testng/what-is-testng-xml-file/">What is the TestNG.xml file?</a>
             </li>
           
         </ul>

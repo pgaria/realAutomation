@@ -1,7 +1,7 @@
 ---
 title: "How to use DataProvider in TestNG?"
 date: 2017-12-20
-draft: false
+draft: true
 description: "how to pass multiple parameters into a @Test method using DataProvider in TestNG."
 categories: [ "Automation Testing","Tutorials"]
 keywords: "TestNG,Java,parameters,DataProvider,test"

@@ -1,14 +1,13 @@
 ---
 title: "In Germany Deutschland"
-date: 2017-12-17
+date: 2017-12-19
 draft: true
 description: "How to skip a Test in TestNG and marking a test as Skip should be present in Test Report as Skip."
-categories: [ "Deutschland" ]
+categories: [ "Tutorials" ]
 keywords: "Travel,Germany,Deutschland"
 image: "/img/testng/skip-testng-test-thumb.png"
 logothumb: "/img/logothumb/testng_logo.png"
 tags: [
-    "Germany",
     "Deutschland"
 ]
 ---

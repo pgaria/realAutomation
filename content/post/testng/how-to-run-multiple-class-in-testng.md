@@ -1,7 +1,7 @@
 ---
 title: "How to run multiple Test Classes in TestNG?"
-date: 2017-12-20
-draft: true
+date: 2017-12-23
+draft: false
 description: "How to run multiple TestNG test classes together as a suite."
 categories: [ "Automation Testing","Tutorials"]
 keywords: "TestNG,Java,class,suite,test,unit"
